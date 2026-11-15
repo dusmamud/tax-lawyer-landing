@@ -48,6 +48,7 @@
 					<h2 class="font-serif text-[24px] font-semibold">Have a tax question the blog does not answer?</h2>
 					<p class="mt-1 text-[14px] text-white/75">Ask an attorney directly — the first 30 minutes are free.</p>
 				</div>
+				<a href="/resources" class="shrink-0 rounded-full border border-white/30 px-6 py-3 text-center text-[14px] font-semibold text-white transition hover:bg-white/10">Browse free resources</a>
 				<a href="/free-consultation" class="shrink-0 rounded-full bg-leaf px-6 py-3 text-center text-[14px] font-bold text-navy-3 transition hover:bg-leaf-2">Ask for free</a>
 			</div>
 		</Reveal>

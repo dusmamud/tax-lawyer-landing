@@ -114,6 +114,7 @@
 		</div>
 		<Reveal class="mt-12 text-center">
 			<a href="/team" class="inline-block rounded-full bg-navy px-7 py-3 text-[14px] font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-navy-3">Meet the Team</a>
+			<a href="/careers" class="ml-3 inline-block rounded-full border border-navy/20 bg-white px-7 py-3 text-[14px] font-semibold text-navy transition hover:bg-cream-2">Join the Team</a>
 		</Reveal>
 	</div>
 </section>

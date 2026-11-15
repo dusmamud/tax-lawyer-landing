@@ -30,6 +30,11 @@
 					<li><a href="/testimonials" class="transition hover:text-white">Testimonials</a></li>
 					<li><a href="/blog" class="transition hover:text-white">Blog</a></li>
 					<li><a href="/faq" class="transition hover:text-white">FAQ</a></li>
+					<li><a href="/case-results" class="transition hover:text-white">Case Results</a></li>
+					<li><a href="/resources" class="transition hover:text-white">Resources</a></li>
+					<li><a href="/locations" class="transition hover:text-white">Locations</a></li>
+					<li><a href="/careers" class="transition hover:text-white">Careers</a></li>
+					<li><a href="/news" class="transition hover:text-white">News</a></li>
 				</ul>
 			</div>
 			<div>
@@ -45,7 +50,7 @@
 		</div>
 		<div class="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-[12.5px] text-white/55 sm:flex-row">
 			<p>© 2026 MSY Law. All rights reserved.</p>
-			<p class="flex flex-wrap items-center gap-x-4 gap-y-1"><a href="/privacy-policy" class="transition hover:text-white">Privacy Policy</a><a href="/terms" class="transition hover:text-white">Terms of Service</a><a href="/disclaimer" class="transition hover:text-white">Disclaimer</a><span>Attorney advertising. Past results do not guarantee similar outcomes.</span></p>
+			<p class="flex flex-wrap items-center gap-x-4 gap-y-1"><a href="/privacy-policy" class="transition hover:text-white">Privacy Policy</a><a href="/terms" class="transition hover:text-white">Terms of Service</a><a href="/disclaimer" class="transition hover:text-white">Disclaimer</a><a href="/cookie-policy" class="transition hover:text-white">Cookie Policy</a><a href="/accessibility" class="transition hover:text-white">Accessibility</a><a href="/sitemap" class="transition hover:text-white">Sitemap</a><span>Attorney advertising. Past results do not guarantee similar outcomes.</span></p>
 		</div>
 	</div>
 </footer>

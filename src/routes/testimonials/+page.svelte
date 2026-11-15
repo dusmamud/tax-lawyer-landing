@@ -54,6 +54,9 @@
 				</Reveal>
 			{/each}
 		</div>
+		<Reveal class="mt-10 text-center">
+			<a href="/case-results" class="inline-block rounded-full bg-navy px-7 py-3 text-[14px] font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-navy-3">See detailed case results</a>
+		</Reveal>
 	</div>
 </section>
 
