@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+	--font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+	--font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+	--color-cream: #f3f6e8;
+	--color-cream-2: #eef2dd;
+	--color-cream-3: #e6ebcf;
+	--color-navy: #1e3d52;
+	--color-navy-2: #24495f;
+	--color-navy-3: #16303f;
+	--color-ink: #122a3a;
+	--color-leaf: #8fbf4d;
+	--color-leaf-2: #a8cf5a;
+	--color-leaf-dark: #7aa93a;
+	--color-sage: #dce8b8;
+	--color-muted: #5b6b76;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-sans);
+	color: var(--color-ink);
+	background: #ffffff;
+	-webkit-font-smoothing: antialiased;
+}
+
+::selection {
+	background: #8fbf4d;
+	color: #fff;
+}
