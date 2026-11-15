@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Picture from '#lib/components/Picture.svelte';
 	import Icon from '#lib/components/Icon.svelte';
 	import Stars from '#lib/components/Stars.svelte';
 </script>
@@ -20,7 +21,7 @@
 				<div class="absolute -inset-3 rounded-full border border-dashed border-navy/25 sm:-inset-4"></div>
 				<div class="absolute -inset-6 rounded-full border border-navy/10 sm:-inset-8"></div>
 				<div class="relative h-[168px] w-[168px] overflow-hidden rounded-full bg-sage ring-8 ring-white/70 sm:h-[200px] sm:w-[200px] lg:h-[220px] lg:w-[220px]">
-					<img src="/lawyer-man.webp" alt="Tax lawyer" class="h-full w-full object-cover object-top" />
+					<Picture src="/lawyer-man.webp" alt="Tax lawyer" class="h-full w-full object-cover object-top" width={1600} height={1600} loading="eager" fetchpriority="high" />
 				</div>
 				<span class="absolute -bottom-1 -left-4 -rotate-12 rounded-sm bg-leaf px-3 py-1.5 text-[12px] font-bold text-white shadow sm:-left-6 sm:text-[13px]">
 					Tax Lawyer
@@ -76,9 +77,9 @@
 				<Reveal delay={280}>
 					<div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
 						<div class="flex -space-x-3">
-							<img src="/lawyer-man.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" />
-							<img src="/lawyer-woman.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" />
-							<img src="/lawyer-senior.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" />
+							<Picture src="/lawyer-man.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" />
+							<Picture src="/lawyer-woman.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" />
+							<Picture src="/lawyer-senior.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" />
 							<span class="flex h-10 w-10 items-center justify-center rounded-full bg-navy text-[11px] font-bold text-white ring-2 ring-white">1.2k+</span>
 						</div>
 						<div class="text-center sm:text-left">
@@ -96,7 +97,7 @@
 				<div class="absolute -inset-3 rounded-full border border-dashed border-navy/25 sm:-inset-4"></div>
 				<div class="absolute -inset-6 rounded-full border border-navy/10 sm:-inset-8"></div>
 				<div class="relative h-[168px] w-[168px] overflow-hidden rounded-full bg-sage ring-8 ring-white/70 sm:h-[200px] sm:w-[200px] lg:h-[220px] lg:w-[220px]">
-					<img src="/lawyer-woman.webp" alt="Tax attorney" class="h-full w-full object-cover object-top" />
+					<Picture src="/lawyer-woman.webp" alt="Tax attorney" class="h-full w-full object-cover object-top" width={1600} height={1600} loading="eager" />
 				</div>
 				<span class="absolute -top-3 -right-1 flex h-11 w-11 items-center justify-center rounded-full border-2 border-leaf bg-white text-[17px] font-bold text-leaf-dark shadow sm:-top-6 sm:-right-2 sm:h-12 sm:w-12">
 					1

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import PageHero from '#lib/components/PageHero.svelte';
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Picture from '#lib/components/Picture.svelte';
 	import Results from '#lib/components/Results.svelte';
 	import Testimonials from '#lib/components/Testimonials.svelte';
 	import CtaBanner from '#lib/components/CtaBanner.svelte';
@@ -44,7 +45,7 @@
 						<Stars />
 						<blockquote class="mt-4 flex-1 text-[15px] leading-relaxed text-ink/85">“{item.quote}”</blockquote>
 						<figcaption class="mt-5 flex items-center gap-3 border-t border-black/5 pt-4">
-							<img src={item.img} alt={item.name} class="h-11 w-11 rounded-full object-cover object-top" />
+							<Picture src={item.img} alt={item.name} class="h-11 w-11 rounded-full object-cover object-top" />
 							<span>
 								<span class="block text-[14px] font-bold">{item.name}</span>
 								<span class="block text-[12.5px] text-muted">{item.role}</span>

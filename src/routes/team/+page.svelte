@@ -1,6 +1,7 @@
 <script lang="ts">
 	import PageHero from '#lib/components/PageHero.svelte';
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Picture from '#lib/components/Picture.svelte';
 	import Icon from '#lib/components/Icon.svelte';
 	import CtaBanner from '#lib/components/CtaBanner.svelte';
 	import { team } from '../../lib/data/team';
@@ -25,7 +26,7 @@
 				<Reveal delay={i * 90}>
 					<a href="/team/{member.slug}" class="group block overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl">
 						<div class="relative aspect-[4/4.4] overflow-hidden bg-sage">
-							<img src={member.img} alt={member.name} loading="lazy" class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />
+							<Picture src={member.img} alt={member.name} class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />
 							<span class="absolute top-3 left-3 rounded-full bg-white/90 px-3 py-1 text-[11px] font-bold text-navy">{member.tag}</span>
 						</div>
 						<div class="p-5">

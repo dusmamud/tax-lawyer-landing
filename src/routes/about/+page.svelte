@@ -1,5 +1,6 @@
 <script lang="ts">
 	import PageHero from '#lib/components/PageHero.svelte';
+	import Picture from '#lib/components/Picture.svelte';
 	import Reveal from '#lib/components/Reveal.svelte';
 	import Stats from '#lib/components/Stats.svelte';
 	import CtaBanner from '#lib/components/CtaBanner.svelte';
@@ -38,7 +39,7 @@
 			<div class="absolute -inset-5 rounded-full border border-navy/10"></div>
 			<div class="absolute -inset-3 rounded-full border border-dashed border-navy/20"></div>
 			<div class="relative aspect-square overflow-hidden rounded-full bg-sage ring-8 ring-white">
-				<img src="/lawyer-meeting.webp" alt="Tax attorney discussing documents with a client" class="h-full w-full object-cover" />
+				<Picture src="/lawyer-meeting.webp" alt="Tax attorney discussing documents with a client" class="h-full w-full object-cover" width={1920} height={1280} />
 			</div>
 			<div class="absolute -bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-2xl bg-navy px-5 py-3 text-white shadow-xl sm:left-auto sm:translate-x-0">
 				<p class="font-serif text-2xl leading-none font-bold">15+</p>

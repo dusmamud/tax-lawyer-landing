@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Picture from '#lib/components/Picture.svelte';
 	import Icon from '#lib/components/Icon.svelte';
 	import Stars from '#lib/components/Stars.svelte';
 
@@ -44,7 +45,7 @@
 					</blockquote>
 				{/key}
 				<div class="mt-7 flex items-center justify-center gap-3">
-					<img src={items[index].img} alt={items[index].name} class="h-12 w-12 rounded-full object-cover object-top ring-2 ring-cream" />
+					<Picture src={items[index].img} alt={items[index].name} class="h-12 w-12 rounded-full object-cover object-top ring-2 ring-cream" />
 					<div class="text-left">
 						<p class="text-[15px] font-bold">{items[index].name}</p>
 						<p class="text-[13px] text-muted">{items[index].role}</p>

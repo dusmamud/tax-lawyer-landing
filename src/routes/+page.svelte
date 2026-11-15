@@ -14,6 +14,13 @@
 	import CtaBanner from '#lib/components/CtaBanner.svelte';
 		</script>
 
+<svelte:head>
+	<!-- Preload the LCP hero image in its smallest format (AVIF). Browsers
+		that do not support AVIF skip this preload and use the <picture>
+		fallback chain instead. -->
+	<link rel="preload" as="image" href="/lawyer-man.avif" type="image/avif" fetchpriority="high" />
+</svelte:head>
+
 <main>
 	<Hero />
 	<Stats />

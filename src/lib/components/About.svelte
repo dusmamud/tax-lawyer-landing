@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Picture from '#lib/components/Picture.svelte';
 
 	const points = [
 		'Licensed tax attorneys, not just accountants',
@@ -18,7 +19,7 @@
 			<span class="absolute top-1/2 -left-5 h-2 w-2 rounded-full bg-leaf"></span>
 			<span class="absolute right-2 bottom-16 h-2.5 w-2.5 rounded-full bg-leaf"></span>
 			<div class="relative aspect-square overflow-hidden rounded-full bg-sage ring-8 ring-white">
-				<img src="/lawyer-meeting.webp" alt="Tax attorney discussing documents with a client" class="h-full w-full object-cover" loading="lazy" />
+				<Picture src="/lawyer-meeting.webp" alt="Tax attorney discussing documents with a client" class="h-full w-full object-cover" width={1920} height={1280} />
 			</div>
 			<div class="absolute -bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-2xl bg-navy px-5 py-3 text-white shadow-xl sm:left-auto sm:translate-x-0">
 				<p class="font-serif text-2xl leading-none font-bold">15+</p>
@@ -57,7 +58,7 @@
 						Begin Your Tax Journey
 					</a>
 					<div class="flex items-center gap-3">
-						<img src="/lawyer-senior.webp" alt="Michael S. Young, founding partner" class="h-12 w-12 rounded-full object-cover object-top ring-2 ring-cream" />
+						<Picture src="/lawyer-senior.webp" alt="Michael S. Young, founding partner" class="h-12 w-12 rounded-full object-cover object-top ring-2 ring-cream" width={1280} height={1920} />
 						<div>
 							<p class="font-serif text-[17px] font-semibold italic">Michael S. Young</p>
 							<p class="text-[12px] text-muted">Founding Partner · 15+ yrs</p>

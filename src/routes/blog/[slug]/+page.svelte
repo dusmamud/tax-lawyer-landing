@@ -1,6 +1,7 @@
 <script lang="ts">
 	import PageHero from '#lib/components/PageHero.svelte';
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Picture from '#lib/components/Picture.svelte';
 	import Icon from '#lib/components/Icon.svelte';
 	import CtaBanner from '#lib/components/CtaBanner.svelte';
 	import type { PageData } from './$types';
@@ -26,7 +27,7 @@
 	<div class="mx-auto max-w-3xl px-4 sm:px-5">
 		<Reveal>
 			<div class="flex flex-wrap items-center gap-4 border-b border-black/5 pb-6">
-				<img src={post.authorImg} alt={post.author} class="h-13 w-13 rounded-full object-cover object-top ring-2 ring-cream" />
+				<Picture src={post.authorImg} alt={post.author} class="h-13 w-13 rounded-full object-cover object-top ring-2 ring-cream" />
 				<div>
 					<p class="text-[15px] font-bold">{post.author}</p>
 					<p class="text-[13px] text-muted">{post.authorRole}</p>
