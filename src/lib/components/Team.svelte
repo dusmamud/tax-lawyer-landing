@@ -1,6 +1,9 @@
 <script lang="ts">
 	import Reveal from '#lib/components/Reveal.svelte';
 
+	const slugOf = (name: string) =>
+		name === 'Michael S. Young' ? 'michael-young' : name === 'David Carter' ? 'david-carter' : name === 'Sarah Mitchell' ? 'sarah-mitchell' : 'emily-ross';
+
 	const team = [
 		{ img: '/lawyer-senior.webp', name: 'Michael S. Young', role: 'Founding Partner · Tax Litigation', exp: '15+ yrs', tag: 'IRS Defence' },
 		{ img: '/lawyer-man.webp', name: 'David Carter', role: 'Senior Attorney · Business Tax', exp: '12 yrs', tag: 'Corporate Tax' },
@@ -20,7 +23,7 @@
 		<div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 			{#each team as member, i}
 				<Reveal delay={i * 90}>
-					<article class="group overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl">
+					<a href="/team/{slugOf(member.name)}" class="group block overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl">
 						<div class="relative aspect-[4/4.4] overflow-hidden bg-sage">
 							<img src={member.img} alt={member.name} loading="lazy" class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />
 							<span class="absolute top-3 left-3 rounded-full bg-white/90 px-3 py-1 text-[11px] font-bold text-navy">{member.tag}</span>
@@ -30,7 +33,7 @@
 							<p class="mt-1 text-[13.5px] text-muted">{member.role}</p>
 							<p class="mt-3 inline-block rounded-full bg-cream px-3 py-1 text-[12px] font-semibold text-navy">{member.exp} experience</p>
 						</div>
-					</article>
+					</a>
 				</Reveal>
 			{/each}
 		</div>

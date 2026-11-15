@@ -15,7 +15,7 @@
 					Book a free 30-minute consultation today. Leave with a clear plan — whether you hire us or not.
 				</p>
 				<div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-					<a href="#contact" class="w-full rounded-full bg-leaf px-7 py-3.5 text-[15px] font-bold text-navy-3 shadow-lg transition hover:-translate-y-0.5 hover:bg-leaf-2 sm:w-auto">Book Free Consultation</a>
+					<a href="/free-consultation" class="w-full rounded-full bg-leaf px-7 py-3.5 text-[15px] font-bold text-navy-3 shadow-lg transition hover:-translate-y-0.5 hover:bg-leaf-2 sm:w-auto">Book Free Consultation</a>
 					<a href="tel:+18005550199" class="w-full rounded-full border border-white/30 px-7 py-3.5 text-[15px] font-semibold text-white transition hover:bg-white/10 sm:w-auto">Call +1 (800) 555-0199</a>
 				</div>
 			</div>

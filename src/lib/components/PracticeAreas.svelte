@@ -2,14 +2,14 @@
 	import Reveal from '#lib/components/Reveal.svelte';
 	import Icon from '#lib/components/Icon.svelte';
 
-	type Area = { title: string; text: string; icon: string; highlight?: boolean };
+	type Area = { title: string; text: string; icon: string; highlight?: boolean; slug: string };
 	const areas: Area[] = [
-		{ title: 'Criminal Tax Law', text: 'Our team of experienced tax attorneys and experts is here to provide you with valuable.', icon: 'scales' },
-		{ title: 'Estate Planning & Taxation', text: 'From understanding the latest tax code change to exploring tax planning strategies.', icon: 'bank' },
-		{ title: 'State & Local Taxation', text: 'Explore our informative articles, guides, and tools to gain a better grasp of tax laws.', icon: 'doc', highlight: true },
-		{ title: 'Tax Planning & Compliance', text: 'We aim to simplify the intricacies of tax law, making it accessible and relevant to Tax.', icon: 'calc' },
-		{ title: 'International Taxation', text: 'Whether you’re dealing with income tax, estate tax, business tax, or any other Expect.', icon: 'globe' },
-		{ title: 'Property Taxes', text: 'Tax strategy, or a legal professional in to the search of the latest updates and insights.', icon: 'home' }
+		{ slug: 'criminal-tax-law', title: 'Criminal Tax Law', text: 'Our team of experienced tax attorneys and experts is here to provide you with valuable.', icon: 'scales' },
+		{ slug: 'estate-planning-taxation', title: 'Estate Planning & Taxation', text: 'From understanding the latest tax code change to exploring tax planning strategies.', icon: 'bank' },
+		{ slug: 'state-local-taxation', title: 'State & Local Taxation', text: 'Explore our informative articles, guides, and tools to gain a better grasp of tax laws.', icon: 'doc', highlight: true },
+		{ slug: 'tax-planning-compliance', title: 'Tax Planning & Compliance', text: 'We aim to simplify the intricacies of tax law, making it accessible and relevant to Tax.', icon: 'calc' },
+		{ slug: 'international-taxation', title: 'International Taxation', text: 'Whether you’re dealing with income tax, estate tax, business tax, or any other Expect.', icon: 'globe' },
+		{ slug: 'property-taxes', title: 'Property Taxes', text: 'Tax strategy, or a legal professional in to the search of the latest updates and insights.', icon: 'home' }
 	];
 </script>
 
@@ -45,7 +45,7 @@
 						</span>
 						<h3 class="mt-5 font-serif text-[22px] font-semibold">{area.title}</h3>
 						<p class="mt-2 text-[14px] leading-relaxed {area.highlight ? 'text-white/80' : 'text-muted'}">{area.text}</p>
-						<a href="#contact" class="mt-5 inline-flex items-center gap-1.5 text-[13px] font-bold {area.highlight ? 'text-white' : 'text-ink'}">
+						<a href="/practice-areas/{area.slug}" class="mt-5 inline-flex items-center gap-1.5 text-[13px] font-bold {area.highlight ? 'text-white' : 'text-ink'}">
 							Read More <Icon name="arrow-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
 						</a>
 					</article>
@@ -54,7 +54,7 @@
 		</div>
 
 		<Reveal class="mt-12 text-center">
-			<a href="#contact" class="inline-block rounded-full bg-navy px-7 py-3 text-[14px] font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-navy-3">View More Services</a>
+			<a href="/practice-areas" class="inline-block rounded-full bg-navy px-7 py-3 text-[14px] font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-navy-3">View More Services</a>
 		</Reveal>
 	</div>
 </section>

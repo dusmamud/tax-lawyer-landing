@@ -64,10 +64,10 @@
 
 				<Reveal delay={220}>
 					<div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
-						<a href="#contact" class="w-full rounded-full bg-navy px-7 py-3.5 text-[15px] font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-navy-3 sm:w-auto">
+						<a href="/practice-areas" class="w-full rounded-full bg-navy px-7 py-3.5 text-[15px] font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-navy-3 sm:w-auto">
 							Discover Tax Services
 						</a>
-						<a href="#about" class="w-full rounded-full border border-navy/20 bg-white/80 px-7 py-3.5 text-[15px] font-semibold text-navy transition hover:-translate-y-0.5 hover:bg-white sm:w-auto">
+						<a href="/about" class="w-full rounded-full border border-navy/20 bg-white/80 px-7 py-3.5 text-[15px] font-semibold text-navy transition hover:-translate-y-0.5 hover:bg-white sm:w-auto">
 							Learn More
 						</a>
 					</div>

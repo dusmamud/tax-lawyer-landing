@@ -32,7 +32,7 @@
 		<Reveal>
 			<span class="inline-block rounded-md bg-white px-3 py-1 text-[12px] font-semibold tracking-wide text-navy shadow-sm">Testimonials</span>
 			<h2 class="mt-4 font-serif text-[32px] leading-tight font-semibold text-ink sm:text-[40px]">What our clients say</h2>
-			<p class="mt-2 text-[15px] text-muted"><span class="font-bold text-ink">4.9 / 5</span> average from 1,200+ clients</p>
+			<p class="mt-2 text-[15px] text-muted"><span class="font-bold text-ink">4.9 / 5</span> average from 1,200+ clients · <a href="/testimonials" class="font-bold text-navy underline underline-offset-4">Read all testimonials</a></p>
 		</Reveal>
 
 		<Reveal delay={120}>

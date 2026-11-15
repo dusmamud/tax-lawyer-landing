@@ -1,6 +1,9 @@
 <script lang="ts">
 	import '../app.css';
 	import type { LayoutProps } from './$types';
+	import Header from '#lib/components/Header.svelte';
+	import Footer from '#lib/components/Footer.svelte';
+	import BackToTop from '#lib/components/BackToTop.svelte';
 
 	let { children }: LayoutProps = $props();
 </script>
@@ -19,4 +22,7 @@
 	<meta property="og:type" content="website" />
 </svelte:head>
 
+<Header />
 {@render children()}
+<Footer />
+<BackToTop />

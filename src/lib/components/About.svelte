@@ -53,7 +53,7 @@
 
 			<Reveal delay={200}>
 				<div class="mt-8 flex flex-col gap-5 sm:flex-row sm:items-center">
-					<a href="#contact" class="rounded-full bg-navy px-6 py-3 text-center text-[14px] font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-navy-3">
+					<a href="/free-consultation" class="rounded-full bg-navy px-6 py-3 text-center text-[14px] font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-navy-3">
 						Begin Your Tax Journey
 					</a>
 					<div class="flex items-center gap-3">

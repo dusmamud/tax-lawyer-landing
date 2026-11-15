@@ -12,13 +12,13 @@
 	});
 
 	const links = [
-		{ label: 'Home', href: '#home' },
-		{ label: 'About Us', href: '#about' },
-		{ label: 'Practice Areas', href: '#practice' },
-		{ label: 'Our Team', href: '#team' },
-		{ label: 'Testimonials', href: '#testimonials' },
-		{ label: 'Blog', href: '#blog' },
-		{ label: 'Contact Us', href: '#contact' }
+		{ label: 'Home', href: '/' },
+		{ label: 'About Us', href: '/about' },
+		{ label: 'Practice Areas', href: '/practice-areas' },
+		{ label: 'Our Team', href: '/team' },
+		{ label: 'Testimonials', href: '/testimonials' },
+		{ label: 'Blog', href: '/blog' },
+		{ label: 'Contact Us', href: '/contact' }
 	];
 </script>
 
@@ -34,7 +34,7 @@
 			? 'py-2.5'
 			: 'py-4'}"
 	>
-		<a href="#home" class="flex shrink-0 items-center gap-2.5" aria-label="MSY Law — home">
+		<a href="/" class="flex shrink-0 items-center gap-2.5" aria-label="MSY Law — home">
 			<span
 				class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-navy/80 bg-white text-navy sm:h-12 sm:w-12"
 			>
@@ -69,7 +69,7 @@
 				</svg>
 			</a>
 			<a
-				href="#contact"
+				href="/free-consultation"
 				class="hidden rounded-full bg-navy px-5 py-2.5 text-[13.5px] font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-navy-3 sm:inline-block"
 			>
 				Free Consultation
@@ -101,7 +101,7 @@
 				{/each}
 			</div>
 			<a
-				href="#contact"
+				href="/free-consultation"
 				onclick={() => (open = false)}
 				class="mt-5 block rounded-full bg-navy py-3.5 text-center text-[15px] font-semibold text-white"
 			>
