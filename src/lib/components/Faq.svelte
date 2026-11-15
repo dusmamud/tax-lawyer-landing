@@ -28,13 +28,15 @@
 			{#each faqs as faq, i}
 				<Reveal delay={i * 60}>
 					<div class="overflow-hidden rounded-2xl border border-black/5 bg-cream/50 transition {open === i ? 'bg-white shadow-md' : ''}">
-						<button onclick={() => (open = open === i ? -1 : i)} aria-expanded={open === i} class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left sm:px-6">
+						<button onclick={() => (open = open === i ? -1 : i)} aria-expanded={open === i} aria-controls="faq-panel-{i}" class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left sm:px-6">
 							<span class="text-[15px] font-bold sm:text-base">{faq.q}</span>
 							<span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy text-lg text-white transition-transform duration-300 {open === i ? 'rotate-45' : ''}" aria-hidden="true">+</span>
 						</button>
-						{#if open === i}
-							<p class="animate-fade-up px-5 pb-5 text-[14.5px] leading-relaxed text-muted sm:px-6">{faq.a}</p>
-						{/if}
+						<div id="faq-panel-{i}" class="grid transition-all duration-500 ease-in-out {open === i ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}">
+							<div class="overflow-hidden">
+								<p class="px-5 pb-5 text-[14.5px] leading-relaxed text-muted sm:px-6">{faq.a}</p>
+							</div>
+						</div>
 					</div>
 				</Reveal>
 			{/each}

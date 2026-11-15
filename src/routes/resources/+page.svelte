@@ -64,13 +64,15 @@
 					<div class="mt-6 space-y-3">
 						{#each glossary as item, i}
 							<div class="overflow-hidden rounded-2xl border border-black/5 bg-cream/50 transition {open === i ? 'bg-white shadow-md' : ''}">
-								<button onclick={() => (open = open === i ? -1 : i)} aria-expanded={open === i} class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left">
+								<button onclick={() => (open = open === i ? -1 : i)} aria-expanded={open === i} aria-controls="glossary-panel-{i}" class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left">
 									<span class="text-[15px] font-bold">{item.term}</span>
 									<span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy text-lg text-white transition-transform duration-300 {open === i ? 'rotate-45' : ''}" aria-hidden="true">+</span>
 								</button>
-								{#if open === i}
-									<p class="animate-fade-up px-5 pb-5 text-[14.5px] leading-relaxed text-muted">{item.def}</p>
-								{/if}
+								<div id="glossary-panel-{i}" class="grid transition-all duration-500 ease-in-out {open === i ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}">
+									<div class="overflow-hidden">
+										<p class="px-5 pb-5 text-[14.5px] leading-relaxed text-muted">{item.def}</p>
+									</div>
+								</div>
 							</div>
 						{/each}
 					</div>
