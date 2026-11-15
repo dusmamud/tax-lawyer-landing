@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Icon from '#lib/components/Icon.svelte';
 
 	const faqs = [
 		{ q: 'How much does a tax attorney cost?', a: 'Every case starts with a free 30-minute consultation. After that you get a written, fixed-fee quote before we start — no hourly surprises and no hidden charges.' },
@@ -19,7 +20,7 @@
 			<h2 class="mt-4 font-serif text-[32px] leading-tight font-semibold text-ink sm:text-[40px]">Questions? We’ve got honest answers.</h2>
 			<p class="mt-3 max-w-md text-[15px] leading-relaxed text-muted">Can’t find your question? Call us — a real attorney answers, not a bot.</p>
 			<a href="tel:+18005550199" class="mt-6 inline-flex items-center gap-2 rounded-full border border-navy/15 px-5 py-3 text-[14px] font-semibold text-navy transition hover:bg-cream">
-				<span aria-hidden="true">☎</span> +1 (800) 555-0199
+				<Icon name="phone" class="h-4 w-4" /> +1 (800) 555-0199
 			</a>
 		</Reveal>
 

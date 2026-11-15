@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Icon from '#lib/components/Icon.svelte';
 
 	const posts = [
 		{ tag: 'IRS Audits', date: 'Nov 10, 2026', read: '6 min read', title: 'Got an IRS audit letter? Do these 5 things first', text: 'The first 48 hours decide how your audit goes. Here is the exact checklist our attorneys use.', grad: 'from-navy to-navy-2' },
@@ -15,7 +16,7 @@
 				<span class="inline-block rounded-md bg-white px-3 py-1 text-[12px] font-semibold tracking-wide text-navy shadow-sm">Our Blog</span>
 				<h2 class="mt-4 font-serif text-[32px] leading-tight font-semibold text-ink sm:text-[40px]">Tax insights, in plain English</h2>
 			</div>
-			<a href="#contact" class="text-[14px] font-bold text-navy underline underline-offset-4 hover:text-leaf-dark">View all articles →</a>
+			<a href="#contact" class="text-[14px] font-bold text-navy underline underline-offset-4 hover:text-leaf-dark">View all articles <Icon name="arrow-right" class="ml-1 inline h-4 w-4 align-middle" /></a>
 		</Reveal>
 
 		<div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -30,7 +31,7 @@
 							<p class="text-[12.5px] font-medium text-muted">{post.date} · {post.read}</p>
 							<h3 class="mt-2 font-serif text-[21px] leading-snug font-semibold transition group-hover:text-navy">{post.title}</h3>
 							<p class="mt-2 flex-1 text-[14px] leading-relaxed text-muted">{post.text}</p>
-							<span class="mt-4 text-[13px] font-bold text-navy">Read article <span class="transition-transform group-hover:translate-x-1 inline-block" aria-hidden="true">→</span></span>
+							<span class="mt-4 text-[13px] font-bold text-navy">Read article <Icon name="arrow-right" class="inline h-3.5 w-3.5 transition-transform group-hover:translate-x-1" /></span>
 						</div>
 					</article>
 				</Reveal>

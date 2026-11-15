@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Icon from '#lib/components/Icon.svelte';
 
 	type Area = { title: string; text: string; icon: string; highlight?: boolean };
 	const areas: Area[] = [
@@ -45,7 +46,7 @@
 						<h3 class="mt-5 font-serif text-[22px] font-semibold">{area.title}</h3>
 						<p class="mt-2 text-[14px] leading-relaxed {area.highlight ? 'text-white/80' : 'text-muted'}">{area.text}</p>
 						<a href="#contact" class="mt-5 inline-flex items-center gap-1.5 text-[13px] font-bold {area.highlight ? 'text-white' : 'text-ink'}">
-							Read More <span class="transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
+							Read More <Icon name="arrow-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
 						</a>
 					</article>
 				</Reveal>

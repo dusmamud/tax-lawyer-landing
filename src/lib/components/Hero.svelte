@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Icon from '#lib/components/Icon.svelte';
+	import Stars from '#lib/components/Stars.svelte';
 </script>
 
 <section id="home" class="relative overflow-hidden bg-cream">
@@ -81,7 +83,7 @@
 						</div>
 						<div class="text-center sm:text-left">
 							<p class="text-[14px] font-semibold text-ink">
-								<span class="text-gold" aria-label="4.9 out of 5 stars">★★★★★</span> 4.9/5
+								<Stars /> 4.9/5
 							</p>
 							<p class="text-[12.5px] text-muted">from 1,200+ happy clients</p>
 						</div>
@@ -121,13 +123,13 @@
 			<div class="marquee-track items-center gap-10 text-[13px] font-bold tracking-[0.18em] text-navy/60 uppercase">
 				{#each [0, 1] as dup}
 					<div class="flex items-center gap-10 pr-10" aria-hidden={dup === 1}>
-						<span>Tax Audits</span><span class="text-leaf">✦</span>
-						<span>IRS Representation</span><span class="text-leaf">✦</span>
-						<span>Estate Planning</span><span class="text-leaf">✦</span>
-						<span>Business Tax</span><span class="text-leaf">✦</span>
-						<span>International Tax</span><span class="text-leaf">✦</span>
-						<span>Property Tax</span><span class="text-leaf">✦</span>
-						<span>Tax Compliance</span><span class="text-leaf">✦</span>
+						<span>Tax Audits</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
+						<span>IRS Representation</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
+						<span>Estate Planning</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
+						<span>Business Tax</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
+						<span>International Tax</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
+						<span>Property Tax</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
+						<span>Tax Compliance</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
 					</div>
 				{/each}
 			</div>

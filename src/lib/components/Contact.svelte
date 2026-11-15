@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Icon from '#lib/components/Icon.svelte';
 
 	let name = $state('');
 	let email = $state('');
@@ -31,15 +32,15 @@
 
 			<div class="mt-8 space-y-4">
 				<a href="tel:+18005550199" class="flex items-center gap-4 rounded-2xl border border-black/5 bg-cream/60 p-4 transition hover:-translate-y-0.5 hover:shadow-md">
-					<span class="flex h-12 w-12 items-center justify-center rounded-full bg-navy text-lg text-white">☎</span>
+					<span class="flex h-12 w-12 items-center justify-center rounded-full bg-navy text-white"><Icon name="phone" class="h-5 w-5" /></span>
 					<span><span class="block text-[12px] font-semibold tracking-wide text-muted uppercase">Call us</span><span class="block text-[15px] font-bold">+1 (800) 555-0199</span></span>
 				</a>
 				<a href="mailto:hello@msylaw.com" class="flex items-center gap-4 rounded-2xl border border-black/5 bg-cream/60 p-4 transition hover:-translate-y-0.5 hover:shadow-md">
-					<span class="flex h-12 w-12 items-center justify-center rounded-full bg-navy text-lg text-white">✉</span>
+					<span class="flex h-12 w-12 items-center justify-center rounded-full bg-navy text-white"><Icon name="mail" class="h-5 w-5" /></span>
 					<span><span class="block text-[12px] font-semibold tracking-wide text-muted uppercase">Email</span><span class="block text-[15px] font-bold">hello@msylaw.com</span></span>
 				</a>
 				<div class="flex items-center gap-4 rounded-2xl border border-black/5 bg-cream/60 p-4">
-					<span class="flex h-12 w-12 items-center justify-center rounded-full bg-navy text-lg text-white">◷</span>
+					<span class="flex h-12 w-12 items-center justify-center rounded-full bg-navy text-white"><Icon name="clock" class="h-5 w-5" /></span>
 					<span><span class="block text-[12px] font-semibold tracking-wide text-muted uppercase">Office hours</span><span class="block text-[15px] font-bold">Mon–Fri · 9:00 AM – 6:00 PM</span></span>
 				</div>
 			</div>
@@ -48,7 +49,7 @@
 		<Reveal delay={120}>
 			{#if submitted}
 				<div class="animate-fade-up flex h-full flex-col items-center justify-center rounded-3xl bg-cream p-10 text-center">
-					<span class="flex h-16 w-16 items-center justify-center rounded-full bg-leaf text-3xl text-white">✓</span>
+					<span class="flex h-16 w-16 items-center justify-center rounded-full bg-leaf text-white"><Icon name="check" class="h-8 w-8" /></span>
 					<h3 class="mt-5 font-serif text-3xl font-semibold">Thank you, {name.split(' ')[0]}!</h3>
 					<p class="mt-3 max-w-sm text-[15px] leading-relaxed text-muted">
 						Your request is in. An attorney will reply to <strong class="text-ink">{email}</strong> within one business day — usually much faster.
@@ -93,7 +94,7 @@
 						<p class="mt-3 rounded-xl bg-red-50 px-4 py-3 text-[13.5px] font-medium text-red-700" role="alert">{error}</p>
 					{/if}
 					<button type="submit" class="mt-5 w-full rounded-full bg-navy py-3.5 text-[15px] font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-navy-3">
-						Get My Free Consultation →
+						Get My Free Consultation <Icon name="arrow-right" class="ml-1 inline h-4 w-4 align-middle" />
 					</button>
 					<p class="mt-3 text-center text-[12px] text-muted">No spam, no obligation. Your details stay confidential.</p>
 				</form>

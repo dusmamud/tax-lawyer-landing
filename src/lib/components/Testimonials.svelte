@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Reveal from '#lib/components/Reveal.svelte';
+	import Icon from '#lib/components/Icon.svelte';
+	import Stars from '#lib/components/Stars.svelte';
 
 	const items = [
 		{ quote: 'The IRS wanted $180,000. MSY Law settled it for $22,000 — and I finally sleep at night. They called me every week with an update, no chasing needed.', name: 'Robert Hayes', role: 'Small Business Owner, Texas', img: '/lawyer-man.webp' },
@@ -48,16 +50,16 @@
 						<p class="text-[13px] text-muted">{items[index].role}</p>
 					</div>
 				</div>
-				<p class="mt-3 text-gold" aria-label="5 out of 5 stars">★★★★★</p>
+				<p class="mt-3"><Stars /></p>
 
 				<div class="mt-6 flex items-center justify-center gap-4">
-					<button onclick={() => go(index - 1)} aria-label="Previous testimonial" class="flex h-11 w-11 items-center justify-center rounded-full border border-navy/15 text-navy transition hover:bg-navy hover:text-white">←</button>
+					<button onclick={() => go(index - 1)} aria-label="Previous testimonial" class="flex h-11 w-11 items-center justify-center rounded-full border border-navy/15 text-navy transition hover:bg-navy hover:text-white"><Icon name="arrow-left" class="h-5 w-5" /></button>
 					<div class="flex gap-2">
 						{#each items as _, i}
 							<button onclick={() => go(i)} aria-label="Go to testimonial {i + 1}" class="h-2.5 rounded-full transition-all {i === index ? 'w-8 bg-navy' : 'w-2.5 bg-navy/25 hover:bg-navy/50'}"></button>
 						{/each}
 					</div>
-					<button onclick={() => go(index + 1)} aria-label="Next testimonial" class="flex h-11 w-11 items-center justify-center rounded-full border border-navy/15 text-navy transition hover:bg-navy hover:text-white">→</button>
+					<button onclick={() => go(index + 1)} aria-label="Next testimonial" class="flex h-11 w-11 items-center justify-center rounded-full border border-navy/15 text-navy transition hover:bg-navy hover:text-white"><Icon name="arrow-right" class="h-5 w-5" /></button>
 				</div>
 			</div>
 		</Reveal>

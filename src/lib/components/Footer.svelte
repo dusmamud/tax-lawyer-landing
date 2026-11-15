@@ -1,3 +1,7 @@
+<script>
+	import Stars from '#lib/components/Stars.svelte';
+</script>
+
 <footer class="bg-navy-3 pt-14 pb-8 text-white">
 	<div class="mx-auto max-w-7xl px-4 sm:px-5 lg:px-8">
 		<div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -6,7 +10,7 @@
 				<p class="mt-3 max-w-xs text-[14px] leading-relaxed text-white/70">
 					Trusted tax attorneys — solving tax issues together since 2011. Clear advice, fixed fees, real results.
 				</p>
-				<p class="mt-4 text-[13px] text-white/60"><span class="text-gold">★★★★★</span> 4.9/5 · 1,200+ clients</p>
+				<p class="mt-4 flex items-center gap-2 text-[13px] text-white/60"><Stars /> 4.9/5 · 1,200+ clients</p>
 			</div>
 			<div>
 				<h3 class="text-[13px] font-bold tracking-[0.16em] text-white/50 uppercase">Practice Areas</h3>
