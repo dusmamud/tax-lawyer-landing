@@ -5,7 +5,7 @@
 	const stats: Stat[] = [
 		{ value: 98, suffix: '%', label: 'Successful Cases' },
 		{ value: 1200, suffix: '+', label: 'Happy Clients' },
-		{ value: 50, suffix: 'M', prefix: '$', label: 'Recovered for Clients' },
+		{ value: 120, suffix: ' Cr+', prefix: '₹', label: 'Tax Saved for Clients' },
 		{ value: 15, suffix: '+', label: 'Years of Experience' }
 	];
 

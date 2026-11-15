@@ -5,9 +5,10 @@
 	import Stars from '#lib/components/Stars.svelte';
 
 	const items = [
-		{ quote: 'The IRS wanted $180,000. MSY Law settled it for $22,000 — and I finally sleep at night. They called me every week with an update, no chasing needed.', name: 'Robert Hayes', role: 'Small Business Owner, Texas', img: '/lawyer-man.webp' },
-		{ quote: 'After two accountants failed, Sarah rebuilt our estate plan in three weeks and saved us over a million in tax. Clear, calm and completely honest about fees.', name: 'Priya Sharma', role: 'Estate Client, California', img: '/lawyer-woman.webp' },
-		{ quote: 'I was terrified of the audit letter. Emily explained everything in plain English, handled the whole audit, and not a single penalty stuck. Worth every penny.', name: 'James O’Connor', role: 'Freelancer, New York', img: '/lawyer-senior.webp' }
+		{ quote: 'The department raised a demand of ₹1.8 Cr on my business. MSY Law settled it for ₹12 lakh under Vivad se Vishwas — and I finally sleep at night. They called me every week with an update, no chasing needed.', name: 'Priya Sharma', role: 'Business Owner, New Delhi', img: '/lawyer-woman.webp' },
+		{ quote: 'After two accountants failed, Sara rebuilt our GST filings and recovered ₹86 lakh of blocked input tax credit. Clear, calm and completely honest about fees.', name: 'Rohan Mehta', role: 'E-commerce Seller, Mumbai', img: '/lawyer-man.webp' },
+		{ quote: 'I was terrified of the scrutiny notice. Ananya explained everything in plain English, handled the whole assessment, and not a single rupee of penalty stuck. Worth every rupee.', name: 'Kavya Reddy', role: 'Salaried Professional, Hyderabad', img: '/lawyer-young-woman.webp' },
+		{ quote: 'After the search, I thought my business was finished. Mohan closed the case with no prosecution and the penalty deleted in appeal. They saved my company — and my family.', name: 'Vikram Malhotra', role: 'Real Estate Developer, New Delhi', img: '/lawyer-senior.webp' }
 	];
 
 	let index = $state(0);

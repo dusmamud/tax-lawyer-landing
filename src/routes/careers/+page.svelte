@@ -6,32 +6,32 @@
 
 	const roles = [
 		{
-			title: 'Tax Attorney — Audit Defence',
-			type: 'Full-time · Austin, TX (hybrid)',
-			text: 'Own a caseload of 40–60 IRS audit and collection matters. You will run client meetings, negotiate with examiners, and write the briefs — not just review them.',
-			reqs: ['Licensed in Texas (or eligible to waive in)', '3+ years of tax controversy experience', 'U.S. Tax Court admission preferred']
+			title: 'Tax Advocate — Scrutiny & Appeals',
+			type: 'Full-time · New Delhi (hybrid)',
+			text: 'Own a caseload of 40–60 scrutiny, assessment and appeal matters. You will run client meetings, argue before the CIT(A) and ITAT, and write the submissions — not just review them.',
+			reqs: ['Enrolled with the Bar Council of Delhi', '3+ years of tax litigation experience', 'ITAT appearance experience preferred']
 		},
 		{
-			title: 'Paralegal — Tax & Estate',
-			type: 'Full-time · Austin, TX',
-			text: 'Support our estate and international tax team: prepare filings, manage deadlines, organise client documents, and keep cases moving while attorneys focus on the law.',
-			reqs: ['2+ years in a law firm or tax practice', 'Excellent written English and attention to detail', 'Experience with estate documents a plus']
+			title: 'Paralegal — GST & Compliance',
+			type: 'Full-time · Mumbai',
+			text: 'Support our GST and compliance team: prepare filings, manage deadlines, organise client documents, and keep cases moving while advocates focus on the law.',
+			reqs: ['2+ years in a law firm or tax practice', 'Excellent written English and attention to detail', 'Experience with GST returns a plus']
 		},
 		{
 			title: 'Client Intake Specialist',
-			type: 'Full-time · Remote (US)',
-			text: 'Be the first voice a scared taxpayer hears. You will answer first calls, explain how we work, and make sure every enquiry reaches the right attorney the same day.',
-			reqs: ['Kind, calm, and clear on the phone', 'Previous customer service or intake experience', 'Able to work Mon–Fri, 9 AM – 6 PM CT']
+			type: 'Full-time · Remote (India)',
+			text: 'Be the first voice a worried taxpayer hears. You will answer first calls, explain how we work, and make sure every enquiry reaches the right advocate the same day.',
+			reqs: ['Kind, calm, and clear on the phone', 'Previous customer service or intake experience', 'Able to work Mon–Sat, 10 AM – 7 PM IST']
 		}
 	];
 
 	const perks = [
 		'Competitive salary + performance bonus',
-		'Health, dental and vision insurance',
+		'Health insurance for you and your family',
 		'20 days paid leave + public holidays',
 		'Paid bar fees and continuing education',
 		'Hybrid working — 2 days from home',
-		'No billable-hour targets for attorneys'
+		'No billable-hour targets for advocates'
 	];
 
 	let name = $state('');
@@ -53,8 +53,8 @@
 </script>
 
 <svelte:head>
-	<title>Careers — MSY Law | Join Our Tax Team</title>
-	<meta name="description" content="Careers at MSY Law: tax attorney, paralegal and client intake roles in Austin, TX. Competitive pay, no billable-hour targets, hybrid working." />
+	<title>Careers — MSY Law | Join Our Tax Team in India</title>
+	<meta name="description" content="Careers at MSY Law: tax advocate, paralegal and client intake roles in New Delhi and Mumbai. Competitive pay, no billable-hour targets, hybrid working." />
 </svelte:head>
 
 <PageHero
@@ -126,11 +126,11 @@
 						<div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
 							<label class="block">
 								<span class="mb-1.5 block text-[13px] font-bold">Full name *</span>
-								<input bind:value={name} type="text" autocomplete="name" placeholder="Jane Cooper" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
+								<input bind:value={name} type="text" autocomplete="name" placeholder="Priya Sharma" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
 							</label>
 							<label class="block">
 								<span class="mb-1.5 block text-[13px] font-bold">Email *</span>
-								<input bind:value={email} type="email" autocomplete="email" placeholder="jane@example.com" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
+								<input bind:value={email} type="email" autocomplete="email" placeholder="priya@example.com" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
 							</label>
 						</div>
 						<label class="mt-4 block">

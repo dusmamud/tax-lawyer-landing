@@ -5,24 +5,24 @@
 	import CtaBanner from '#lib/components/CtaBanner.svelte';
 
 	const cities = [
-		{ slug: 'austin', name: 'Austin', detail: 'Main office — 1200 Congress Ave, Suite 400', tag: 'Headquarters' },
-		{ slug: 'dallas', name: 'Dallas', detail: 'Serving clients across the Dallas–Fort Worth metro', tag: 'By appointment' },
-		{ slug: 'houston', name: 'Houston', detail: 'Serving clients across Greater Houston', tag: 'By appointment' },
-		{ slug: 'san-antonio', name: 'San Antonio', detail: 'Serving clients across Bexar County and South Texas', tag: 'By appointment' },
-		{ slug: 'fort-worth', name: 'Fort Worth', detail: 'Serving clients across Tarrant County', tag: 'By appointment' },
-		{ slug: 'el-paso', name: 'El Paso', detail: 'Serving clients across West Texas', tag: 'By appointment' }
+		{ slug: 'new-delhi', name: 'New Delhi', detail: 'Main office — Statesman House, Barakhamba Road, Connaught Place', tag: 'Headquarters' },
+		{ slug: 'mumbai', name: 'Mumbai', detail: 'Serving clients across Mumbai and Maharashtra', tag: 'By appointment' },
+		{ slug: 'bengaluru', name: 'Bengaluru', detail: 'Serving clients across Bengaluru and Karnataka', tag: 'By appointment' },
+		{ slug: 'hyderabad', name: 'Hyderabad', detail: 'Serving clients across Hyderabad and Telangana', tag: 'By appointment' },
+		{ slug: 'chennai', name: 'Chennai', detail: 'Serving clients across Chennai and Tamil Nadu', tag: 'By appointment' },
+		{ slug: 'kolkata', name: 'Kolkata', detail: 'Serving clients across Kolkata and West Bengal', tag: 'By appointment' }
 	];
 </script>
 
 <svelte:head>
-	<title>Locations &amp; Service Areas — MSY Law | Tax Attorney in Texas</title>
-	<meta name="description" content="MSY Law is based in Austin, Texas and serves clients in Dallas, Houston, San Antonio, Fort Worth and El Paso — and nationwide for federal tax matters." />
+	<title>Locations &amp; Service Areas — MSY Law | Tax Attorney in India</title>
+	<meta name="description" content="MSY Law is based in New Delhi and serves clients in Mumbai, Bengaluru, Hyderabad, Chennai and Kolkata — and across India for income tax and GST matters." />
 </svelte:head>
 
 <PageHero
 	eyebrow="Locations"
-	title="Based in Austin. Serving all of Texas — and beyond."
-	subtitle="Our office is in downtown Austin, but most of our work happens by phone and video. For federal tax matters — audits, IRS debt, international tax — we serve clients in all 50 states."
+	title="Based in New Delhi. Serving all of India — and beyond."
+	subtitle="Our office is in Connaught Place, New Delhi, but most of our work happens by phone and video. For income tax and GST matters — appeals, disputes, international tax — we serve clients across India."
 	crumb="Locations"
 />
 
@@ -37,7 +37,7 @@
 						<p class="mt-2 text-[14.5px] leading-relaxed text-muted">{city.detail}</p>
 						{#if i === 0}
 							<p class="mt-4 border-t border-black/5 pt-4 text-[13.5px] leading-relaxed text-muted">
-								1200 Congress Ave, Suite 400, Austin, TX 78701<br />Mon–Fri · 9:00 AM – 6:00 PM<br />Free validated parking in the Congress garage.
+								Statesman House, Barakhamba Road, Connaught Place, New Delhi 110001<br />Mon–Sat · 10:00 AM – 7:00 PM IST<br />Barakhamba Road Metro (Blue Line) — 2 min walk.
 							</p>
 						{/if}
 						<a href="/locations/{city.slug}" class="mt-4 inline-flex items-center gap-1.5 text-[13px] font-bold text-navy">See the {city.name} page <Icon name="arrow-right" class="h-3.5 w-3.5" /></a>
@@ -50,17 +50,17 @@
 			<div class="rounded-3xl bg-navy p-8 text-white sm:p-10">
 				<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
 					<div>
-						<h2 class="font-serif text-[26px] font-semibold sm:text-[30px]">Not in Texas? That is usually fine.</h2>
+						<h2 class="font-serif text-[26px] font-semibold sm:text-[30px]">Not in one of these cities? That is usually fine.</h2>
 						<p class="mt-3 text-[15px] leading-relaxed text-white/75">
-							Federal tax law is the same in every state. Audits, IRS debt, international tax and
-							estate planning for federal purposes can all be handled remotely — by phone, video and
-							secure document sharing. State-specific matters (like a Texas property tax appeal) are
-							the only ones that need you to be here.
+							Income tax and GST law are the same across India. Appeals, notices, international tax
+							and planning can all be handled remotely — by phone, video and secure document sharing.
+							Only matters that need a physical appearance, like a search, are the ones where
+							location matters.
 						</p>
 					</div>
 					<div class="flex flex-col justify-center gap-3">
 						<a href="/free-consultation" class="rounded-full bg-leaf py-3.5 text-center text-[15px] font-bold text-navy-3 transition hover:bg-leaf-2">Book a free consultation</a>
-						<a href="tel:+18005550199" class="rounded-full border border-white/30 py-3.5 text-center text-[15px] font-semibold text-white transition hover:bg-white/10">Call +1 (800) 555-0199</a>
+						<a href="tel:+919811012345" class="rounded-full border border-white/30 py-3.5 text-center text-[15px] font-semibold text-white transition hover:bg-white/10">Call +91 98110 12345</a>
 					</div>
 				</div>
 			</div>

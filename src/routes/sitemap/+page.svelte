@@ -27,7 +27,7 @@
 		{ label: 'Case Evaluator', href: '/case-evaluator' },
 		{ label: 'Client Portal', href: '/client-portal' },
 		{ label: 'Search', href: '/search' },
-		{ label: 'En español', href: '/es' }
+		{ label: 'हिन्दी में', href: '/hi' }
 	];
 	const legal = [
 		{ label: 'Privacy Policy', href: '/privacy-policy' },
@@ -41,7 +41,7 @@
 
 <svelte:head>
 	<title>Sitemap — MSY Law</title>
-	<meta name="description" content="Full sitemap of the MSY Law website: every page, practice area, attorney profile and article." />
+	<meta name="description" content="Full sitemap of the MSY Law website: every page, practice area, lawyer profile and article." />
 </svelte:head>
 
 <PageHero
@@ -97,7 +97,7 @@
 					<h2 class="font-serif text-[22px] font-semibold">Locations</h2>
 					<ul class="mt-4 space-y-2.5">
 						{#each cities as city}
-							<li><a href="/locations/{city.slug}" class="text-[15px] font-medium text-navy underline-offset-4 hover:underline">Tax Attorney in {city.name}, TX</a></li>
+							<li><a href="/locations/{city.slug}" class="text-[15px] font-medium text-navy underline-offset-4 hover:underline">Tax Lawyer in {city.name}, India</a></li>
 						{/each}
 					</ul>
 				</div>

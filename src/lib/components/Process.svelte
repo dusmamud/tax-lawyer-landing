@@ -4,7 +4,7 @@
 	const steps = [
 		{ n: '01', title: 'Free Consultation', text: 'Tell us what happened in a free 30-minute call. No obligation, no jargon.' },
 		{ n: '02', title: 'Clear Action Plan', text: 'Within 48 hours you get a written plan, timeline and fixed-fee quote.' },
-		{ n: '03', title: 'We Handle It', text: 'We deal with the IRS, paperwork and deadlines — you get weekly updates.' },
+		{ n: '03', title: 'We Handle It', text: 'We deal with the Income-tax Department, GST officers, paperwork and deadlines — you get weekly updates.' },
 		{ n: '04', title: 'Resolved & Protected', text: 'Case closed, savings locked in, and a plan so it never happens again.' }
 	];
 </script>

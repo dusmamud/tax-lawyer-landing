@@ -16,380 +16,373 @@ export type Post = {
 
 export const posts: Post[] = [
 	{
-		slug: 'irs-audit-letter-5-things-first',
-		tag: 'IRS Audits',
-		date: 'Nov 10, 2026',
+		slug: 'income-tax-notice-what-to-do-first',
+		tag: 'Income Tax',
+		date: 'Nov 14, 2026',
 		read: '6 min read',
-		title: 'Got an IRS audit letter? Do these 5 things first',
-		excerpt: 'The first 48 hours decide how your audit goes. Here is the exact checklist our attorneys use.',
-		author: 'Emily Ross',
-		authorRole: 'Attorney · Compliance & Audits',
+		title: 'Income tax notice? 5 things to do first',
+		excerpt: 'The first 48 hours decide how your notice goes. Here is the exact checklist our lawyers use.',
+		author: 'Ananya Rao',
+		authorRole: 'Attorney · Compliance & Appeals',
 		authorImg: '/lawyer-young-woman.webp',
 		grad: 'from-navy to-navy-2',
 		sections: [
 			{
 				paragraphs: [
-					'The envelope looks ordinary. The letter inside is not. An IRS audit notice is the most stressful piece of mail most people will ever receive — and the first 48 hours decide how the whole thing goes.',
-					'After handling more than 200 audits, we can tell you this: the audit itself is rarely the problem. The problem is what people do in the first two days. Here is the exact checklist we give our clients.'
+					'The envelope — or the email — looks ordinary. The notice inside is not. An income tax notice is the most stressful piece of mail most people will ever receive, and the first 48 hours decide how the whole thing goes.',
+					'After handling more than 200 assessments, we can tell you this: the notice itself is rarely the problem. The problem is what people do in the first two days. Here is the exact checklist we give our clients.'
 				]
 			},
 			{
 				heading: '1. Do not ignore it — and do not panic',
 				paragraphs: [
-					'Every audit letter has a deadline, usually 30 days. Missing it is the single most expensive mistake you can make: the IRS will simply decide your tax for you, and their number is never in your favour.',
-					'At the same time, an audit letter is not an accusation. Most audits are random, or triggered by a simple mismatch — a 1099 the IRS has that your return does not. Stay calm, and start the clock.'
+					'Every notice carries a deadline. Missing it is the single most expensive mistake you can make: the department will simply decide your tax for you, and their number is never in your favour.',
+					'At the same time, a notice is not an accusation. Most notices are routine — a mismatch between your return and the information the department already has, such as bank interest or a high-value transaction. Stay calm, and start the clock.'
 				]
 			},
 			{
-				heading: '2. Read the letter carefully — what year, what issue?',
+				heading: '2. Read the notice carefully — what year, what issue?',
 				paragraphs: [
-					'The letter tells you exactly which tax year and which items are being examined. Read it twice. A letter about 2024 business expenses is a very different audit from one about foreign accounts.',
-					'Write down the response deadline, the examiner’s name and phone number, and the reference number. Keep the letter itself somewhere safe — you will need it.'
+					'The notice tells you exactly which tax year and which items are being examined. Read it twice. A notice about a mismatch in interest income is a very different matter from a full scrutiny assessment.',
+					'Write down the response deadline, the assessing officer’s details, and the reference number. Keep the notice itself somewhere safe — you will need it. And check that the notice is genuine: real notices appear on the income tax portal, and any demand can be verified there before you pay a rupee.'
 				]
 			},
 			{
-				heading: '3. Do not call the IRS alone',
+				heading: '3. Do not reply alone — and do not volunteer extra',
 				paragraphs: [
-					'Everything you say to an examiner can be used in the audit. A casual comment — “I think my accountant handled that” — can open a whole new line of questions.',
-					'You have the right to representation. With a signed power of attorney, we handle every call and letter for you. Most of our clients never speak to the IRS at all.'
-				]
-			},
-			{
-				heading: '4. Gather documents — but do not volunteer extra',
-				paragraphs: [
-					'Collect receipts, bank statements and records for the items the letter actually asks about. Organise them by year and category.',
-					'Do not send anything the letter does not ask for. Extra documents create extra questions. Your attorney will decide what the IRS needs to see — and what it does not.'
+					'Everything you write in a reply becomes part of the record. A casual line — “I think my accountant handled that” — can open a whole new line of questions.',
+					'You have the right to be represented. With a signed authorisation, we handle every reply and hearing for you. Most of our clients never speak to the assessing officer at all. Gather the documents the notice actually asks about — bank statements, Form 26AS and the Annual Information Statement, salary slips, investment proofs — but do not send anything the notice does not ask for. Extra documents create extra questions.'
 				],
 				list: [
-					'The audit letter and all IRS correspondence',
-					'Tax returns for the years under audit',
-					'Receipts and records for the items listed',
-					'Bank and credit card statements for those years'
+					'The notice and all department correspondence',
+					'Your income tax return for the year in question',
+					'Form 26AS and the Annual Information Statement',
+					'Bank statements and proofs for the items listed'
 				]
 			},
 			{
-				heading: '5. Get professional help this week, not next month',
+				heading: '4. Get professional help this week, not next month',
 				paragraphs: [
-					'Audits settled early cost less. In our experience, clients who call within a week of receiving the letter pay significantly less than those who wait — because we can shape the audit before it shapes itself.',
-					'Our first consultation is free, and honest: if your audit is simple enough to handle alone, we will tell you how. If it is not, we will tell you exactly what it will cost to fix it.'
+					'Notices settled early cost less. In our experience, clients who call within a week of receiving the notice pay significantly less than those who wait — because we can shape the assessment before it shapes itself.',
+					'Our first consultation is free, and honest: if your notice is simple enough to handle alone, we will tell you how. If it is not, we will tell you exactly what it will cost to fix it.'
 				]
 			}
 		]
 	},
 	{
-		slug: '2026-tax-changes-business-owners',
-		tag: 'Tax Planning',
-		date: 'Nov 2, 2026',
+		slug: 'itr-filing-deadline-guide',
+		tag: 'ITR Filing',
+		date: 'Nov 12, 2026',
 		read: '8 min read',
-		title: '2026 tax changes every business owner should know',
-		excerpt: 'New deductions, new deadlines — and the three mistakes that cost owners the most this year.',
-		author: 'David Carter',
-		authorRole: 'Senior Attorney · Business Tax',
-		authorImg: '/lawyer-man.webp',
+		title: 'ITR filing: deadlines, the new Act, and what changed',
+		excerpt: 'The 2026-27 deadlines, the Income-tax Act, 2025, and what a late return really costs you.',
+		author: 'Mohan S. Yadav',
+		authorRole: 'Founding Partner · Tax Litigation',
+		authorImg: '/lawyer-senior.webp',
 		grad: 'from-leaf-dark to-leaf',
 		sections: [
 			{
 				paragraphs: [
-					'Every year, the tax code changes in ways that matter to business owners — and every year, most owners find out too late. This year is no different. Here are the changes that actually affect your bottom line, and the three mistakes we see owners make most often.'
+					'Every year, the return filing season ends the same way: a rush in the last week, a crashed portal, and thousands of people discovering — too late — that a late return costs real money. This year there is one more thing to understand: a brand-new Income-tax Act is now in force.',
+					'Here are the deadlines that actually matter for assessment year 2026-27, what the new Act changes, and what happens if you miss the date.'
 				]
 			},
 			{
-				heading: 'What changed in 2026',
+				heading: 'The deadlines for AY 2026-27',
 				paragraphs: [
-					'Standard deduction and bracket thresholds have risen with inflation, which helps — but several business provisions have tightened. Bonus depreciation continues to phase down, and the rules for deducting research costs remain stricter than they were a few years ago.',
-					'On the positive side, the qualified business income deduction remains available for most pass-through owners, and several states have expanded their own credits for hiring and equipment. The details depend on your state and your entity type.'
+					'The due date depends on who you are. Individuals and Hindu Undivided Families who do not need an audit must file by 31 July 2026. Businesses that do not need an audit get until 31 August 2026. And taxpayers whose accounts must be audited have until 21 November 2026.',
+					'Missed the date? You can still file a belated return until 31 December 2026, and a return can be revised until 31 March 2027. But a belated return is not free — read on.'
 				],
 				list: [
-					'Bonus depreciation phases down further — plan equipment purchases early',
-					'Research and experimental costs must still be amortised over 5 years',
-					'The QBI deduction survives, but income thresholds matter more than ever',
-					'Several states added hiring and equipment credits worth checking'
+					'31 July 2026 — individuals and HUFs (no audit)',
+					'31 August 2026 — businesses not requiring audit',
+					'21 November 2026 — cases where audit is required',
+					'31 December 2026 — last date for a belated return',
+					'31 March 2027 — last date to revise a return'
 				]
 			},
 			{
-				heading: 'Mistake 1: Waiting until April to plan',
+				heading: 'The Income-tax Act, 2025 — what actually changed',
 				paragraphs: [
-					'By April, the tax year is over. Every deduction, every timing decision, every retirement contribution that could have saved you money is already locked in. Planning happens in October and November — not in tax season.'
+					'The Income-tax Act, 2025 came into force on 1 April 2026. It replaces the 1961 Act with a shorter, simpler law — and it renames the basics: the old “previous year” and “assessment year” are gone, replaced by a single “tax year”.',
+					'One thing that has not changed: returns for assessment year 2026-27 are still filed under the 1961 Act. The new Act applies from the tax year beginning 1 April 2026. So this filing season, the deadlines and the law you file under are the old ones — but the concepts you will hear from next year onwards are the new ones.'
 				]
 			},
 			{
-				heading: 'Mistake 2: The wrong entity for your size',
+				heading: 'What a late return really costs',
 				paragraphs: [
-					'The entity that was right when you started is often wrong once you grow. An LLC taxed as a sole proprietorship can cost a profitable owner tens of thousands in self-employment tax that an S-corp election would have saved. Review your entity every year, not every decade.'
-				]
-			},
-			{
-				heading: 'Mistake 3: Mixing business and personal money',
-				paragraphs: [
-					'One personal expense in the business account gives an auditor a reason to question everything. Separate accounts, separate cards, and a clean paper trail are not bureaucracy — they are the cheapest audit insurance you will ever buy.'
-				]
-			},
-			{
-				heading: 'What to do now',
-				paragraphs: [
-					'Book a year-end planning session before December. Bring your profit-and-loss statement, your payroll records, and your biggest plans for next year. In one hour we can usually find savings that pay for the session many times over — and set up next year so April is boring, the way it should be.'
+					'File late and a late fee of up to ₹5,000 applies under section 234F. That is only the start: a late filer cannot carry forward most losses, cannot choose the old regime in some cases, and pays interest on any unpaid tax until the return is filed.',
+					'The cheapest return is the one filed on time. If you are already late, file now — every week of delay adds interest, and a belated return is always better than no return at all.'
 				]
 			}
 		]
 	},
 	{
-		slug: 'estate-planning-not-just-wealthy',
-		tag: 'Estate Tax',
-		date: 'Oct 24, 2026',
-		read: '5 min read',
-		title: 'Estate planning is not just for the wealthy',
-		excerpt: 'If you own a home or a business, you already have an estate plan — the IRS wrote it for you.',
-		author: 'Sarah Mitchell',
-		authorRole: 'Partner · Estate & International',
+		slug: 'gst-notice-reply-guide',
+		tag: 'GST',
+		date: 'Nov 10, 2026',
+		read: '6 min read',
+		title: 'GST notice? How to reply and what not to say',
+		excerpt: 'A show-cause notice is not a demand yet. Here is how to reply well — and the mistakes that turn it into one.',
+		author: 'Sara Iyer',
+		authorRole: 'Partner · GST & International',
 		authorImg: '/lawyer-woman.webp',
 		grad: 'from-navy-3 to-navy',
 		sections: [
 			{
 				paragraphs: [
-					'Most people hear “estate planning” and think of mansions and trust funds. That is the wrong picture. If you own a home, have children, or run a business, you need an estate plan — and if you do not write one, the state has already written one for you. It is called intestacy, and it rarely matches what you would have chosen.'
+					'A GST notice usually arrives as a show-cause notice on the GST portal: the department believes tax is short-paid, input tax credit is wrongly claimed, or a return does not match. The notice asks you to show cause — to explain why a demand should not be raised.',
+					'That is the key point most people miss. At this stage, there is no demand yet. A good reply can end the matter here. A bad one creates the demand.'
 				]
 			},
 			{
-				heading: 'What happens without a plan',
+				heading: '1. Read what the notice actually alleges',
 				paragraphs: [
-					'Without a will, a court decides who raises your children and who gets your home. Without a power of attorney, nobody can legally pay your bills if you are incapacitated — not even your spouse, without a court order. The process is slow, public, and expensive.',
-					'A basic plan fixes all of this in a few weeks. It is one of the highest-value legal documents most families will ever sign.'
+					'Every show-cause notice states the period, the amount, and the reason — a mismatch between GSTR-1 and GSTR-3B, credit claimed on a blocked item, or turnover that does not match your returns. Read it twice, and match each allegation to your own records before you write a word.',
+					'Note the reply deadline and the officer’s details. GST notices have strict timelines, and a missed reply means the demand is confirmed by default.'
 				]
 			},
 			{
-				heading: 'The four documents every family needs',
+				heading: '2. Reconcile before you reply',
 				paragraphs: [
-					'You do not need a 200-page trust to start. Most families need four documents, and a good attorney can prepare them in two meetings.'
+					'Most GST notices come from mismatches the department’s system spotted automatically: sales reported in GSTR-1 that do not appear in GSTR-3B, or credit claimed that does not match your suppliers’ filings. Before replying, reconcile your books — GSTR-1 against GSTR-3B, and your purchase register against the credit shown on the portal.',
+					'In our experience, a large share of notices close once the reconciliation is shown clearly. The department’s system flags a difference; a clean, documented reply explains it.'
+				]
+			},
+			{
+				heading: '3. What not to say — and when to get help',
+				paragraphs: [
+					'Do not admit liability you have not verified, do not attach documents the notice does not ask for, and do not argue the law in your first reply without checking it. A short, factual reply with the reconciliation attached beats a long letter full of arguments.',
+					'If the amount is large, or the notice alleges suppression or misstatement, get professional help before replying. The words in your first reply will be read again if the matter goes to appeal — and a badly written reply is very hard to take back.'
 				],
 				list: [
-					'A will — who gets what, and who raises the children',
-					'A revocable living trust — to avoid probate and keep things private',
-					'A durable power of attorney — so someone can act for you if you cannot',
-					'A healthcare directive — your medical wishes, in writing'
-				]
-			},
-			{
-				heading: 'The tax part people miss',
-				paragraphs: [
-					'For most families, federal estate tax is not the issue — the exemption is high. State estate tax is the surprise: several states tax estates far below the federal threshold. And for business owners, the real tax is the one your family pays when they have to sell the business quickly to cover a tax bill. Planning now prevents a forced sale later.'
-				]
-			},
-			{
-				heading: 'Start with one conversation',
-				paragraphs: [
-					'You do not need to have all the answers. You need one honest conversation about what matters to you: who you trust, what you own, and what you want protected. We will handle the rest — and your family will never have to guess what you wanted.'
+					'The show-cause notice and the annexures attached to it',
+					'GSTR-1 and GSTR-3B for the period in question',
+					'Purchase and sales registers, reconciled',
+					'Invoices and e-way bills for the disputed transactions'
 				]
 			}
 		]
 	},
 	{
-		slug: 'irs-penalty-abatement-how-it-works',
-		tag: 'IRS Penalties',
-		date: 'Nov 14, 2026',
-		read: '6 min read',
-		title: 'IRS penalty abatement: how to get penalties removed',
-		excerpt: 'Reasonable cause, first-time abatement, and what actually works with the IRS.',
-		author: 'Emily Ross',
-		authorRole: 'Attorney · Compliance & Audits',
-		authorImg: '/lawyer-young-woman.webp',
+		slug: 'advance-tax-due-dates-guide',
+		tag: 'Tax Planning',
+		date: 'Nov 8, 2026',
+		read: '7 min read',
+		title: 'Advance tax: the four dates every business must know',
+		excerpt: '15 June, 15 September, 15 December, 15 March — miss one and interest starts running at 1% a month.',
+		author: 'Arvind Kapoor',
+		authorRole: 'Senior Attorney · Corporate Tax',
+		authorImg: '/lawyer-man.webp',
 		grad: 'from-navy-2 to-navy-3',
 		sections: [
 			{
 				paragraphs: [
-					'Penalties are often the biggest part of an IRS bill — sometimes larger than the tax itself. The good news: the IRS removes penalties far more often than people think. In our practice, penalties are abated in full in more than 80% of the cases we take on.',
-					'There are two main routes: first-time abatement, for taxpayers with a clean compliance history, and reasonable-cause abatement, for people who had a genuine reason for the failure.'
+					'If your tax liability for the year, after TDS, is more than ₹10,000, you are expected to pay it in advance — in four instalments, through the year. Wait until March to pay everything and interest starts running at 1% per month on the shortfall.',
+					'Most businesses we meet know advance tax exists. Far fewer know the exact dates and percentages — and that is where the interest comes from.'
 				]
 			},
 			{
-				heading: 'First-time abatement: the easy win',
+				heading: 'The four instalments',
 				paragraphs: [
-					'If you have filed and paid on time for the previous three years, you usually qualify for first-time abatement of failure-to-file and failure-to-pay penalties. It is a single phone call or letter — and it works for one tax year at a time.',
-					'Most people never ask. The IRS does not offer it; you have to claim it.'
+					'Advance tax is paid in four parts. By 15 June you should have paid 15% of your total tax for the year. By 15 September, 45%. By 15 December, 75%. And by 15 March, the full 100%.',
+					'The percentages are cumulative — each date is a checkpoint on the year’s total tax, not a fresh 15% or 30%. The simplest discipline is to estimate your year’s profit honestly in June and pay on that estimate, then correct it in December when the year is clearer.'
+				],
+				list: [
+					'15 June — 15% of the year’s tax',
+					'15 September — 45% of the year’s tax',
+					'15 December — 75% of the year’s tax',
+					'15 March — 100% of the year’s tax'
 				]
 			},
 			{
-				heading: 'Reasonable cause: tell the real story',
+				heading: 'What happens if you miss an instalment',
 				paragraphs: [
-					'Reasonable cause covers serious illness, a natural disaster, a death in the family, bad advice from a professional you reasonably relied on, or records destroyed through no fault of yours. The key is documentation: the IRS believes paper, not stories.',
-					'We build the file the way an examiner expects to see it — timeline, evidence, and a short letter that connects the two. Vague requests get denied; specific ones get approved.'
+					'Interest runs at 1% per month on the amount you should have paid but did not, for each month of delay. It is charged instalment by instalment, so a shortfall in June costs more than the same shortfall in March.',
+					'The interest is real money — on a ₹10 lakh shortfall, a few months of delay can cost tens of thousands. And unlike a penalty, interest is almost never waived. The only cure is paying on time.'
+				]
+			},
+			{
+				heading: 'How to get the estimate right',
+				paragraphs: [
+					'The hardest part of advance tax is the estimate itself. Our advice: work from your actual profit to date, not last year’s figure. A growing business that pays on last year’s numbers will always be short in December; a business in a slow year that pays on last year’s numbers will have overpaid and waited months for a refund.',
+					'Revisit the estimate every quarter — June, September, December. Fifteen minutes with your books four times a year is all it takes to never pay interest again.'
+				]
+			}
+		]
+	},
+	{
+		slug: 'section-270a-penalty-waiver',
+		tag: 'Penalties',
+		date: 'Nov 6, 2026',
+		read: '6 min read',
+		title: 'Section 270A penalty: how to get it reduced or waived',
+		excerpt: '50% for under-reporting, 200% for misreporting — and the routes that can reduce it to nothing.',
+		author: 'Ananya Rao',
+		authorRole: 'Attorney · Compliance & Appeals',
+		authorImg: '/lawyer-young-woman.webp',
+		grad: 'from-leaf to-leaf-dark',
+		sections: [
+			{
+				paragraphs: [
+					'Section 270A is the penalty provision that follows an assessment. If the assessing officer finds that income was under-reported, the penalty is 50% of the tax on the under-reported income. If the officer finds misreporting — concealment, false entries, or suppression of facts — it rises to 200%.',
+					'The difference between those two numbers is often the whole case. And in our practice, penalties are reduced or deleted entirely in more than 80% of the matters we take on.'
+				]
+			},
+			{
+				heading: 'Under-reporting vs misreporting: the line that matters',
+				paragraphs: [
+					'Under-reporting covers mistakes and omissions: income left out of the return, a deduction claimed wrongly, a mismatch the officer picks up. Misreporting is different — it needs an act: concealing income, recording false entries, or suppressing facts.',
+					'The department often frames an ordinary under-reporting case as misreporting to reach the 200% rate. The first job in any penalty matter is to push the case back across that line, with evidence: the return, the books, and a clear explanation of how the error happened.'
+				]
+			},
+			{
+				heading: 'The routes to reduction or waiver',
+				paragraphs: [
+					'The strongest route is the facts themselves. If the addition that caused the penalty is deleted in appeal, the penalty falls with it — there is no tax on under-reported income if the income itself is not sustained. That is why the assessment and the penalty must be fought together, not one after the other.',
+					'There is also a statutory route to immunity: a taxpayer who pays the tax and interest on the under-reported income and does not appeal the assessment can seek immunity from the penalty. And where the error was a genuine, bona fide mistake — supported by records — the penalty can be contested on the ground that there was no deliberate default at all.'
+				],
+				list: [
+					'Fight the underlying addition first — a deleted addition deletes the penalty',
+					'Challenge a 200% misreporting charge with evidence of how the error happened',
+					'Consider the immunity route: pay the tax and interest, do not appeal',
+					'If the mistake was bona fide, put the records on file to prove it'
 				]
 			},
 			{
 				heading: 'What does not work',
 				paragraphs: [
-					'"I did not know" is not reasonable cause. Neither is "my accountant messed up" without proof that you gave them everything on time. And penalties on tax you never reported are much harder to remove than penalties on tax you reported late.',
-					'If your penalties are large, get help before you write to the IRS. A badly written first request can be used against you in the second one.'
-				],
-				list: [
-					'Check your compliance history — 3 clean years usually means first-time abatement',
-					'Gather documents that prove the cause, with dates',
-					'Request abatement in writing, with the penalty amounts itemised',
-					'If denied, appeal — many denials are reversed on appeal'
+					'"I did not know" is not a defence on its own — but a documented, genuine mistake, explained with records, often is. What never works is silence: a penalty order that is not challenged becomes final, and the department will collect it.',
+					'If your penalty is large, get help before you reply to the penalty notice. The reply you file is the record the appellate authorities will read — and a badly written first reply can be used against you in the appeal.'
 				]
 			}
 		]
 	},
 	{
-		slug: 'offer-in-compromise-settle-irs-debt',
-		tag: 'IRS Debt',
-		date: 'Nov 12, 2026',
+		slug: 'vivad-se-vishwas-settle-tax-dispute',
+		tag: 'Settlement',
+		date: 'Nov 4, 2026',
 		read: '7 min read',
-		title: 'Offer in Compromise: settle your IRS debt for less',
-		excerpt: 'When the IRS accepts less than you owe — and when it does not.',
-		author: 'David Carter',
-		authorRole: 'Senior Attorney · Business Tax',
+		title: 'Vivad se Vishwas: settle your tax dispute for less',
+		excerpt: 'Pay the disputed tax, close the case, and stop the interest clock — when settlement beats an appeal.',
+		author: 'Arvind Kapoor',
+		authorRole: 'Senior Attorney · Corporate Tax',
 		authorImg: '/lawyer-man.webp',
-		grad: 'from-leaf to-leaf-dark',
-		sections: [
-			{
-				paragraphs: [
-					'You have probably seen the ads: “Settle your IRS debt for pennies!” The truth is less dramatic, but still good news for many people. An Offer in Compromise lets you settle for less than you owe when paying the full amount would cause real financial hardship — and the IRS accepts a meaningful share of the offers it receives.',
-					'The catch is the application. It is long, detailed, and the IRS rejects offers that are sloppy, incomplete, or simply too low.'
-				]
-			},
-			{
-				heading: 'How the IRS decides',
-				paragraphs: [
-					'The IRS calculates your “reasonable collection potential”: your assets plus your monthly disposable income over 12 or 24 months. Offer at least that number, with clean financial statements to prove it, and you have a real chance.',
-					'Offer less than that without a good reason and the answer is no — and you have wasted months. This is why the first step is always the maths, not the form.'
-				]
-			},
-			{
-				heading: 'The three mistakes that kill offers',
-				paragraphs: [
-					'First, applying while you are not current on filings. The IRS will not even look at an offer if returns are missing. Second, hiding assets — the IRS checks, and a hidden asset ends the offer and can start a criminal referral. Third, stopping payments during the review: you must keep paying your current taxes and the offer instalments while you wait.'
-				]
-			},
-			{
-				heading: 'What if an offer is not right for you?',
-				paragraphs: [
-					'Many clients are better off with an installment agreement — monthly payments the IRS accepts — or with currently-not-collectible status, where the IRS agrees you cannot pay right now and leaves you alone. The right answer depends on your income, assets, and how much you owe.',
-					'We evaluate all three options in a free consultation and tell you honestly which one fits. Sometimes the answer is “none of these yet — file the missing returns first.” That honesty is worth more than a fast application.'
-				]
-			}
-		]
-	},
-	{
-		slug: 'texas-property-tax-protest-guide',
-		tag: 'Property Tax',
-		date: 'Nov 8, 2026',
-		read: '6 min read',
-		title: 'Texas property tax protest: a step-by-step guide',
-		excerpt: 'How to protest your appraisal in Texas, meet the May 15 deadline, and win.',
-		author: 'Michael S. Young',
-		authorRole: 'Founding Partner · Tax Litigation',
-		authorImg: '/lawyer-senior.webp',
 		grad: 'from-navy-3 to-navy',
 		sections: [
 			{
 				paragraphs: [
-					'Every spring, Texas homeowners open an appraisal notice and wonder how their house gained 15% in value while nothing changed. It probably did not — appraisal districts value thousands of properties at once, and they get it wrong often. The good news: Texas gives you a formal right to protest, and it works.',
-					'Our average successful appeal cuts the annual bill by 22%. Here is how the process works.'
+					'Vivad se Vishwas — “no dispute, no trust deficit” — is the government’s settlement scheme for tax disputes. The idea is simple: instead of fighting an appeal for years, you settle the disputed demand by paying the tax, plus part of the interest and penalty, and the case closes.',
+					'For the right taxpayer, it is the cheapest way out of a dispute. For the wrong one, it gives away a case that would have been won. The difference is knowing which one you are.'
 				]
 			},
 			{
-				heading: 'Step 1: Check the deadline',
+				heading: 'How the scheme works',
 				paragraphs: [
-					'In Texas the protest deadline is usually May 15 — or 30 days after your appraisal notice arrives, whichever is later. Miss it and you wait a whole year. Put it in your calendar the day the notice arrives.'
+					'You apply for the disputed demand, pay the tax amount in question along with a portion of the interest and penalty, and the department withdraws the demand. The appeal ends, the interest clock stops, and no further proceedings follow on that demand.',
+					'The saving comes from the interest and penalty you no longer pay — and from the years of litigation you no longer fund. A dispute that would take five years through the ITAT and the High Court can be closed in months.'
 				]
 			},
 			{
-				heading: 'Step 2: Find your evidence',
+				heading: 'When settlement beats an appeal',
 				paragraphs: [
-					'The strongest evidence is comparable sales: similar homes nearby that sold for less than your assessed value. Photos of damage, repair estimates, and a survey showing a smaller lot also help. The appraisal district has its own comparables — yours need to be better.'
-				],
-				list: [
-					'3–5 comparable sales from the last 12 months',
-					'Photos of any damage or deferred maintenance',
-					'Your survey or lot dimensions, if the district has them wrong',
-					'Any exemption you qualify for: homestead, senior, veteran, agricultural'
+					'Settlement wins when the addition is likely to survive — the facts are against you, the law is settled, or the amount at stake is smaller than the cost of fighting. It also wins when certainty matters more than principle: a business raising funds, selling, or closing its books cannot carry an open demand for years.',
+					'Appeal wins when the addition is weak — a penalty that should not have been levied, an addition the department cannot prove, or a question of law that higher courts have already decided in the taxpayer’s favour. We have had penalties of crores deleted in appeal that a settlement would have made us pay.'
 				]
 			},
 			{
-				heading: 'Step 3: File, negotiate, and if needed, appeal',
+				heading: 'What to check before you settle',
 				paragraphs: [
-					'File the protest online or by mail, then attend the informal hearing. Many cases settle there — the appraiser would rather agree than go to the review board. If not, you present your case to the Appraisal Review Board, and after that to a court if the value is still wrong.',
-					'We handle the whole process for a share of the first year’s savings — and if we cannot reduce your assessment, you pay us nothing for the appeal.'
+					'Before applying, get an honest read on the appeal: what is the addition, how strong is the department’s case, and what would the appeal realistically cost in time and fees? Settlement is final — once you pay, the case is closed, and you cannot reopen it because a later judgment went your way.',
+					'We evaluate every disputed demand on both tracks in a free consultation and tell you honestly which one fits. Sometimes the answer is “settle — the addition will survive.” Sometimes it is “appeal — this one is winnable.” That honesty is worth more than a fast settlement.'
 				]
 			}
 		]
 	},
 	{
-		slug: 'fbar-fatca-foreign-accounts-guide',
-		tag: 'International Tax',
-		date: 'Nov 5, 2026',
+		slug: 'nri-taxation-india-guide',
+		tag: 'NRI Tax',
+		date: 'Nov 2, 2026',
 		read: '8 min read',
-		title: 'FBAR & FATCA: the foreign account guide',
-		excerpt: 'Who must file, what the penalties really are, and how streamlined disclosure works.',
-		author: 'Sarah Mitchell',
-		authorRole: 'Partner · Estate & International',
+		title: 'NRI taxation: the complete guide for Indians abroad',
+		excerpt: 'Residential status, DTAA relief, TDS on property sales, and the mistakes that cost NRIs the most.',
+		author: 'Sara Iyer',
+		authorRole: 'Partner · GST & International',
 		authorImg: '/lawyer-woman.webp',
 		grad: 'from-navy to-leaf-dark',
 		sections: [
 			{
 				paragraphs: [
-					'If you are a U.S. citizen or resident with money in a foreign bank account, you probably have two filings to make every year — and the penalties for missing them are the harshest in the tax code. Miss an FBAR and the fine can exceed the account balance itself.',
-					'The rules sound scary. In practice, most people who come forward voluntarily fix the problem with modest penalties — or none at all.'
+					'If you are an Indian living abroad with income or property in India, you probably have an Indian tax filing to make every year — and the rules are the most misunderstood in the tax code. Miss a filing and the penalty can exceed the tax itself.',
+					'The rules sound scary. In practice, most NRIs who come forward voluntarily fix the problem with modest tax — or none at all.'
 				]
 			},
 			{
-				heading: 'FBAR: the $10,000 rule',
+				heading: 'Residential status: the question that decides everything',
 				paragraphs: [
-					'If the combined value of all your foreign financial accounts exceeded $10,000 at any point in the year, you must file an FBAR (FinCEN Form 114). It is not a tax return — it is a report, filed separately, and it is due April 15 with an automatic extension to October 15.',
-					'Accounts include bank accounts, brokerage accounts, pensions, and accounts you only have signature authority over — like a parent’s account you can access.'
+					'Whether you are taxed in India, and on what income, depends on your residential status — and that depends mainly on how many days you spend in India during the year. A non-resident is taxed only on income earned or received in India. A resident is taxed on worldwide income.',
+					'Get the status wrong and everything downstream is wrong: the return, the tax, and the refunds. Before you file anything, work out your status for that year — it can change from year to year as your travel changes.'
 				]
 			},
 			{
-				heading: 'FATCA and Form 8938: the second filing',
+				heading: 'DTAA: the treaty that stops double taxation',
 				paragraphs: [
-					'FATCA requires a separate form — Form 8938, attached to your tax return — with higher thresholds: $50,000 for single filers living in the U.S., $200,000 for single filers living abroad. Many people need one filing but not the other; some need both.'
+					'India has Double Taxation Avoidance Agreements with most countries. A DTAA decides which country gets to tax which income, and lets you claim credit in one country for the tax paid in the other — so the same salary or rent is not taxed twice.',
+					'Claiming treaty relief needs paperwork: a tax residency certificate from your country of residence and the right forms with your Indian return. Many NRIs pay tax twice simply because nobody filed the treaty claim.'
 				]
 			},
 			{
-				heading: 'Missed years? Streamlined disclosure',
+				heading: 'Property, TDS, and the mistakes that cost the most',
 				paragraphs: [
-					'The IRS streamlined procedures let non-willful filers catch up on 3 years of returns and 6 years of FBARs with a single 5% penalty — and no penalty at all for people living abroad. We have removed $860k in penalties through this program.',
-					'The key word is non-willful. If the IRS contacts you first, the streamlined program is closed to you. Come forward before that happens.'
+					'When an NRI sells property in India, the buyer must deduct TDS on the sale — and the rate is high, which surprises most sellers. The TDS is not the final tax: file the return, claim the correct capital gains treatment, and the excess comes back as a refund.',
+					'The three mistakes we see most: not filing a return in India at all because “I live abroad now”, keeping all income in an NRO account without checking the tax on it, and selling property without planning the TDS. Each one is fixable — but only before the department writes to you.'
+				],
+				list: [
+					'Work out your residential status for the year before filing',
+					'Claim DTAA relief with a tax residency certificate',
+					'File the return after a property sale — excess TDS is refunded',
+					'Keep NRE and NRO accounts separate and know what is taxable in each'
 				]
 			}
 		]
 	},
 	{
-		slug: 'llc-vs-scorp-tax-which-entity',
-		tag: 'Business Tax',
-		date: 'Oct 28, 2026',
+		slug: 'gst-registration-threshold-guide',
+		tag: 'GST',
+		date: 'Oct 30, 2026',
 		read: '7 min read',
-		title: 'LLC vs S-Corp: which entity saves you more tax?',
-		excerpt: 'The honest comparison — including the self-employment tax trap most owners miss.',
-		author: 'David Carter',
-		authorRole: 'Senior Attorney · Business Tax',
-		authorImg: '/lawyer-man.webp',
+		title: 'GST registration: who must register and when',
+		excerpt: '₹40 lakh for goods, ₹20 lakh for services — and the cases where the threshold does not apply at all.',
+		author: 'Sara Iyer',
+		authorRole: 'Partner · GST & International',
+		authorImg: '/lawyer-woman.webp',
 		grad: 'from-leaf-dark to-navy',
 		sections: [
 			{
 				paragraphs: [
-					'Every new business owner asks the same question, and the internet gives the same wrong answer: “Just form an LLC.” An LLC is a legal structure, not a tax choice — and the tax choice that saves you money is often an S-corp election on top of that LLC.',
-					'Here is the honest comparison, with real numbers.'
+					'Every growing business reaches the same question: do I need GST registration yet? The answer is a number — your aggregate turnover — but the number is different for goods and services, and in several cases the threshold does not apply at all.',
+					'Register too late and you face tax, interest and penalty on the unregistered period. Register too early and you take on monthly filings you did not need. Here is how to get the timing right.'
 				]
 			},
 			{
-				heading: 'The self-employment tax trap',
+				heading: 'The thresholds: ₹40 lakh and ₹20 lakh',
 				paragraphs: [
-					'A single-member LLC taxed as a sole proprietorship pays self-employment tax — 15.3% — on every dollar of profit. Earn $120,000 and that is $18,360, before income tax even starts.',
-					'An S-corp splits the same $120,000 into a reasonable salary (say $70,000, which still pays payroll tax) and a $50,000 distribution, which pays no self-employment tax at all. The saving is roughly $7,650 a year — every year.'
+					'A business supplying goods must register once its aggregate turnover crosses ₹40 lakh in a financial year. A business supplying services must register once turnover crosses ₹20 lakh. Aggregate turnover means all your taxable supplies, exempt supplies and exports added together — not just the taxable part.',
+					'Once you cross the limit, you must apply for registration within 30 days. The department can also register you on its own if it finds you should have registered — and then the tax for the unregistered period is demanded with interest.'
 				]
 			},
 			{
-				heading: 'When an S-corp is the wrong choice',
+				heading: 'When the threshold does not apply',
 				paragraphs: [
-					'S-corps cost more to run: payroll, a separate return, and stricter rules about who can own shares. Below about $50,000–$60,000 of profit, the extra costs eat the saving. And if you plan to take on foreign investors or issue different classes of shares, an S-corp is not allowed at all.',
-					'The right answer depends on your profit, your growth plans, and your state — Texas has no state income tax, which changes the maths again.'
+					'Some businesses must register from the very first rupee, whatever their turnover. If you supply goods or services to buyers in another state, you need registration. If you sell through an e-commerce platform, you need registration. And if you are liable to pay tax under reverse charge, you need registration too.',
+					'This is the trap most small sellers fall into: turnover is only ₹8 lakh, but the first interstate sale or the first order through a marketplace already made registration compulsory.'
 				]
 			},
 			{
-				heading: 'Review your entity every year',
+				heading: 'GSTR-1, GSTR-3B — and the new GST 2.0 slabs',
 				paragraphs: [
-					'The entity that was right when you started is often wrong once you grow. We review entity choice as part of quarterly planning — it takes one meeting, and the saving usually pays for the year’s planning several times over.'
+					'Once registered, the monthly rhythm is simple: GSTR-1, reporting your outward supplies, is due by the 11th of the following month, and GSTR-3B, the summary return with the tax payment, is due by the 20th. Miss the dates and late fees and interest start running automatically.',
+					'And remember the rates changed: under GST 2.0, in force from 22 September 2025, there are three slabs — 5%, 18% and 40%. Check the rate on your goods or services before you invoice, because charging the old rate is the most common reason for a mismatch notice.'
 				]
 			}
 		]

@@ -9,26 +9,26 @@
 	let typing = $state(false);
 	let timer: ReturnType<typeof setTimeout> | undefined;
 	let messages = $state<Msg[]>([
-		{ from: 'bot', text: 'Hi, this is MSY Law. How can we help? Ask about fees, audits, or booking a free consultation.' }
+		{ from: 'bot', text: 'Namaste, this is MSY Law. How can we help? Ask about fees, an income-tax notice, GST, or booking a free consultation.' }
 	]);
 
-	const quick = ['How much does it cost?', 'I got an IRS audit letter', 'Book a free consultation'];
+	const quick = ['How much does it cost?', 'I got an income-tax notice', 'Book a free consultation'];
 
 	function botReply(text: string): string {
 		const t = text.toLowerCase();
 		if (t.includes('cost') || t.includes('fee') || t.includes('price') || t.includes('much'))
-			return 'Consultations are free for 30 minutes. After that you get a written fixed-fee quote before we start — see our Fees page for typical prices, or tell me what happened and I can point you to the right service.';
-		if (t.includes('audit') || t.includes('irs') || t.includes('letter') || t.includes('notice'))
-			return 'Do not ignore the letter and do not reply alone — deadlines are strict. The fastest help is a free consultation: an attorney will read your letter with you. Would you like the booking link?';
+			return 'Consultations are free for 30 minutes. After that you get a written fixed-fee quote before we start — income-tax notices from ₹9,999, ITR filing from ₹2,499. See our Fees page for typical prices, or tell me what happened and I can point you to the right service.';
+		if (t.includes('notice') || t.includes('scrutiny') || t.includes('demand') || t.includes('itr') || t.includes('gst') || t.includes('assessment') || t.includes('letter'))
+			return 'Do not ignore the notice and do not reply alone — deadlines under the Income-tax Act are strict, and a late reply can add penalty and interest. The fastest help is a free consultation: a lawyer will read your notice with you. Would you like the booking link?';
 		if (t.includes('book') || t.includes('consult') || t.includes('appointment') || t.includes('schedule'))
-			return 'You can book a free 30-minute consultation right here: /free-consultation — or call +1 (800) 555-0199, Mon–Fri 9 AM–6 PM.';
+			return 'You can book a free 30-minute consultation right here: /free-consultation — or call +91 98110 12345, Mon–Sat 10 AM–7 PM IST.';
 		if (t.includes('hour') || t.includes('open') || t.includes('when'))
-			return 'Our office is open Mon–Fri, 9:00 AM – 6:00 PM (Austin time). Urgent audit matters left after hours are returned within 2 hours.';
-		if (t.includes('spanish') || t.includes('español'))
-			return '¡Sí! Se habla español. You can also visit our Spanish page at /es.';
-		if (t.includes('hi') || t.includes('hello') || t.includes('hey'))
-			return 'Hello! Tell me briefly what happened — an audit letter, an IRS bill, estate planning, or something else — and I will guide you.';
-		return 'Thanks — I have noted that. An attorney will pick this up during office hours (Mon–Fri, 9 AM–6 PM). For urgent IRS matters, call +1 (800) 555-0199, or book a free consultation at /free-consultation.';
+			return 'Our office is open Mon–Sat, 10:00 AM – 7:00 PM IST. Urgent matters — search, seizure or a notice deadline — left after hours are returned within 2 hours.';
+		if (t.includes('hindi') || t.includes('हिन्दी') || t.includes('hindi me') || t.includes('hindi mein'))
+			return 'जी हाँ! हम हिन्दी में भी बात करते हैं। Visit our Hindi page at /hi — or just type your question in Hindi here.';
+		if (t.includes('hi') || t.includes('hello') || t.includes('hey') || t.includes('namaste'))
+			return 'Hello! Tell me briefly what happened — an income-tax notice, a GST notice, a tax demand, or something else — and I will guide you.';
+		return 'Thanks — I have noted that. A lawyer will pick this up during office hours (Mon–Sat, 10 AM–7 PM IST). For urgent tax matters, call +91 98110 12345, or book a free consultation at /free-consultation.';
 	}
 
 	function send(text: string) {

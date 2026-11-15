@@ -4,7 +4,7 @@
 	let name = $state('');
 	let email = $state('');
 	let phone = $state('');
-	let service = $state('Tax Audit & IRS Defence');
+	let service = $state('Income Tax Notice & Scrutiny');
 	let message = $state('');
 	let submitted = $state(false);
 	let sending = $state(false);
@@ -34,7 +34,7 @@
 		<span class="flex h-16 w-16 items-center justify-center rounded-full bg-leaf text-white"><Icon name="check" class="h-8 w-8" /></span>
 		<h3 class="mt-5 font-serif text-3xl font-semibold">Thank you, {name.split(' ')[0]}!</h3>
 		<p class="mt-3 max-w-sm text-[15px] leading-relaxed text-muted">
-			Your request is in. An attorney will reply to <strong class="text-ink">{email}</strong> within one business day — usually much faster.
+			Your request is in. A lawyer will reply to <strong class="text-ink">{email}</strong> within one business day — usually much faster.
 		</p>
 		<p class="mt-3 text-[13px] text-muted">Your reference: <strong class="text-ink">{ref}</strong> — quote it when you call.</p>
 		<button
@@ -55,32 +55,31 @@
 		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
 			<label class="block">
 				<span class="mb-1.5 block text-[13px] font-bold">Full name *</span>
-				<input bind:value={name} type="text" autocomplete="name" placeholder="Jane Cooper" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
+				<input bind:value={name} type="text" autocomplete="name" placeholder="Priya Sharma" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
 			</label>
 			<label class="block">
 				<span class="mb-1.5 block text-[13px] font-bold">Email *</span>
-				<input bind:value={email} type="email" autocomplete="email" placeholder="jane@example.com" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
+				<input bind:value={email} type="email" autocomplete="email" placeholder="priya@example.com" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
 			</label>
 			<label class="block">
 				<span class="mb-1.5 block text-[13px] font-bold">Phone</span>
-				<input bind:value={phone} type="tel" autocomplete="tel" placeholder="+1 (555) 000-0000" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
+				<input bind:value={phone} type="tel" autocomplete="tel" placeholder="+91 98110 12345" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
 			</label>
 			<label class="block">
 				<span class="mb-1.5 block text-[13px] font-bold">I need help with</span>
 				<select bind:value={service} class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30">
-					<option>Tax Audit &amp; IRS Defence</option>
-					<option>Criminal Tax Law</option>
-					<option>Estate Planning &amp; Taxation</option>
-					<option>State &amp; Local Taxation</option>
-					<option>Tax Planning &amp; Compliance</option>
-					<option>International Taxation</option>
-					<option>Property Taxes</option>
+					<option>Income Tax Notice &amp; Scrutiny</option>
+					<option>GST Notice &amp; Disputes</option>
+					<option>Tax Demand &amp; Settlement</option>
+					<option>Search &amp; Seizure</option>
+					<option>ITR Filing &amp; Planning</option>
+					<option>NRI &amp; International Tax</option>
 				</select>
 			</label>
 		</div>
 		<label class="mt-4 block">
 			<span class="mb-1.5 block text-[13px] font-bold">Tell us what happened *</span>
-			<textarea bind:value={message} rows="4" placeholder="I received an IRS notice last week…" class="w-full resize-none rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30"></textarea>
+			<textarea bind:value={message} rows="4" placeholder="I received an income-tax notice last week…" class="w-full resize-none rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/30"></textarea>
 		</label>
 		{#if error}
 			<p class="mt-3 rounded-xl bg-red-50 px-4 py-3 text-[13.5px] font-medium text-red-700" role="alert">{error}</p>

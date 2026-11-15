@@ -11,27 +11,36 @@
 
 	let openFaq = $state(0);
 
+	const stateBySlug: Record<string, string> = {
+		'new-delhi': 'Delhi',
+		mumbai: 'Maharashtra',
+		bengaluru: 'Karnataka',
+		hyderabad: 'Telangana',
+		chennai: 'Tamil Nadu',
+		kolkata: 'West Bengal'
+	};
+
 	const schema = $derived({
 		'@context': 'https://schema.org',
 		'@type': 'LegalService',
-		name: `MSY Law — Tax Attorney in ${city.name}, TX`,
-		telephone: '+1-800-555-0199',
-		email: 'hello@msylaw.com',
-		address: { '@type': 'PostalAddress', streetAddress: city.address, addressLocality: city.name, addressRegion: 'TX', addressCountry: 'US' },
+		name: `MSY Law — Tax Attorney in ${city.name}, India`,
+		telephone: '+91 98110 12345',
+		email: 'hello@msylaw.in',
+		address: { '@type': 'PostalAddress', streetAddress: city.address, addressLocality: city.name, addressRegion: stateBySlug[city.slug] ?? 'India', addressCountry: 'IN' },
 		areaServed: { '@type': 'City', name: city.name },
 		url: `https://tax-lawyer-landing.pages.dev/locations/${city.slug}`
 	});
 </script>
 
 <svelte:head>
-	<title>Tax Attorney in {city.name}, TX — MSY Law</title>
-	<meta name="description" content="MSY Law serves {city.name}, Texas: {city.detail.toLowerCase()}. IRS audits, state tax, estate planning and property tax appeals — free 30-minute consultation." />
+	<title>Tax Attorney in {city.name}, India — MSY Law</title>
+	<meta name="description" content="MSY Law serves {city.name}, India: {city.detail.toLowerCase()}. Income tax appeals, GST disputes, corporate tax and search & settlement — free 30-minute consultation." />
 	{@html `<script type="application/ld+json">${JSON.stringify(schema)}</script>`}
 </svelte:head>
 
 <PageHero
-	eyebrow="Locations · {city.name}, TX"
-	title="Tax attorney in {city.name}, Texas"
+	eyebrow="Locations · {city.name}, India"
+	title="Tax attorney in {city.name}, India"
 	subtitle={city.detail}
 	crumb={city.name}
 />
@@ -91,7 +100,7 @@
 						<p class="mt-2 text-[14px] leading-relaxed text-white/75">{city.parking}</p>
 						<p class="mt-3 text-[14px] leading-relaxed text-white/75">Most matters are handled by phone and video after the first meeting.</p>
 						<a href="/free-consultation" class="mt-6 block rounded-full bg-leaf py-3 text-center text-[14px] font-bold text-navy-3 transition hover:bg-leaf-2">Book Free Consultation</a>
-						<a href="tel:+18005550199" class="mt-3 block text-center text-[14px] font-semibold text-white/85 transition hover:text-white">or call +1 (800) 555-0199</a>
+						<a href="tel:+919811012345" class="mt-3 block text-center text-[14px] font-semibold text-white/85 transition hover:text-white">or call +91 98110 12345</a>
 					</div>
 				</Reveal>
 				<Reveal delay={200}>
@@ -113,7 +122,7 @@
 						<h3 class="text-[13px] font-bold tracking-[0.16em] text-muted uppercase">Other locations</h3>
 						<ul class="mt-4 space-y-2.5 text-[14.5px] font-semibold">
 							<li><a href="/locations" class="text-navy transition hover:text-leaf-dark">All locations →</a></li>
-							<li><a href="/locations/austin" class="text-navy/70 transition hover:text-leaf-dark">Austin (Headquarters)</a></li>
+							<li><a href="/locations/new-delhi" class="text-navy/70 transition hover:text-leaf-dark">New Delhi (Headquarters)</a></li>
 						</ul>
 					</div>
 				</Reveal>

@@ -97,14 +97,14 @@
 				<div class="absolute -inset-3 rounded-full border border-dashed border-navy/25 sm:-inset-4"></div>
 				<div class="absolute -inset-6 rounded-full border border-navy/10 sm:-inset-8"></div>
 				<div class="relative h-[168px] w-[168px] overflow-hidden rounded-full bg-sage ring-8 ring-white/70 sm:h-[200px] sm:w-[200px] lg:h-[220px] lg:w-[220px]">
-					<Picture src="/lawyer-woman.webp" alt="Tax attorney" class="h-full w-full object-cover object-top" width={1600} height={1600} loading="eager" />
+					<Picture src="/lawyer-woman.webp" alt="Tax lawyer" class="h-full w-full object-cover object-top" width={1600} height={1600} loading="eager" />
 				</div>
 				<span class="absolute -top-3 -right-1 flex h-11 w-11 items-center justify-center rounded-full border-2 border-leaf bg-white text-[17px] font-bold text-leaf-dark shadow sm:-top-6 sm:-right-2 sm:h-12 sm:w-12">
 					1
 				</span>
 				<div class="absolute -left-3 -bottom-4 hidden rounded-2xl bg-white px-3.5 py-2.5 shadow-lg ring-1 ring-black/5 sm:block">
-					<p class="font-serif text-lg leading-none font-bold text-navy">$50M</p>
-					<p class="mt-1 text-[11px] font-medium text-muted">Recovered for clients</p>
+					<p class="font-serif text-lg leading-none font-bold text-navy">₹120 Cr+</p>
+					<p class="mt-1 text-[11px] font-medium text-muted">Tax saved for clients</p>
 				</div>
 			</div>
 		</div>
@@ -124,12 +124,12 @@
 			<div class="marquee-track items-center gap-10 text-[13px] font-bold tracking-[0.18em] text-navy/60 uppercase">
 				{#each [0, 1] as dup}
 					<div class="flex items-center gap-10 pr-10" aria-hidden={dup === 1}>
-						<span>Tax Audits</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
-						<span>IRS Representation</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
-						<span>Estate Planning</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
-						<span>Business Tax</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
+						<span>Income Tax Appeals</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
+						<span>GST Disputes</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
+						<span>Corporate Tax Planning</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
 						<span>International Tax</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
-						<span>Property Tax</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
+						<span>Search &amp; Seizure</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
+						<span>NRI Taxation</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
 						<span>Tax Compliance</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />
 					</div>
 				{/each}

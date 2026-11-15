@@ -37,7 +37,7 @@
 		{ label: 'Client Portal', href: '/client-portal' },
 		{ label: 'Resources', href: '/resources' },
 		{ label: 'Search', href: '/search' },
-		{ label: 'En español', href: '/es' }
+		{ label: 'हिन्दी में', href: '/hi' }
 	];
 
 	const legal = [
@@ -62,16 +62,16 @@
 					<img src="/logo.svg" alt="MSY Law logo" class="h-11 w-11" width="44" height="44" />
 					<span>
 						<span class="block font-serif text-[22px] leading-none font-bold tracking-[0.18em]">MSY LAW</span>
-						<span class="mt-1 block text-[11px] font-semibold tracking-[0.28em] text-white/50 uppercase">Tax Attorney</span>
+						<span class="mt-1 block text-[11px] font-semibold tracking-[0.28em] text-white/50 uppercase">Tax Lawyer</span>
 					</span>
 				</a>
 				<p class="mt-4 max-w-md text-[14.5px] leading-relaxed text-white/70">
-					Trusted tax attorneys — solving tax issues together since 2011. Clear advice, fixed fees, real results.
+					Trusted tax lawyers — solving tax issues together since 2011. Clear advice, fixed fees, real results.
 				</p>
 				<p class="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[13.5px] text-white/70">
 					<Stars /> <span class="font-semibold text-white">4.9/5</span> · 312 Google reviews ·
-					<a href="https://www.google.com/maps/search/MSY+Law+Austin+TX" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/30 underline-offset-2 transition hover:text-white">See reviews</a>
-					· Se habla español
+					<a href="https://www.google.com/maps/search/MSY+Law+New+Delhi" target="_blank" rel="noopener" class="font-semibold text-white underline decoration-white/30 underline-offset-2 transition hover:text-white">See reviews</a>
+					· हिन्दी में
 				</p>
 				<div class="mt-5 flex items-center gap-2.5">
 					<a href="https://www.linkedin.com/company/msy-law" target="_blank" rel="noopener" aria-label="MSY Law on LinkedIn" class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:-translate-y-0.5 hover:bg-white/20">
@@ -92,7 +92,7 @@
 			<div class="lg:pl-8">
 				<h2 class="font-serif text-[22px] font-semibold">Tax tips, once a month</h2>
 				<p class="mt-2 max-w-md text-[14px] leading-relaxed text-white/65">
-					Deadlines, new IRS rules and money-saving moves — in plain English, no spam. Join 3,400+ readers.
+					Deadlines, new tax rules and money-saving moves — in plain English, no spam. Join 3,400+ readers.
 				</p>
 				{#if subscribed}
 					<p class="mt-5 flex items-center gap-2.5 rounded-2xl bg-leaf/15 px-4 py-3.5 text-[14.5px] font-semibold text-leaf-2">
@@ -151,19 +151,19 @@
 				<ul class="mt-4 space-y-3 text-[14px] text-white/75">
 					<li class="flex items-start gap-2.5">
 						<Icon name="pin" class="mt-0.5 h-4 w-4 shrink-0 text-leaf-2" />
-						<span>1200 Congress Ave, Suite 400<br />Austin, TX 78701</span>
+						<span>Statesman House, Barakhamba Road, Connaught Place<br />New Delhi 110001</span>
 					</li>
 					<li class="flex items-center gap-2.5">
 						<Icon name="phone" class="h-4 w-4 shrink-0 text-leaf-2" />
-						<a href="tel:+18005550199" class="transition hover:text-white">+1 (800) 555-0199</a>
+						<a href="tel:+919811012345" class="transition hover:text-white">+91 98110 12345</a>
 					</li>
 					<li class="flex items-center gap-2.5">
 						<Icon name="mail" class="h-4 w-4 shrink-0 text-leaf-2" />
-						<a href="mailto:hello@msylaw.com" class="transition hover:text-white">hello@msylaw.com</a>
+						<a href="mailto:hello@msylaw.in" class="transition hover:text-white">hello@msylaw.in</a>
 					</li>
 					<li class="flex items-center gap-2.5">
 						<Icon name="clock" class="h-4 w-4 shrink-0 text-leaf-2" />
-						<span>Mon–Fri · 9:00 AM – 6:00 PM</span>
+						<span>Mon–Sat · 10:00 AM – 7:00 PM IST</span>
 					</li>
 				</ul>
 				<a href="/free-consultation" class="mt-5 inline-block rounded-full bg-leaf px-5 py-2.5 text-[13.5px] font-bold text-navy-3 shadow-md transition hover:-translate-y-0.5 hover:bg-leaf-2">Book Free Consultation</a>
@@ -172,7 +172,7 @@
 
 		<!-- Locations strip -->
 		<div class="flex flex-col gap-3 border-b border-white/10 py-6 sm:flex-row sm:items-center sm:justify-between">
-			<p class="text-[12.5px] font-bold tracking-[0.16em] text-white/50 uppercase">Serving Texas</p>
+			<p class="text-[12.5px] font-bold tracking-[0.16em] text-white/50 uppercase">Serving India</p>
 			<p class="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13.5px] text-white/70">
 				{#each cities as city, i}
 					<a href="/locations/{city.slug}" class="transition hover:text-white">{city.name}</a>{#if i < cities.length - 1}<span class="text-white/30">·</span>{/if}
@@ -192,7 +192,7 @@
 			</nav>
 		</div>
 		<p class="pb-8 text-center text-[12px] leading-relaxed text-white/40 lg:text-left">
-			Attorney advertising. Past results do not guarantee similar outcomes. Nothing on this site is legal advice — every case is different, and a consultation is the only way to know how the law applies to you.
+			Lawyer advertising. Past results do not guarantee similar outcomes. Nothing on this site is legal advice — every case is different, and a consultation is the only way to know how the law applies to you.
 		</p>
 	</div>
 </footer>

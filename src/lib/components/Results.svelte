@@ -2,9 +2,9 @@
 	import Reveal from '#lib/components/Reveal.svelte';
 
 	const results = [
-		{ amount: '$2.4M', label: 'Tax debt settled', detail: 'IRS debt of $3.1M reduced to $680k for a family business.', kind: 'Debt Settlement' },
-		{ amount: '$860k', label: 'Audit penalties removed', detail: 'Full penalty abatement after a 3-year audit defence.', kind: 'Audit Defence' },
-		{ amount: '$1.2M', label: 'Estate tax saved', detail: 'Restructured estate plan before a major asset sale.', kind: 'Estate Planning' }
+		{ amount: '₹4.2 Cr', label: 'Penalty deleted in appeal', detail: '₹4.2 Cr penalty deleted by the ITAT in an income tax appeal.', kind: 'Income Tax Appeal' },
+		{ amount: '₹86 lakh', label: 'GST refund recovered', detail: '₹86 lakh of blocked input tax credit refunded after a GST dispute.', kind: 'GST Dispute' },
+		{ amount: '₹1.8 Cr', label: 'Demand settled for ₹12 lakh', detail: '₹1.8 Cr disputed demand settled for ₹12 lakh under Vivad se Vishwas.', kind: 'Settlement' }
 	];
 </script>
 

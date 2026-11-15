@@ -23,34 +23,34 @@
 		'@type': 'LegalService',
 		name: 'MSY Law',
 		description:
-			'Trusted tax attorneys for tax audits, compliance, estate planning and tax solutions in Austin, Texas and nationwide.',
+			'Trusted tax attorneys in India — income tax, GST, appeals and planning. New Delhi · Mumbai · Bengaluru · Hyderabad · Chennai · Kolkata.',
 		url: siteUrl,
-		telephone: '+1-800-555-0199',
-		email: 'hello@msylaw.com',
-		priceRange: '$$',
+		telephone: '+91-98110-12345',
+		email: 'hello@msylaw.in',
+		priceRange: '₹₹',
 		address: {
 			'@type': 'PostalAddress',
-			streetAddress: '1200 Congress Ave, Suite 400',
-			addressLocality: 'Austin',
-			addressRegion: 'TX',
-			postalCode: '78701',
-			addressCountry: 'US'
+			streetAddress: 'Statesman House, Barakhamba Road, Connaught Place',
+			addressLocality: 'New Delhi',
+			addressRegion: 'Delhi',
+			postalCode: '110001',
+			addressCountry: 'IN'
 		},
-		geo: { '@type': 'GeoCoordinates', latitude: 30.2711, longitude: -97.7431 },
+		geo: { '@type': 'GeoCoordinates', latitude: 28.6315, longitude: 77.2167 },
 		openingHoursSpecification: {
 			'@type': 'OpeningHoursSpecification',
-			dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-			opens: '09:00',
-			closes: '18:00'
+			dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+			opens: '10:00',
+			closes: '19:00'
 		},
 		areaServed: [
-			{ '@type': 'City', name: 'Austin' },
-			{ '@type': 'City', name: 'Dallas' },
-			{ '@type': 'City', name: 'Houston' },
-			{ '@type': 'City', name: 'San Antonio' },
-			{ '@type': 'City', name: 'Fort Worth' },
-			{ '@type': 'City', name: 'El Paso' },
-			{ '@type': 'Country', name: 'United States' }
+			{ '@type': 'City', name: 'New Delhi' },
+			{ '@type': 'City', name: 'Mumbai' },
+			{ '@type': 'City', name: 'Bengaluru' },
+			{ '@type': 'City', name: 'Hyderabad' },
+			{ '@type': 'City', name: 'Chennai' },
+			{ '@type': 'City', name: 'Kolkata' },
+			{ '@type': 'Country', name: 'India' }
 		],
 		aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '312' },
 		sameAs: [
@@ -63,16 +63,16 @@
 </script>
 
 <svelte:head>
-	<title>MSY Law — Tax Attorney &amp; Tax Lawyer</title>
+	<title>MSY Law — Tax Lawyer in India | Income Tax, GST &amp; Appeals</title>
 	<meta
 		name="description"
-		content="We handle every case professionally. Trusted tax attorneys for tax audits, compliance, estate planning and tax solutions."
+		content="Trusted tax attorneys in India — income tax, GST, appeals and planning. New Delhi · Mumbai · Bengaluru · Hyderabad · Chennai · Kolkata."
 	/>
 	<link rel="canonical" href={canonical} />
-	<meta property="og:title" content="MSY Law — We Handle Every Case Professionally" />
+	<meta property="og:title" content="MSY Law — Tax Lawyer in India | Income Tax, GST & Appeals" />
 	<meta
 		property="og:description"
-		content="With a track record of successfully resolving a wide range of tax-related issues, we're committed to protecting your financial interests."
+		content="Trusted tax attorneys in India — income tax, GST, appeals and planning. New Delhi · Mumbai · Bengaluru · Hyderabad · Chennai · Kolkata."
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={canonical} />
@@ -81,10 +81,10 @@
 	<meta property="og:image:height" content="630" />
 	<meta property="og:site_name" content="MSY Law" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="MSY Law — Tax Attorney & Tax Lawyer" />
+	<meta name="twitter:title" content="MSY Law — Tax Lawyer in India | Income Tax, GST & Appeals" />
 	<meta
 		name="twitter:description"
-		content="Trusted tax attorneys for tax audits, compliance, estate planning and tax solutions."
+		content="Trusted tax attorneys in India — income tax, GST, appeals and planning. New Delhi · Mumbai · Bengaluru · Hyderabad · Chennai · Kolkata."
 	/>
 	<meta name="twitter:image" content="{siteUrl}/og-image.jpg" />
 	{@html `<script type="application/ld+json">${JSON.stringify(legalService)}</script>`}

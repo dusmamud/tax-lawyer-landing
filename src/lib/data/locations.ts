@@ -14,117 +14,117 @@ export type City = {
 
 export const cities: City[] = [
 	{
-		slug: 'austin',
-		name: 'Austin',
+		slug: 'new-delhi',
+		name: 'New Delhi',
 		tag: 'Headquarters',
-		detail: 'Main office — 1200 Congress Ave, Suite 400',
-		address: '1200 Congress Ave, Suite 400, Austin, TX 78701',
-		parking: 'Free validated parking in the Congress garage — bring your ticket.',
+		detail: 'Main office — Statesman House, Barakhamba Road, Connaught Place',
+		address: 'Statesman House, Barakhamba Road, Connaught Place, New Delhi 110001',
+		parking: 'Paid parking at Statesman House; Barakhamba Road Metro (Blue Line) is a 2-minute walk.',
 		about: [
-			'Our main office is in downtown Austin, a short walk from the Texas Capitol. This is where the firm started in 2011, and where most of our attorneys work every day. Walk-ins are welcome during office hours, but a booked consultation means an attorney is waiting for you — not a receptionist.',
-			'From Austin we serve the whole of Texas and clients nationwide. Federal tax matters — audits, IRS debt, international tax — are handled the same way whether you live in Travis County or anywhere else in the country.'
+			'Our main office is in Connaught Place, a short walk from the Barakhamba Road Metro station and minutes from the Income Tax Appellate Tribunal and the Delhi High Court. This is where the firm started in 2011, and where most of our attorneys work every day. Walk-ins are welcome during office hours, but a booked consultation means an attorney is waiting for you — not a receptionist.',
+			'From New Delhi we serve the whole of India. Income tax appeals, GST disputes, search matters and international tax are handled the same way whether you live in Connaught Place or anywhere else in the country — and most of the work is faceless now, so location rarely matters at all.'
 		],
-		areas: ['Downtown Austin', 'Round Rock', 'Cedar Park', 'Georgetown', 'Pflugerville', 'Travis County'],
-		attorneys: ['Michael S. Young', 'David Carter', 'Sarah Mitchell', 'Emily Ross'],
-		mapQuery: '1200 Congress Ave, Austin, TX 78701',
+		areas: ['Connaught Place', 'Karol Bagh', 'South Delhi', 'Gurugram', 'Noida', 'Ghaziabad'],
+		attorneys: ['Mohan S. Yadav', 'Arvind Kapoor', 'Sara Iyer', 'Ananya Rao'],
+		mapQuery: 'Statesman House, Barakhamba Road, Connaught Place, New Delhi',
 		faqs: [
-			{ q: 'Can I walk in without an appointment?', a: 'Yes, during office hours (Mon–Fri, 9 AM–6 PM). For a guaranteed 30 minutes with an attorney, book a free consultation in advance.' },
-			{ q: 'Is parking really free?', a: 'Yes — park in the Congress garage and bring your ticket. We validate it at the front desk.' }
+			{ q: 'Can I walk in without an appointment?', a: 'Yes, during office hours (Mon–Sat, 10 AM–7 PM IST). For a guaranteed 30 minutes with an attorney, book a free consultation in advance.' },
+			{ q: 'How do I reach the office by Metro?', a: 'Take the Blue Line to Barakhamba Road station — the office is a 2-minute walk from Gate 1. Paid parking is also available at Statesman House.' }
 		]
 	},
 	{
-		slug: 'dallas',
-		name: 'Dallas',
+		slug: 'mumbai',
+		name: 'Mumbai',
 		tag: 'By appointment',
-		detail: 'Serving clients across the Dallas–Fort Worth metro',
-		address: 'Ross Tower, 500 N Akard St, Dallas, TX 75201',
-		parking: 'Validated parking in the Ross Tower garage for in-person meetings.',
+		detail: 'Serving clients across Mumbai and Maharashtra',
+		address: 'One World Centre, Senapati Bapat Marg, Lower Parel, Mumbai 400013',
+		parking: 'Valet and visitor parking at One World Centre.',
 		about: [
-			'Dallas is home to thousands of growing businesses — and to some of the most aggressive state tax audits in Texas. Our Dallas clients are usually business owners facing a Comptroller audit, a sales tax assessment, or a multi-state nexus problem that started when they expanded.',
-			'We meet Dallas clients in person by appointment at our downtown meeting office, and most matters are handled by phone and video after the first meeting. For federal matters — IRS audits, tax debt, international tax — location does not matter at all: the law is the same in Dallas as it is in Austin.'
+			'Mumbai is India’s financial capital — and home to some of the most complex corporate tax, transfer pricing and GST disputes in the country. Our Mumbai clients are usually companies and promoters dealing with a scrutiny assessment, a transfer pricing adjustment, or a GST demand that started with a single notice.',
+			'We meet Mumbai clients in person by appointment at our Lower Parel meeting office, and most matters are handled by phone and video after the first meeting. For income tax and GST matters, the law is the same in Mumbai as it is in New Delhi — and most proceedings are faceless, so your case moves just as fast.'
 		],
-		areas: ['Downtown Dallas', 'Plano', 'Frisco', 'Irving', 'Arlington', 'Fort Worth metro'],
-		attorneys: ['David Carter', 'Michael S. Young'],
-		mapQuery: 'Ross Tower, 500 N Akard St, Dallas, TX 75201',
+		areas: ['Lower Parel', 'Bandra Kurla Complex', 'Andheri', 'Thane', 'Navi Mumbai', 'South Mumbai'],
+		attorneys: ['Arvind Kapoor', 'Mohan S. Yadav'],
+		mapQuery: 'One World Centre, Senapati Bapat Marg, Lower Parel, Mumbai',
 		faqs: [
-			{ q: 'Do I need to travel to Austin for my case?', a: 'No. Most Dallas matters are handled by phone, video and secure document sharing. In-person meetings are available by appointment in downtown Dallas.' },
-			{ q: 'Can you handle a Texas Comptroller sales tax audit?', a: 'Yes — state audits are one of our core practices. We have reduced multi-state assessments from hundreds of thousands to a fraction of the original amount on appeal.' }
+			{ q: 'Do I need to travel to New Delhi for my case?', a: 'No. Most Mumbai matters are handled by phone, video and secure document sharing. In-person meetings are available by appointment in Lower Parel.' },
+			{ q: 'Can you handle a transfer pricing adjustment?', a: 'Yes — transfer pricing is one of our core practices. We have had adjustments of several crores deleted at the Dispute Resolution Panel and the ITAT.' }
 		]
 	},
 	{
-		slug: 'houston',
-		name: 'Houston',
+		slug: 'bengaluru',
+		name: 'Bengaluru',
 		tag: 'By appointment',
-		detail: 'Serving clients across Greater Houston',
-		address: 'JPMorgan Chase Tower, 600 Travis St, Houston, TX 77002',
-		parking: 'Visitor parking in the Chase Tower garage; street parking on Travis St.',
+		detail: 'Serving clients across Bengaluru and Karnataka',
+		address: 'UB City, Vittal Mallya Road, Bengaluru 560001',
+		parking: 'Visitor parking at UB City; Vidhana Soudha Metro is nearby.',
 		about: [
-			'Houston’s energy, healthcare and shipping industries create tax problems most firms never see: foreign income, complex partnerships, and audits that span multiple years and entities. Our Houston clients range from independent contractors to mid-size companies with operations overseas.',
-			'We meet Houston clients by appointment downtown, and handle almost everything remotely after that. If you received an IRS letter, do not wait for an in-person meeting — call us the same day and we will start protecting your deadlines immediately.'
+			'Bengaluru’s startups and global capability centres create tax problems most firms never see: ESOP taxation, transfer pricing for captives, GST on software exports, and founders with income in two countries. Our Bengaluru clients range from first-time founders to listed companies.',
+			'We meet Bengaluru clients by appointment at UB City, and handle almost everything remotely after that. If you received an income tax or GST notice, do not wait for an in-person meeting — call us the same day and we will start protecting your deadlines immediately.'
 		],
-		areas: ['Downtown Houston', 'The Woodlands', 'Sugar Land', 'Katy', 'Pasadena', 'Galveston County'],
-		attorneys: ['Sarah Mitchell', 'David Carter'],
-		mapQuery: 'JPMorgan Chase Tower, 600 Travis St, Houston, TX 77002',
+		areas: ['UB City', 'Koramangala', 'Whitefield', 'Electronic City', 'HSR Layout', 'Indiranagar'],
+		attorneys: ['Sara Iyer', 'Ananya Rao'],
+		mapQuery: 'UB City, Vittal Mallya Road, Bengaluru',
 		faqs: [
-			{ q: 'I work in energy and have foreign income. Can you help?', a: 'Yes. International tax — FBAR, FATCA, foreign tax credits and treaty planning — is a core practice. We have resolved foreign-account penalties for clients in 14 countries.' },
-			{ q: 'How fast can you respond to an audit letter?', a: 'Same day. Call before the deadline in the letter passes — in most cases we can take over all IRS contact within 24 hours of your first call.' }
+			{ q: 'My startup gives ESOPs. How are they taxed?', a: 'ESOPs are taxed twice — once as a perquisite when you exercise, and again as capital gains when you sell. The timing and the valuation decide how much. We plan both events so employees are not surprised by a demand.' },
+			{ q: 'Can you help with GST on software exports?', a: 'Yes. Exports are zero-rated, but refunds get stuck on documentation — LUT filings, FIRC, and invoice matching. We fix the paperwork and follow up the refund until it is credited.' }
 		]
 	},
 	{
-		slug: 'san-antonio',
-		name: 'San Antonio',
+		slug: 'hyderabad',
+		name: 'Hyderabad',
 		tag: 'By appointment',
-		detail: 'Serving clients across Bexar County and South Texas',
-		address: 'Frost Tower, 111 W Houston St, San Antonio, TX 78205',
-		parking: 'Free street parking after 6 PM; garage parking on Houston St.',
+		detail: 'Serving clients across Hyderabad and Telangana',
+		address: 'Financial District, Nanakramguda, Hyderabad 500032',
+		parking: 'Visitor parking in the Financial District towers.',
 		about: [
-			'San Antonio’s mix of military families, small businesses and cross-border trade with Mexico creates a distinctive set of tax issues — from military tax benefits to international filings for families with ties on both sides of the border.',
-			'We serve Bexar County and all of South Texas by phone, video and in-person meetings by appointment. Property tax appeals are especially common here: Bexar County assessments rise fast, and most homeowners who appeal pay less every year after.'
+			'Hyderabad’s pharma, IT and life-sciences industries bring a distinctive mix of tax work — R&D deductions, GST on clinical trials and contract manufacturing, and transfer pricing for global captives. Our Hyderabad clients are usually CFOs and founders who need a straight answer fast, not a 40-page memo.',
+			'We serve Hyderabad and all of Telangana by phone, video and in-person meetings by appointment in the Financial District. GST audits are especially common here: the department’s data analytics flag mismatches automatically, and a well-drafted reply usually closes the matter at the first stage.'
 		],
-		areas: ['Downtown San Antonio', 'Alamo Heights', 'Stone Oak', 'Boerne', 'New Braunfels', 'South Texas'],
-		attorneys: ['Emily Ross', 'Sarah Mitchell'],
-		mapQuery: 'Frost Tower, 111 W Houston St, San Antonio, TX 78205',
+		areas: ['Financial District', 'HITEC City', 'Gachibowli', 'Jubilee Hills', 'Secunderabad', 'Begumpet'],
+		attorneys: ['Ananya Rao', 'Arvind Kapoor'],
+		mapQuery: 'Financial District, Nanakramguda, Hyderabad',
 		faqs: [
-			{ q: 'Can you help with a Bexar County property tax appeal?', a: 'Yes. We challenge residential and commercial assessments with comparable sales and a formal appeal record — and if we cannot reduce your assessment, you pay nothing for the appeal.' },
-			{ q: 'Do you work with military families?', a: 'Yes. We advise on military tax benefits, multi-state filing issues from PCS moves, and residency questions — starting with a free consultation.' }
+			{ q: 'Can you handle a GST audit for my company?', a: 'Yes. We review the audit questionnaire, prepare the reconciliations, and attend the proceedings with you — most audits close at the reply stage when the workings are clean.' },
+			{ q: 'We are a pharma company. What tax issues should we watch?', a: 'R&D deductions, GST on contract manufacturing, and transfer pricing on inter-company charges. A quarterly review catches all three before they become demands.' }
 		]
 	},
 	{
-		slug: 'fort-worth',
-		name: 'Fort Worth',
+		slug: 'chennai',
+		name: 'Chennai',
 		tag: 'By appointment',
-		detail: 'Serving clients across Tarrant County',
-		address: 'Burnett Plaza, 801 Cherry St, Fort Worth, TX 76102',
-		parking: 'Garage parking at Burnett Plaza; free evenings and weekends.',
+		detail: 'Serving clients across Chennai and Tamil Nadu',
+		address: 'Express Avenue, Whites Road, Royapettah, Chennai 600014',
+		parking: 'Mall parking at Express Avenue; Royapettah is well connected by bus and Metro.',
 		about: [
-			'Fort Worth businesses — from the Stockyards to the Alliance corridor — face the same state and federal tax pressure as Dallas, often with smaller teams and tighter margins. A single audit can feel existential, which is why our first job is usually to slow things down and get the client a clear plan.',
-			'We meet Fort Worth clients by appointment downtown and handle most work remotely. Estate planning is a large part of our Fort Worth practice: ranch and family-business succession, where the tax bill can force a sale if nobody plans ahead.'
+			'Chennai’s manufacturing base, auto ancillaries and a large NRI community create a distinctive set of tax issues — from GST on job work and exports to NRI residential status and foreign asset disclosures for families with members abroad.',
+			'We serve Chennai and all of Tamil Nadu by phone, video and in-person meetings by appointment at Express Avenue. NRI taxation is a large part of our Chennai practice: residential status, Schedule FA, and DTAA claims for families with income in two countries.'
 		],
-		areas: ['Downtown Fort Worth', 'Alliance', 'Arlington', 'Keller', 'Southlake', 'Tarrant County'],
-		attorneys: ['David Carter', 'Sarah Mitchell'],
-		mapQuery: 'Burnett Plaza, 801 Cherry St, Fort Worth, TX 76102',
+		areas: ['Royapettah', 'T. Nagar', 'Anna Nagar', 'Adyar', 'OMR', 'Ambattur'],
+		attorneys: ['Sara Iyer', 'Mohan S. Yadav'],
+		mapQuery: 'Express Avenue, Whites Road, Royapettah, Chennai',
 		faqs: [
-			{ q: 'My family business is in Fort Worth. Can you help with succession?', a: 'Yes — business succession is part of our estate planning practice. We structure the handover so the next generation keeps the business instead of selling it to pay tax.' },
-			{ q: 'Do you offer video consultations?', a: 'Yes. Most Fort Worth clients meet us once in person and then work with us entirely by video and phone.' }
+			{ q: 'I am an NRI with property in Chennai. What do I need to file?', a: 'It depends on your rental income, capital gains and residential status — and foreign assets must be disclosed in Schedule FA. Bring your documents to a free consultation and we will map out exactly what you owe and where.' },
+			{ q: 'Can you help with a GST notice on job work?', a: 'Yes. Job work has its own GST rules — and most notices come from a mismatch between the principal’s and the job worker’s returns. We reconcile both sides and draft the reply.' }
 		]
 	},
 	{
-		slug: 'el-paso',
-		name: 'El Paso',
+		slug: 'kolkata',
+		name: 'Kolkata',
 		tag: 'By appointment',
-		detail: 'Serving clients across West Texas',
-		address: 'One San Jacinto Plaza, 111 E San Jacinto Blvd, El Paso, TX 79901',
-		parking: 'Street parking on San Jacinto Blvd; garage parking nearby.',
+		detail: 'Serving clients across Kolkata and West Bengal',
+		address: 'Camac Street, Park Street Area, Kolkata 700017',
+		parking: 'Street and mall parking on Camac Street; Park Street Metro is nearby.',
 		about: [
-			'El Paso is the most cross-border city we serve: families and businesses with income, property and family on both sides of the U.S.–Mexico border. That means international tax filings, dual-residency questions, and FBAR issues are everyday work here — not edge cases.',
-			'We serve all of West Texas from El Paso by appointment, phone and video. Se habla español: our team can handle your consultation in Spanish, and our Spanish-language page (/es) covers the basics.'
+			'Kolkata’s family businesses — some in their third generation — face a particular problem: succession. A business built over decades can be broken by a single tax demand if nobody plans the handover. Our Kolkata practice is built around that: succession planning, settlement of old disputes, and restructuring so the next generation keeps the business.',
+			'We serve Kolkata and all of West Bengal by appointment, phone and video. Vivad se Vishwas settlements are especially common here — many families have disputes pending for years, and the scheme lets them close the matter by paying the tax and waiving the interest and penalty.'
 		],
-		areas: ['Downtown El Paso', 'Las Cruces, NM', 'Midland–Odessa', 'West Texas', 'Ciudad Juárez (U.S. tax matters)'],
-		attorneys: ['Sarah Mitchell', 'Emily Ross'],
-		mapQuery: 'One San Jacinto Plaza, El Paso, TX 79901',
+		areas: ['Camac Street', 'Park Street', 'Salt Lake', 'New Town', 'Howrah', 'Alipore'],
+		attorneys: ['Ananya Rao', 'Mohan S. Yadav'],
+		mapQuery: 'Camac Street, Park Street Area, Kolkata',
 		faqs: [
-			{ q: '¿Hablan español?', a: 'Sí. We can handle your consultation in Spanish — call +1 (800) 555-0199 and ask for the Spanish line, or visit /es.' },
-			{ q: 'I have income in Mexico and the U.S. What do I file?', a: 'Usually both — but tax treaties and the foreign tax credit exist so you are not taxed twice. Bring your documents to a free consultation and we will map out exactly what you owe and where.' }
+			{ q: 'My family business is in Kolkata. Can you help with succession?', a: 'Yes — business succession is a core part of our practice. We structure the handover so the next generation keeps the business instead of selling it to pay tax.' },
+			{ q: 'We have a tax dispute pending for years. Can it be settled?', a: 'Very likely, yes. Vivad se Vishwas lets you close a disputed demand by paying the tax and waiving the interest and penalty. We will tell you honestly whether settlement beats fighting.' }
 		]
 	}
 ];

@@ -3,13 +3,13 @@
 	import Picture from '#lib/components/Picture.svelte';
 
 	const slugOf = (name: string) =>
-		name === 'Michael S. Young' ? 'michael-young' : name === 'David Carter' ? 'david-carter' : name === 'Sarah Mitchell' ? 'sarah-mitchell' : 'emily-ross';
+		name === 'Mohan S. Yadav' ? 'mohan-s-yadav' : name === 'Arvind Kapoor' ? 'arvind-kapoor' : name === 'Sara Iyer' ? 'sara-iyer' : 'ananya-rao';
 
 	const team = [
-		{ img: '/lawyer-senior.webp', name: 'Michael S. Young', role: 'Founding Partner · Tax Litigation', exp: '15+ yrs', tag: 'IRS Defence' },
-		{ img: '/lawyer-man.webp', name: 'David Carter', role: 'Senior Attorney · Business Tax', exp: '12 yrs', tag: 'Corporate Tax' },
-		{ img: '/lawyer-woman.webp', name: 'Sarah Mitchell', role: 'Partner · Estate & International', exp: '11 yrs', tag: 'Estate Planning' },
-		{ img: '/lawyer-young-woman.webp', name: 'Emily Ross', role: 'Attorney · Compliance & Audits', exp: '6 yrs', tag: 'Tax Audits' }
+		{ img: '/lawyer-senior.webp', name: 'Mohan S. Yadav', role: 'Founding Partner · Tax Litigation', exp: '15+ yrs', tag: 'Income Tax Appeals' },
+		{ img: '/lawyer-man.webp', name: 'Arvind Kapoor', role: 'Senior Advocate · Corporate Tax', exp: '12 yrs', tag: 'Corporate Tax' },
+		{ img: '/lawyer-woman.webp', name: 'Sara Iyer', role: 'Partner · International & GST', exp: '11 yrs', tag: 'GST Disputes' },
+		{ img: '/lawyer-young-woman.webp', name: 'Ananya Rao', role: 'Advocate · Compliance & Scrutiny', exp: '6 yrs', tag: 'Scrutiny Defence' }
 	];
 </script>
 
@@ -17,8 +17,8 @@
 	<div class="mx-auto max-w-7xl px-4 sm:px-5 lg:px-8">
 		<Reveal class="mx-auto max-w-2xl text-center">
 			<span class="inline-block rounded-md bg-cream px-3 py-1 text-[12px] font-semibold tracking-wide text-navy">Our Team</span>
-			<h2 class="mt-4 font-serif text-[32px] leading-tight font-semibold text-ink sm:text-[40px]">Meet the attorneys behind the results</h2>
-			<p class="mt-3 text-[15px] text-muted">Real people, direct phone numbers, and a named attorney on every case — never a call centre.</p>
+			<h2 class="mt-4 font-serif text-[32px] leading-tight font-semibold text-ink sm:text-[40px]">Meet the lawyers behind the results</h2>
+			<p class="mt-3 text-[15px] text-muted">Real people, direct phone numbers, and a named lawyer on every case — never a call centre.</p>
 		</Reveal>
 
 		<div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

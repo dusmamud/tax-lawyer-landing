@@ -3,11 +3,11 @@
 	import Icon from '#lib/components/Icon.svelte';
 
 	const awards = [
-		{ name: 'Super Lawyers', detail: 'Selected 2024 · 2025 · 2026' },
-		{ name: 'Avvo Rating 10.0', detail: 'Superb — highest rating' },
-		{ name: 'Best Law Firms', detail: 'U.S. News · Tax Law 2026' },
-		{ name: 'Texas Legal Awards', detail: 'Client Service 2026' },
-		{ name: 'State Bar of Texas', detail: 'Members in good standing' }
+		{ name: 'Legal 500 Asia-Pacific', detail: 'Leading Tax Firm 2026' },
+		{ name: 'Chambers Asia-Pacific', detail: 'Tax, Band 1' },
+		{ name: 'India Business Law Journal', detail: 'Tax Firm of the Year' },
+		{ name: 'India Legal Awards', detail: 'Best Tax Practice 2026' },
+		{ name: 'Bar Council of Delhi', detail: 'Member since 2011' }
 	];
 </script>
 

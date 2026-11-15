@@ -32,8 +32,8 @@
 </script>
 
 <svelte:head>
-	<title>{area.title} Lawyer in Austin, TX — MSY Law | Tax Attorney</title>
-	<meta name="description" content="{area.short} MSY Law serves Austin, Dallas, Houston, San Antonio, Fort Worth and El Paso, Texas — and clients nationwide." />
+	<title>{area.title} Lawyer in New Delhi, India — MSY Law | Tax Attorney</title>
+	<meta name="description" content="{area.short} MSY Law serves New Delhi, Mumbai, Bengaluru, Hyderabad, Chennai and Kolkata — and clients across India." />
 	{@html `<script type="application/ld+json">${JSON.stringify(faqSchema)}</script>`}
 	{@html `<script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>`}
 </svelte:head>
@@ -93,7 +93,7 @@
 						</div>
 					{/each}
 				</div>
-				<p class="mt-5 text-[14px] text-muted">More questions? See the full <a href="/faq" class="font-semibold text-navy underline underline-offset-2">FAQ page</a> or call <a href="tel:+18005550199" class="font-semibold text-navy underline underline-offset-2">+1 (800) 555-0199</a>.</p>
+				<p class="mt-5 text-[14px] text-muted">More questions? See the full <a href="/faq" class="font-semibold text-navy underline underline-offset-2">FAQ page</a> or call <a href="tel:+919811012345" class="font-semibold text-navy underline underline-offset-2">+91 98110 12345</a>.</p>
 			</Reveal>
 		</div>
 
@@ -106,8 +106,8 @@
 						Tell us what happened in a free 30-minute consultation. You will leave with a clear plan — whether you hire us or not.
 					</p>
 					<a href="/free-consultation" class="mt-6 block rounded-full bg-leaf py-3 text-center text-[14px] font-bold text-navy-3 transition hover:bg-leaf-2">Book Free Consultation</a>
-					<a href="tel:+18005550199" class="mt-3 block text-center text-[14px] font-semibold text-white/85 transition hover:text-white">or call +1 (800) 555-0199</a>
-					<p class="mt-4 border-t border-white/10 pt-4 text-[13px] text-white/60">Serving Austin, Dallas, Houston, San Antonio, Fort Worth &amp; El Paso — and clients nationwide for federal matters.</p>
+					<a href="tel:+919811012345" class="mt-3 block text-center text-[14px] font-semibold text-white/85 transition hover:text-white">or call +91 98110 12345</a>
+					<p class="mt-4 border-t border-white/10 pt-4 text-[13px] text-white/60">Serving New Delhi, Mumbai, Bengaluru, Hyderabad, Chennai &amp; Kolkata — and clients across India.</p>
 				</div>
 			</Reveal>
 

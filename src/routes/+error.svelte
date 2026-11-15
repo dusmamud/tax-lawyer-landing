@@ -22,7 +22,7 @@
 			<a href="/contact" class="w-full rounded-full border border-navy/20 bg-white px-7 py-3.5 text-[15px] font-semibold text-navy transition hover:bg-white sm:w-auto">Contact Us</a>
 		</div>
 		<p class="mt-8 text-[13.5px] text-muted">
-			Or call us directly: <a href="tel:+18005550199" class="font-bold text-navy">+1 (800) 555-0199</a>
+			Or call us directly: <a href="tel:+919811012345" class="font-bold text-navy">+91 98110 12345</a>
 		</p>
 	</div>
 </section>

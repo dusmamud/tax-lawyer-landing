@@ -1,9 +1,12 @@
 // Shared FAQ data — used by the Faq component on the home page and the
 // /faq page, and by the FAQPage JSON-LD schema on /faq.
 export const faqs = [
-	{ q: 'How much does a tax attorney cost?', a: 'Every case starts with a free 30-minute consultation. After that you get a written, fixed-fee quote before we start — no hourly surprises and no hidden charges.' },
-	{ q: 'I got an IRS audit letter. What should I do first?', a: 'Don’t ignore it and don’t reply alone. Call us the same day — deadlines in audit letters are strict, and an early response usually means a far better outcome.' },
-	{ q: 'Can you deal with the IRS on my behalf?', a: 'Yes. With a signed power of attorney we handle all IRS calls, letters and meetings for you. Most clients never speak to the IRS directly again.' },
-	{ q: 'How long does a typical case take?', a: 'Simple compliance work takes 1–2 weeks. Audits usually take 2–6 months, and settlements 1–4 months. You’ll get a realistic timeline in your action plan, plus weekly updates.' },
+	{ q: 'How much does a tax lawyer cost?', a: 'Every case starts with a free 30-minute consultation. After that you get a written, fixed-fee quote before we start — no hourly surprises and no hidden charges.' },
+	{ q: 'I got an income tax notice. What should I do first?', a: 'Don’t ignore it and don’t reply alone. Call us the same day — notices carry strict deadlines, and the first reply frames the whole assessment. In most cases we can take over all department contact within 24 hours of your first call.' },
+	{ q: 'What are the ITR deadlines for AY 2026-27?', a: '31 July 2026 for most individuals, 31 August 2026 for non-audit businesses, and 21 November 2026 for audit cases. A belated return can still be filed till 31 December 2026, and a revised return till 31 March 2027. Missing the deadline attracts a late fee of up to ₹5,000 under section 234F.' },
+	{ q: 'Do I have to register for GST?', a: 'If your turnover crosses ₹40 lakh for goods or ₹20 lakh for services, registration is mandatory. Some businesses must register regardless of turnover — for example, inter-state suppliers and e-commerce sellers. We will check your exact position in a free consultation.' },
+	{ q: 'What is Vivad se Vishwas?', a: 'It is the government’s dispute settlement scheme: you pay the disputed tax and the department waives the interest and penalty, closing the case for good. It is often the cheapest way out of a long appeal — we will tell you honestly whether it beats fighting.' },
+	{ q: 'What is the section 270A penalty?', a: 'Section 270A imposes a penalty of 50% of the tax on under-reported income, and 200% where the under-reporting amounts to misreporting. The difference between the two turns on the facts — and the penalty can often be reduced or deleted in appeal.' },
+	{ q: 'I am an NRI. Do I have to file an ITR in India?', a: 'It depends on your income in India and your residential status, which turns on the number of days you spent here. Many NRIs must file even when their Indian income is small — and foreign assets must be disclosed in Schedule FA. We will check your exact position in a free consultation.' },
 	{ q: 'Is my information confidential?', a: 'Completely. Attorney–client privilege applies from your very first call, and we never share your details with anyone without your written permission.' }
 ];

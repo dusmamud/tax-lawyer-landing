@@ -39,7 +39,7 @@
 			<img src="/logo.svg" alt="MSY Law logo" class="h-11 w-11 sm:h-12 sm:w-12" width="48" height="48" />
 			<span class="leading-none">
 				<span class="block font-serif text-[20px] font-bold tracking-[0.16em] text-navy sm:text-[22px]">MSY LAW</span>
-				<span class="mt-1 block text-[9px] font-semibold tracking-[0.32em] text-muted uppercase">Tax Attorney</span>
+				<span class="mt-1 block text-[9px] font-semibold tracking-[0.32em] text-muted uppercase">Tax Lawyer</span>
 			</span>
 		</a>
 
@@ -63,7 +63,7 @@
 				</svg>
 			</a>
 			<a
-				href="tel:+18005550199"
+				href="tel:+919811012345"
 				class="hidden h-11 w-11 items-center justify-center rounded-full text-navy transition hover:bg-white lg:flex"
 				aria-label="Call us"
 			>
@@ -111,7 +111,7 @@
 				Book a Free Consultation
 			</a>
 			<p class="mt-4 text-center text-[13px] text-muted">
-				Call <a href="tel:+18005550199" class="font-semibold text-navy">+1 (800) 555-0199</a> · Mon–Fri, 9 AM – 6 PM
+				Call <a href="tel:+919811012345" class="font-semibold text-navy">+91 98110 12345</a> · Mon–Sat, 10 AM – 7 PM IST
 			</p>
 		</nav>
 	{/if}

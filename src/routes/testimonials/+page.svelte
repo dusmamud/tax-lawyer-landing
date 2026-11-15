@@ -8,18 +8,18 @@
 	import Stars from '#lib/components/Stars.svelte';
 
 	const more = [
-		{ quote: 'They settled a $90,000 state tax bill for $11,000. I checked the numbers three times because I could not believe it.', name: 'Maria Gonzalez', role: 'Restaurant Owner, Florida', img: '/lawyer-young-woman.webp' },
-		{ quote: 'Clear quote, weekly updates, and a result better than promised. This is how every law firm should work.', name: 'Alan Brooks', role: 'E-commerce Seller, Ohio', img: '/lawyer-man.webp' },
-		{ quote: 'My estate plan took three weeks and cost exactly what they quoted. My kids will never have to guess what I wanted.', name: 'Helen Park', role: 'Estate Client, California', img: '/lawyer-woman.webp' },
-		{ quote: 'The audit lasted four months and ended with zero penalties. Emily handled everything — I just signed papers.', name: 'Tom Becker', role: 'Contractor, Arizona', img: '/lawyer-senior.webp' },
-		{ quote: 'As a non-resident investor I had filings in two countries and penalties in both. Sarah fixed all of it in one engagement.', name: 'Arjun Mehta', role: 'Foreign Investor, New York', img: '/lawyer-man.webp' },
-		{ quote: 'They challenged my property assessment and cut my annual tax by $4,800. Every year, from now on.', name: 'Grace Liu', role: 'Homeowner, Texas', img: '/lawyer-woman.webp' }
+		{ quote: 'They settled a ₹42 lakh GST demand for ₹6 lakh. I checked the numbers three times because I could not believe it.', name: 'Neha Agarwal', role: 'Restaurant Owner, Gurugram', img: '/lawyer-young-woman.webp' },
+		{ quote: 'Clear quote, weekly updates, and a result better than promised. This is how every law firm should work.', name: 'Suresh Nair', role: 'E-commerce Seller, Bengaluru', img: '/lawyer-man.webp' },
+		{ quote: 'My scrutiny assessment took three months and cost exactly what they quoted. The additions were deleted in full.', name: 'Anil Gupta', role: 'Business Owner, New Delhi', img: '/lawyer-senior.webp' },
+		{ quote: 'The assessment lasted four months and ended with zero penalties. Ananya handled everything — I just signed papers.', name: 'Meera Krishnan', role: 'Salaried Professional, Chennai', img: '/lawyer-woman.webp' },
+		{ quote: 'As an NRI I had filings in two countries and demands in both. Sara fixed all of it in one engagement.', name: 'Karan Kapoor', role: 'NRI Client, Dubai', img: '/lawyer-man.webp' },
+		{ quote: 'They got my transfer pricing addition of ₹2.6 Cr deleted at the ITAT. Every rupee of it.', name: 'Divya Menon', role: 'CFO, Pune', img: '/lawyer-woman.webp' }
 	];
 </script>
 
 <svelte:head>
 	<title>Testimonials &amp; Case Results — MSY Law</title>
-	<meta name="description" content="What MSY Law clients say: 4.9/5 from 1,200+ clients, with real case results — $2.4M settled, $860k penalties removed, $1.2M estate tax saved." />
+	<meta name="description" content="What MSY Law clients say: 4.9/5 from 1,200+ clients, with real case results — ₹4.2 Cr penalty deleted, ₹86 lakh GST refund recovered, ₹1.8 Cr demand settled." />
 </svelte:head>
 
 <PageHero
@@ -38,16 +38,16 @@
 			<span class="inline-block rounded-md bg-white px-3 py-1 text-[12px] font-semibold tracking-wide text-navy shadow-sm">Google Reviews</span>
 			<h2 class="mt-4 font-serif text-[30px] font-semibold text-ink sm:text-[36px]">4.9 out of 5 on Google — 312 reviews</h2>
 			<p class="mx-auto mt-2 max-w-xl text-[15px] text-muted">These reviews are also on our Google Business Profile, where anyone can read — and write — them.</p>
-			<a href="https://www.google.com/maps/search/MSY+Law+Austin+TX" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-[14px] font-semibold text-navy shadow-md transition hover:-translate-y-0.5">
+			<a href="https://www.google.com/maps/search/MSY+Law+New+Delhi" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-[14px] font-semibold text-navy shadow-md transition hover:-translate-y-0.5">
 				<span class="flex h-5 w-5 items-center justify-center rounded-full bg-navy font-serif text-[11px] font-bold text-white">G</span>
 				Read all 312 reviews on Google
 			</a>
 		</Reveal>
 		<div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
 			{#each [
-				{ quote: 'I called on a Tuesday panicking about an audit letter. By Friday, Emily had taken over everything. The audit ended with zero additional tax. I still cannot believe it.', name: 'Rachel T.', role: 'Google review · Austin, TX', stars: 5 },
-				{ quote: 'Fixed fee, quoted in writing, and the final bill matched to the dollar. Weekly updates the whole way. I have already sent two friends here.', name: 'Marcus D.', role: 'Google review · Dallas, TX', stars: 5 },
-				{ quote: 'They settled $68,000 of IRS debt for $9,400. The first consultation was free and honest — they told me exactly what was possible before I paid anything.', name: 'Priya S.', role: 'Google review · Houston, TX', stars: 5 }
+				{ quote: 'I called on a Tuesday panicking about a scrutiny notice. By Friday, Ananya had taken over everything. The assessment ended with zero additional tax. I still cannot believe it.', name: 'Priya S.', role: 'Google review · New Delhi', stars: 5 },
+				{ quote: 'Fixed fee, quoted in writing, and the final bill matched to the rupee. Weekly updates the whole way. I have already sent two friends here.', name: 'Rohan M.', role: 'Google review · Mumbai', stars: 5 },
+				{ quote: 'They settled a ₹42 lakh GST demand for ₹6 lakh. The first consultation was free and honest — they told me exactly what was possible before I paid anything.', name: 'Kavya R.', role: 'Google review · Hyderabad', stars: 5 }
 			] as review, i}
 				<Reveal delay={(i % 3) * 90}>
 					<figure class="flex h-full flex-col rounded-2xl border border-black/5 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
@@ -66,7 +66,7 @@
 			{/each}
 		</div>
 		<Reveal class="mt-8 text-center">
-			<a href="https://www.google.com/maps/search/MSY+Law+Austin+TX" target="_blank" rel="noopener" class="text-[14px] font-semibold text-navy underline underline-offset-4">Leave us a review on Google</a>
+			<a href="https://www.google.com/maps/search/MSY+Law+New+Delhi" target="_blank" rel="noopener" class="text-[14px] font-semibold text-navy underline underline-offset-4">Leave us a review on Google</a>
 		</Reveal>
 	</div>
 </section>

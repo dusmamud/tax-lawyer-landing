@@ -9,7 +9,7 @@
 
 <svelte:head>
 	<title>Blog — MSY Law | Tax Insights in Plain English</title>
-	<meta name="description" content="Tax insights in plain English: IRS audits, 2026 tax changes, estate planning and more — written by MSY Law attorneys." />
+	<meta name="description" content="Tax insights in plain English: income tax notices, ITR deadlines, GST, advance tax, NRI taxation and more — written by MSY Law attorneys." />
 </svelte:head>
 
 <PageHero

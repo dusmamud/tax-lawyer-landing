@@ -5,65 +5,65 @@
 
 	const cases = [
 		{
-			kind: 'IRS Debt Settlement',
-			amount: '$2.4M saved',
-			title: 'Family business: $3.1M IRS debt settled for $680k',
-			situation: 'A second-generation manufacturing business fell behind on payroll taxes during a slow year. The IRS filed liens, levied the operating account, and threatened to shut the business down.',
-			action: 'We negotiated a release of the levy within 72 hours, proved the business could not pay the full amount, and submitted an Offer in Compromise backed by a full financial disclosure.',
-			outcome: 'The IRS accepted $680k — a $2.4M saving. The liens were released, the business kept all 42 employees, and it is still operating today.',
-			time: '7 months'
+			kind: 'Income Tax Appeal',
+			amount: '₹4.2 Cr penalty deleted',
+			title: 'ITAT Delhi deletes ₹4.2 Cr penalty after search assessment',
+			situation: 'A real estate developer faced a search assessment that added crores of unexplained income and a penalty of ₹4.2 Cr under section 270A — enough to sink the business.',
+			action: 'We challenged every addition before the Commissioner (Appeals) and then the ITAT, showing that the additions rested on loose sheets and statements recorded under pressure, with no corroborating evidence.',
+			outcome: 'The ITAT deleted the additions and the entire ₹4.2 Cr penalty with them. The business kept all its projects running, and the department did not appeal further.',
+			time: '11 months'
 		},
 		{
-			kind: 'Audit Defence',
-			amount: '$860k penalties removed',
-			title: 'Three-year audit ends with every penalty abated',
-			situation: 'A freelance consultant was audited for three tax years. The examiner disallowed most business expenses and proposed $860k in tax and penalties.',
-			action: 'We rebuilt the expense records from bank statements, calendars and contracts, and showed the examiner that the expenses were ordinary and necessary — with a penalty abatement request for reasonable cause.',
-			outcome: 'All penalties removed and the tax reduced by 78%. The client paid a fraction of the original proposal and kept their business running throughout.',
-			time: '5 months'
-		},
-		{
-			kind: 'Estate Planning',
-			amount: '$1.2M tax saved',
-			title: 'Estate restructured before a major asset sale',
-			situation: 'A couple planned to sell a commercial property they had owned for 30 years. Without planning, the sale would have triggered over $1.2M in combined estate and capital gains tax.',
-			action: 'We restructured ownership through a family trust and a staged gifting plan, and timed the sale across two tax years to use available exemptions.',
-			outcome: 'The family saved $1.2M in tax, the property sold on schedule, and the estate plan now protects the next generation automatically.',
-			time: '3 months'
-		},
-		{
-			kind: 'Criminal Tax',
-			amount: 'No charges filed',
-			title: 'IRS criminal investigation closed — no charges',
-			situation: 'A business owner discovered the IRS Criminal Investigation division was looking into several years of unfiled returns. A conviction could have meant prison and the loss of his professional licence.',
-			action: 'We made a voluntary disclosure before charges were considered, filed all missing returns with full payment arrangements, and negotiated directly with the investigation team.',
-			outcome: 'The investigation was closed with no criminal charges. The matter was resolved civilly, the licence was saved, and the client now files on time with our quarterly planning.',
-			time: '9 months'
-		},
-		{
-			kind: 'State Tax',
-			amount: '$372k reduced',
-			title: 'Four-state sales tax assessment cut by 91%',
-			situation: 'An e-commerce seller received sales tax assessments from four states at once, totalling $410k, for years when the company had no idea it owed tax in those states.',
-			action: 'We proved the company had no nexus in two states, negotiated voluntary disclosure agreements in the other two, and got interest and penalties waived as a first-time filer.',
-			outcome: 'The total assessment fell from $410k to $38k. The company is now registered and compliant in every state where it sells.',
+			kind: 'GST Dispute',
+			amount: '₹86 lakh refund recovered',
+			title: '₹86 lakh of blocked input tax credit refunded',
+			situation: 'An e-commerce seller’s input tax credit of ₹86 lakh was blocked after a mismatch between GSTR-1 and GSTR-3B — and the refund for the same period was withheld too.',
+			action: 'We reconciled two years of returns, matched every invoice to the suppliers’ filings, and replied to the show-cause notice with a clean, documented reconciliation.',
+			outcome: 'The credit was unblocked and the full ₹86 lakh refunded with interest. The seller’s working capital was restored and filings have been clean ever since.',
 			time: '6 months'
 		},
 		{
-			kind: 'Property Tax',
-			amount: '22% bill cut',
-			title: 'Commercial property assessment reduced every year since',
-			situation: 'A warehouse owner’s assessment rose 40% in a single year, adding $31,000 to the annual tax bill — even though comparable warehouses nearby were assessed far lower.',
-			action: 'We filed a formal appeal with comparable sales, an independent appraisal, and a detailed valuation report, and represented the owner at the review board hearing.',
-			outcome: 'The assessment was reduced by 22%, cutting the annual bill by $18,400 — and we now monitor the assessment every year so it never jumps like that again.',
+			kind: 'Settlement',
+			amount: '₹1.68 Cr saved',
+			title: '₹1.8 Cr disputed demand settled for ₹12 lakh',
+			situation: 'A family business carried a disputed income tax demand of ₹1.8 Cr through three levels of appeal. Interest kept growing, and the open demand was blocking a bank loan the business needed.',
+			action: 'We assessed the appeal honestly — the addition was likely to survive — and applied under Vivad se Vishwas, settling the demand for ₹12 lakh and closing the case.',
+			outcome: 'The demand closed, the interest clock stopped, and the loan was sanctioned within a month. The saving against the full demand was ₹1.68 Cr.',
 			time: '4 months'
+		},
+		{
+			kind: 'Transfer Pricing',
+			amount: '₹2.6 Cr addition deleted',
+			title: 'Transfer pricing addition of ₹2.6 Cr deleted at ITAT',
+			situation: 'A software services company faced a transfer pricing adjustment of ₹2.6 Cr on its international transactions with its parent company, based on a benchmarking study the department had run.',
+			action: 'We rebuilt the benchmarking with the correct comparables, showed that the department’s set included companies that were not comparable at all, and argued the matter before the ITAT.',
+			outcome: 'The ITAT deleted the entire ₹2.6 Cr addition. The company’s pricing method was accepted, and it has not faced an adjustment since.',
+			time: '14 months'
+		},
+		{
+			kind: 'Search & Seizure',
+			amount: 'No prosecution',
+			title: 'Search & seizure case closed with no prosecution',
+			situation: 'A business owner’s premises were searched and several years of unfiled returns came to light. A prosecution could have meant imprisonment and the loss of his professional licence.',
+			action: 'We made a full voluntary disclosure before any prosecution was considered, filed all missing returns with payment arrangements, and cooperated with the investigation team at every step.',
+			outcome: 'The matter was resolved civilly with no prosecution. The licence was saved, and the client now files on time with our quarterly planning.',
+			time: '9 months'
+		},
+		{
+			kind: 'Scrutiny Assessment',
+			amount: '₹55 lakh reduced',
+			title: 'Scrutiny additions of ₹58 lakh cut to ₹3 lakh',
+			situation: 'A salaried professional was picked for scrutiny after a high-value property purchase. The assessing officer added ₹58 lakh of unexplained investment and proposed a penalty on top.',
+			action: 'We traced every rupee of the purchase to salary, a home loan and family gifts — with bank statements, loan sanction letters and gift deeds — and replied to the notice with the full trail documented.',
+			outcome: 'The additions fell from ₹58 lakh to ₹3 lakh, and the penalty was dropped entirely. The client paid a fraction of the original proposal and kept a clean record.',
+			time: '5 months'
 		}
 	];
 </script>
 
 <svelte:head>
 	<title>Case Results — MSY Law | Real Tax Case Outcomes</title>
-	<meta name="description" content="Real MSY Law case results: $2.4M IRS debt settled, $860k penalties removed, $1.2M estate tax saved, criminal investigation closed with no charges." />
+	<meta name="description" content="Real MSY Law case results: ₹4.2 Cr penalty deleted at ITAT, ₹86 lakh GST refund recovered, ₹1.8 Cr demand settled for ₹12 lakh, search case closed with no prosecution." />
 </svelte:head>
 
 <PageHero

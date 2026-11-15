@@ -6,12 +6,12 @@
 	// Mock case evaluator (demo): 4 quick questions, instant result.
 	// No data leaves the browser.
 	const issues = [
-		{ id: 'audit', label: 'IRS audit letter', desc: 'I received an audit or examination notice' },
-		{ id: 'debt', label: 'IRS debt / back taxes', desc: 'I owe tax I cannot pay' },
-		{ id: 'criminal', label: 'Criminal tax / investigation', desc: 'I am under investigation or worried I might be' },
-		{ id: 'estate', label: 'Estate planning', desc: 'Will, trust, or passing on a business' },
-		{ id: 'property', label: 'Property tax', desc: 'My assessment is too high' },
-		{ id: 'other', label: 'Something else', desc: 'Planning, international tax, or state tax' }
+		{ id: 'notice', label: 'Income tax notice', desc: 'I received a notice, scrutiny or assessment order' },
+		{ id: 'gst', label: 'GST notice', desc: 'A show-cause notice, DRC-01 or GST audit' },
+		{ id: 'demand', label: 'Tax demand', desc: 'I owe a demand I cannot pay, or want to settle it' },
+		{ id: 'search', label: 'Search & seizure', desc: 'A search, survey or seizure at my home or office' },
+		{ id: 'itr', label: 'ITR & planning', desc: 'ITR filing, advance tax, or saving tax legally' },
+		{ id: 'other', label: 'Something else', desc: 'NRI, international tax, or another tax matter' }
 	];
 
 	let step = $state(1);
@@ -23,15 +23,13 @@
 	let ref = $state('');
 
 	const result = $derived.by(() => {
-		if (issue === 'criminal')
-			return { level: 'Urgent', color: 'bg-red-50 text-red-700', title: 'Talk to an attorney today — before you speak to anyone else.', body: 'Criminal tax matters are time-sensitive: what you say in the first conversation can shape the whole case. Do not contact the IRS or any investigator until you have spoken to us. Call +1 (800) 555-0199 now — this is exactly what the free consultation is for.', cta: 'Call now — +1 (800) 555-0199', href: 'tel:+18005550199' };
-		if (issue === 'audit')
-			return { level: deadline === 'yes' ? 'Urgent' : 'High priority', color: deadline === 'yes' ? 'bg-red-50 text-red-700' : 'bg-amber-50 text-amber-700', title: 'An audit is very manageable — if you act before the deadline.', body: 'Most audits end far better than clients fear, especially when an attorney takes over IRS contact early. Bring your letter to a free consultation and we will read it with you, explain the deadline, and take over from there.', cta: 'Book a free consultation', href: '/free-consultation' };
-		if (issue === 'debt')
-			return { level: 'Good options available', color: 'bg-leaf/15 text-leaf-dark', title: 'IRS debt can usually be reduced or spread out.', body: 'Depending on the amount, an Offer in Compromise, an installment agreement, or penalty abatement may apply. In our experience, most clients pay far less than the number on the notice — the first step is a free review of what you actually owe.', cta: 'Get a free debt review', href: '/free-consultation' };
-		if (issue === 'property')
-			return { level: 'Quick win possible', color: 'bg-leaf/15 text-leaf-dark', title: 'Your assessment is probably worth challenging.', body: 'Most properties are over-assessed, and a successful appeal cuts your bill every year after. Our appeals are no win, no fee — if we cannot reduce your assessment, you pay nothing. The Texas protest deadline is usually May 15, so start early.', cta: 'Start a free assessment review', href: '/free-consultation' };
-		return { level: 'Good time to plan', color: 'bg-leaf/15 text-leaf-dark', title: 'This is exactly the right time to get advice.', body: 'Estate planning, international tax and year-round planning all work best when they start early. A free 30-minute consultation will give you a clear plan — and an honest answer about whether you need us at all.', cta: 'Book a free consultation', href: '/free-consultation' };
+		if (issue === 'search')
+			return { level: 'Urgent', color: 'bg-red-50 text-red-700', title: 'Talk to a lawyer today — before you speak to anyone else.', body: 'Search and seizure matters are time-sensitive: what you say in the first conversation can shape the whole case. Do not answer questions or hand over documents until you have spoken to us. Call +91 98110 12345 now — this is exactly what the free consultation is for.', cta: 'Call now — +91 98110 12345', href: 'tel:+919811012345' };
+		if (issue === 'notice' || issue === 'gst')
+			return { level: deadline === 'yes' ? 'Urgent' : 'High priority', color: deadline === 'yes' ? 'bg-red-50 text-red-700' : 'bg-amber-50 text-amber-700', title: 'A notice is very manageable — if you act before the deadline.', body: 'Most notices end far better than clients fear, especially when a lawyer takes over department contact early. Bring your notice to a free consultation and we will read it with you, explain the deadline, and take over from there.', cta: 'Book a free consultation', href: '/free-consultation' };
+		if (issue === 'demand')
+			return { level: 'Good options available', color: 'bg-leaf/15 text-leaf-dark', title: 'A tax demand can usually be reduced or settled.', body: 'Depending on the amount, Vivad se Vishwas settlement, rectification, a stay of demand or an instalment plan may apply. In our experience, most clients pay far less than the number on the demand — the first step is a free review of what you actually owe.', cta: 'Get a free demand review', href: '/free-consultation' };
+		return { level: 'Good time to plan', color: 'bg-leaf/15 text-leaf-dark', title: 'This is exactly the right time to get advice.', body: 'ITR filing, advance tax, NRI matters and year-round planning all work best when they start early. A free 30-minute consultation will give you a clear plan — and an honest answer about whether you need us at all.', cta: 'Book a free consultation', href: '/free-consultation' };
 	});
 
 	function finish() {
@@ -81,10 +79,10 @@
 			</Reveal>
 		{:else if step === 2}
 			<Reveal>
-				<h2 class="font-serif text-[26px] font-semibold sm:text-[30px]">2. Is there a deadline in a letter?</h2>
-				<p class="mt-2 text-[15px] text-muted">IRS letters always carry a response deadline — usually 30 days. Missing it is the most expensive mistake.</p>
+				<h2 class="font-serif text-[26px] font-semibold sm:text-[30px]">2. Is there a deadline in the notice?</h2>
+				<p class="mt-2 text-[15px] text-muted">Notices always carry a response deadline — usually 15 to 30 days. Missing it is the most expensive mistake.</p>
 				<div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
-					{#each [{ id: 'yes', label: 'Yes — soon', desc: 'Within 30 days' }, { id: 'later', label: 'Yes — later', desc: 'More than 30 days away' }, { id: 'no', label: 'No letter', desc: 'No deadline yet' }] as opt}
+					{#each [{ id: 'yes', label: 'Yes — soon', desc: 'Within 30 days' }, { id: 'later', label: 'Yes — later', desc: 'More than 30 days away' }, { id: 'no', label: 'No notice', desc: 'No deadline yet' }] as opt}
 						<button onclick={() => { deadline = opt.id; step = 3; }} class="rounded-2xl border border-black/10 bg-cream/50 p-5 text-left transition hover:-translate-y-0.5 hover:border-leaf hover:shadow-md">
 							<span class="block text-[15px] font-bold">{opt.label}</span>
 							<span class="mt-1 block text-[13.5px] text-muted">{opt.desc}</span>
@@ -98,7 +96,7 @@
 				<h2 class="font-serif text-[26px] font-semibold sm:text-[30px]">3. How much is at stake?</h2>
 				<p class="mt-2 text-[15px] text-muted">A rough range is fine — it helps us point you to the right kind of help.</p>
 				<div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
-					{#each [{ id: 'small', label: 'Under $10,000' }, { id: 'mid', label: '$10,000 – $100,000' }, { id: 'large', label: '$100,000 – $1,000,000' }, { id: 'huge', label: 'Over $1,000,000' }] as opt}
+					{#each [{ id: 'small', label: 'Under ₹1 lakh' }, { id: 'mid', label: '₹1 lakh – ₹10 lakh' }, { id: 'large', label: '₹10 lakh – ₹1 crore' }, { id: 'huge', label: 'Over ₹1 crore' }] as opt}
 						<button onclick={() => { amount = opt.id; step = 4; }} class="rounded-2xl border border-black/10 bg-cream/50 p-5 text-left text-[15px] font-bold transition hover:-translate-y-0.5 hover:border-leaf hover:shadow-md">{opt.label}</button>
 					{/each}
 				</div>
@@ -117,11 +115,11 @@
 				>
 					<label class="block">
 						<span class="mb-1.5 block text-[13px] font-bold">Full name *</span>
-						<input bind:value={name} required type="text" placeholder="Jane Cooper" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
+						<input bind:value={name} required type="text" placeholder="Priya Sharma" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
 					</label>
 					<label class="block">
 						<span class="mb-1.5 block text-[13px] font-bold">Email *</span>
-						<input bind:value={email} required type="email" placeholder="jane@example.com" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
+						<input bind:value={email} required type="email" placeholder="priya@example.com" class="w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] outline-none focus:border-leaf focus:ring-2 focus:ring-leaf/30" />
 					</label>
 					<button type="submit" class="w-full rounded-full bg-navy py-3.5 text-[15px] font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-navy-3">See my evaluation</button>
 					<button type="button" onclick={() => (step = 3)} class="w-full text-center text-[14px] font-semibold text-navy">← Back</button>

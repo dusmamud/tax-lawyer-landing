@@ -24,13 +24,13 @@
 
 <svelte:head>
 	<title>Search — MSY Law</title>
-	<meta name="description" content="Search every page of the MSY Law website: practice areas, attorneys, fees, locations, blog articles and more." />
+	<meta name="description" content="Search every page of the MSY Law website: practice areas, lawyers, fees, locations, blog articles and more." />
 </svelte:head>
 
 <PageHero
 	eyebrow="Search"
 	title="Search the site"
-	subtitle="Find a practice area, an attorney, a fee, a city, or a blog article — everything on this site, in one place."
+	subtitle="Find a practice area, a lawyer, a fee, a city, or a blog article — everything on this site, in one place."
 	crumb="Search"
 />
 
@@ -44,7 +44,7 @@
 				<input
 					bind:value={q}
 					type="search"
-					placeholder="Try “audit”, “fees”, “Dallas”, “estate”…"
+					placeholder="Try “notice”, “fees”, “Mumbai”, “GST”…"
 					aria-label="Search the site"
 					class="w-full rounded-full border border-navy/20 bg-cream/50 py-4 pr-5 pl-13 text-[16px] shadow-sm outline-none transition focus:border-leaf focus:bg-white focus:ring-2 focus:ring-leaf/30"
 				/>
@@ -68,14 +68,14 @@
 				<Reveal>
 					<div class="rounded-2xl border border-black/5 bg-cream/50 p-8 text-center">
 						<p class="font-serif text-[20px] font-semibold">No results for “{q.trim()}”</p>
-						<p class="mt-2 text-[14.5px] text-muted">Try a different word — or call us at <a href="tel:+18005550199" class="font-semibold text-navy">+1 (800) 555-0199</a> and an attorney will point you to the right page.</p>
+						<p class="mt-2 text-[14.5px] text-muted">Try a different word — or call us at <a href="tel:+919811012345" class="font-semibold text-navy">+91 98110 12345</a> and a lawyer will point you to the right page.</p>
 					</div>
 				</Reveal>
 			{/each}
 		</div>
 
 		<Reveal class="mt-10">
-			<p class="text-center text-[14px] text-muted">Popular: <a href="/practice-areas/criminal-tax-law" class="font-semibold text-navy underline underline-offset-2">Criminal Tax Law</a> · <a href="/fees" class="font-semibold text-navy underline underline-offset-2">Fees</a> · <a href="/locations/dallas" class="font-semibold text-navy underline underline-offset-2">Dallas</a> · <a href="/blog/irs-audit-letter-5-things-first" class="font-semibold text-navy underline underline-offset-2">Audit letter guide</a></p>
+			<p class="text-center text-[14px] text-muted">Popular: <a href="/practice-areas/income-tax-appeals" class="font-semibold text-navy underline underline-offset-2">Income Tax Appeals</a> · <a href="/fees" class="font-semibold text-navy underline underline-offset-2">Fees</a> · <a href="/locations/mumbai" class="font-semibold text-navy underline underline-offset-2">Mumbai</a> · <a href="/practice-areas/gst-disputes" class="font-semibold text-navy underline underline-offset-2">GST Disputes</a></p>
 		</Reveal>
 	</div>
 </section>

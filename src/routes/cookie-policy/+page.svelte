@@ -28,7 +28,7 @@
 		{/each}
 		<Reveal>
 			<p class="mt-10 rounded-2xl bg-cream/70 p-6 text-[14.5px] leading-relaxed text-muted">
-				Questions? Contact us at <a href="mailto:hello@msylaw.com" class="font-bold text-navy">hello@msylaw.com</a> or <a href="tel:+18005550199" class="font-bold text-navy">+1 (800) 555-0199</a>.
+				Questions? Contact us at <a href="mailto:hello@msylaw.in" class="font-bold text-navy">hello@msylaw.in</a> or <a href="tel:+919811012345" class="font-bold text-navy">+91 98110 12345</a>.
 			</p>
 		</Reveal>
 	</div>

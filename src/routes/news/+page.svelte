@@ -5,34 +5,34 @@
 
 	const news = [
 		{
-			date: 'Nov 12, 2026',
+			date: 'Nov 14, 2026',
 			tag: 'Firm News',
-			title: 'MSY Law named a Top Tax Firm in Texas for the third year running',
-			text: 'The firm was recognised in the 2026 Texas Legal Awards for client service in tax controversy, based on client reviews and case outcomes. “This one belongs to our clients,” said founding partner Michael Young. “They trusted us with the hardest years of their lives.”'
+			title: 'MSY Law ranked a Leading Tax Firm in Legal 500 Asia-Pacific 2026',
+			text: 'The firm was recognised for tax controversy and GST work, based on client reviews and case outcomes. “This one belongs to our clients,” said founding partner Mohan S. Yadav. “They trusted us with the hardest years of their lives.”'
 		},
 		{
-			date: 'Oct 28, 2026',
-			tag: 'Case Win',
-			title: '$860k in audit penalties removed for a freelance consultant',
-			text: 'After a three-year audit, our team rebuilt the client’s expense records from bank statements and contracts — and had every penalty abated for reasonable cause. The full story is in our case results.'
-		},
-		{
-			date: 'Oct 6, 2026',
-			tag: 'Community',
-			title: 'Free tax clinic: 120 low-income taxpayers helped this year',
-			text: 'Our attorneys and volunteers spent a Saturday at the Austin community centre helping residents resolve IRS debts, set up payment plans and claim credits they had missed. The clinic runs every quarter — the next one is in January.'
-		},
-		{
-			date: 'Sep 18, 2026',
-			tag: 'Team',
-			title: 'Emily Ross joins MSY Law to lead the audit response team',
-			text: 'Emily brings six years of audit defence experience and a simple promise: every audit client gets a named attorney, weekly updates, and plain-English answers. She has already handled more than 200 audits, with penalties abated in full in over 80% of cases.'
-		},
-		{
-			date: 'Aug 22, 2026',
+			date: 'Nov 11, 2026',
 			tag: 'Insights',
-			title: 'What the 2026 tax changes mean for your business',
-			text: 'Our senior attorney David Carter breaks down bonus depreciation, the QBI deduction and the three mistakes that cost business owners the most this year. Read the full guide on our blog.'
+			title: 'Income-tax Act, 2025: in force from 1 April 2026 — what actually changed',
+			text: 'The 1961 Act is gone. The new Act replaces “previous year” and “assessment year” with a single “tax year”, simplifies the language, and re-numbers every section. Our guide maps the old sections to the new ones — and the three mistakes taxpayers are already making. Read it on our blog.'
+		},
+		{
+			date: 'Nov 8, 2026',
+			tag: 'Insights',
+			title: 'GST 2.0: the 5% / 18% / 40% slabs — what it means for your business',
+			text: 'Since 22 September 2025, GST runs on three slabs — 5%, 18% and 40% — with most daily goods at 5%. If your invoicing, ITC claims or GSTR-3B still use the old rates, you are overpaying or under-claiming. Here is the checklist we give every client.'
+		},
+		{
+			date: 'Nov 5, 2026',
+			tag: 'Insights',
+			title: 'Faceless assessment expands — and Vivad se Vishwas is back on the table',
+			text: 'Faceless assessment now covers more cases, which means replies are judged on paper alone — no hearing, no meeting, no second chance to explain. For old disputes, the Vivad se Vishwas settlement scheme lets you close the case for a fraction of the demand. Both need the same thing: a strong written reply, filed on time.'
+		},
+		{
+			date: 'Nov 2, 2026',
+			tag: 'Team',
+			title: 'Ananya Rao joins MSY Law to lead the scrutiny response team',
+			text: 'Ananya brings six years of scrutiny defence experience and a simple promise: every notice client gets a named advocate, weekly updates, and plain-English answers. She has already handled more than 200 notices, with penalties waived in full in over 80% of cases.'
 		}
 	];
 </script>
@@ -67,7 +67,7 @@
 		</div>
 		<Reveal class="mt-10 text-center">
 			<p class="text-[14.5px] text-muted">
-				Press enquiries: <a href="mailto:hello@msylaw.com" class="font-bold text-navy">hello@msylaw.com</a> · +1 (800) 555-0199
+				Press enquiries: <a href="mailto:hello@msylaw.in" class="font-bold text-navy">hello@msylaw.in</a> · +91 98110 12345
 			</p>
 		</Reveal>
 	</div>

@@ -5,26 +5,26 @@
 	import CtaBanner from '#lib/components/CtaBanner.svelte';
 
 	const plans = [
-		{ name: 'IRS Audit Defence', price: 'from $2,500', per: 'per audit, fixed fee', items: ['Power of attorney — we handle all IRS contact', 'Full document review and audit strategy', 'Representation at every IRS meeting', 'Negotiation and settlement', 'Weekly updates until the audit closes'] },
-		{ name: 'IRS Debt & Settlement', price: 'from $1,800', per: 'per matter, fixed fee', items: ['Offer in Compromise evaluation', 'Installment agreement setup', 'Penalty abatement requests', 'Currently-not-collectible status', 'Levy and lien release'] },
-		{ name: 'Estate Planning', price: 'from $1,500', per: 'will package · trust plan from $3,500', items: ['Will, power of attorney, healthcare directive', 'Revocable living trust (trust plan)', 'Business succession planning', 'Probate avoidance and trust administration', 'Free review every 3 years'] },
-		{ name: 'Property Tax Appeal', price: 'No win, no fee', per: '25% of first-year savings only', items: ['Assessment review and comparable sales', 'Formal protest and hearing representation', 'Exemptions: homestead, senior, veteran', 'Annual assessment monitoring', 'If we cannot reduce it, you pay nothing'] },
-		{ name: 'Tax Planning & Compliance', price: 'from $2,400', per: 'per year, quarterly sessions', items: ['Quarterly planning sessions', 'Entity choice and review (LLC, S-corp)', 'Federal and state return preparation', 'Estimated tax optimisation', 'IRS notices and penalty abatement'] },
-		{ name: 'Complex Litigation', price: '$350 / hour', per: 'hourly, for court cases', items: ['Tax Court representation', 'Criminal tax defence (quoted in stages)', 'Grand jury and trial work', 'Itemised billing, reviewed monthly', 'Written estimate before we start'] }
+		{ name: 'Income Tax Notice & Scrutiny', price: 'from ₹9,999', per: 'per notice, fixed fee', items: ['Reply drafting — we handle all department contact', 'Full document review and scrutiny strategy', 'Representation before the Assessing Officer', 'Penalty and interest reduction (Section 270A)', 'Weekly updates until the notice closes'] },
+		{ name: 'Tax Demand & Settlement', price: 'from ₹14,999', per: 'per matter, fixed fee', items: ['Demand analysis and Vivad se Vishwas evaluation', 'Rectification and stay of demand', 'Penalty waiver requests', 'Instalment / stay applications', 'Attachment and recovery protection'] },
+		{ name: 'ITR Filing', price: 'from ₹2,499', per: 'per return · HUF & trust planning from ₹24,999', items: ['ITR-1 to ITR-7 — individuals, HUF, firms, trusts', 'Capital gains, foreign assets and F&O schedules', 'HUF and family trust planning (from ₹24,999)', 'Advance tax planning so you never pay interest', 'Free review every year before the 31 July deadline'] },
+		{ name: 'GST Disputes', price: 'No win, no fee', per: '25% of the amount recovered in the first year', items: ['Show-cause notice replies and DRC-01 drafting', 'GSTR-9 / 9C reconciliation and audit defence', 'Input tax credit (ITC) recovery and refunds', 'Appeals before the GST Appellate Tribunal', 'If we cannot reduce it, you pay nothing'] },
+		{ name: 'Corporate Tax Planning', price: 'from ₹49,999', per: 'per year, quarterly sessions', items: ['Quarterly planning sessions', 'Entity choice and review (Pvt Ltd, LLP, partnership)', 'Income-tax and GST return preparation', 'Advance tax and TDS optimisation', 'Notices, scrutiny and penalty defence'] },
+		{ name: 'Appeals & Litigation', price: '₹5,000 / hour', per: 'hourly, for court cases', items: ['CIT(A) and ITAT representation', 'High Court writs and appeals (quoted in stages)', 'Search & seizure and settlement commission work', 'Itemised billing, reviewed monthly', 'Written estimate before we start'] }
 	];
 
 	const faqs = [
 		{ q: 'Do I pay anything before we start?', a: 'No. The first 30-minute consultation is free, and you get a written fixed-fee quote before any work begins. You approve the fee before we start.' },
 		{ q: 'Can I pay in instalments?', a: 'Yes. Most fixed-fee matters can be split into monthly payments — usually 3 to 6 months, interest-free. Tell us what works and we will put it in writing.' },
-		{ q: 'What if my case costs more than quoted?', a: 'Fixed means fixed. If the scope changes — for example, an audit expands to a second year — we tell you first and agree the new fee in writing before doing the extra work.' }
+		{ q: 'What if my case costs more than quoted?', a: 'Fixed means fixed. If the scope changes — for example, a scrutiny expands to a second assessment year — we tell you first and agree the new fee in writing before doing the extra work.' }
 	];
 
 	let openFaq = $state(0);
 </script>
 
 <svelte:head>
-	<title>Fees &amp; Pricing — MSY Law | Tax Attorney Fees in Austin, TX</title>
-	<meta name="description" content="Clear fixed fees: IRS audit defence from $2,500, IRS debt settlement from $1,800, estate planning from $1,500, property tax appeals with no win, no fee. Free 30-minute consultation." />
+	<title>Fees &amp; Pricing — MSY Law | Tax Lawyer Fees in India</title>
+	<meta name="description" content="Clear fixed fees: income-tax notice & scrutiny from ₹9,999, tax demand & settlement from ₹14,999, ITR filing from ₹2,499, GST disputes with no win, no fee. Free 30-minute consultation." />
 </svelte:head>
 
 <PageHero
@@ -65,9 +65,9 @@
 						<p class="mt-2 text-[14px] leading-relaxed text-white/75">These are not extras. They are how we work.</p>
 					</div>
 					<ul class="space-y-2.5 text-[14.5px] text-white/85 lg:col-span-2">
-						<li class="flex items-start gap-2.5"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-leaf/25 text-leaf"><Icon name="check" class="h-3 w-3" /></span>Free 30-minute consultation with an attorney — not a sales rep</li>
+						<li class="flex items-start gap-2.5"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-leaf/25 text-leaf"><Icon name="check" class="h-3 w-3" /></span>Free 30-minute consultation with a lawyer — not a sales rep</li>
 						<li class="flex items-start gap-2.5"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-leaf/25 text-leaf"><Icon name="check" class="h-3 w-3" /></span>Written fixed-fee quote before any work starts</li>
-						<li class="flex items-start gap-2.5"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-leaf/25 text-leaf"><Icon name="check" class="h-3 w-3" /></span>Weekly updates and a named attorney you can call directly</li>
+						<li class="flex items-start gap-2.5"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-leaf/25 text-leaf"><Icon name="check" class="h-3 w-3" /></span>Weekly updates and a named lawyer you can call directly</li>
 						<li class="flex items-start gap-2.5"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-leaf/25 text-leaf"><Icon name="check" class="h-3 w-3" /></span>Interest-free monthly payment plans on most matters</li>
 						<li class="flex items-start gap-2.5"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-leaf/25 text-leaf"><Icon name="check" class="h-3 w-3" /></span>No hidden charges — if the scope changes, we agree the new fee first</li>
 					</ul>
@@ -92,7 +92,7 @@
 					</div>
 				{/each}
 			</div>
-			<p class="mt-6 text-center text-[14px] text-muted">Prices are typical starting points for straightforward matters. Your exact quote depends on your situation — and it is free to find out.</p>
+			<p class="mt-6 text-center text-[14px] text-muted">Prices are typical starting points for straightforward matters, exclusive of GST. Your exact quote depends on your situation — and it is free to find out.</p>
 		</Reveal>
 	</div>
 </section>

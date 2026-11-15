@@ -10,21 +10,22 @@
 		{ title: 'Honesty first', text: 'We tell you the real odds, the real cost and the real timeline — before you pay us anything.' },
 		{ title: 'Plain English', text: 'No jargon, no legal fog. If you cannot understand our advice, we have not done our job.' },
 		{ title: 'Fixed fees', text: 'A written quote before we start. The price we agree is the price you pay.' },
-		{ title: 'Relentless follow-through', text: 'Weekly updates, same-day replies, and a named attorney who actually answers the phone.' }
+		{ title: 'Relentless follow-through', text: 'Weekly updates, same-day replies, and a named lawyer who actually answers the phone.' }
 	];
 
 	const timeline = [
-		{ year: '2011', text: 'Michael S. Young founds MSY Law with one attorney, one desk, and a promise: honest tax help.' },
-		{ year: '2014', text: 'The firm wins its first major IRS settlement — $1.8M of tax debt settled for $210k.' },
-		{ year: '2018', text: 'Estate and international tax practices open as Sarah Mitchell joins as partner.' },
-		{ year: '2022', text: 'MSY Law passes 1,000 clients served and $40M recovered for clients.' },
-		{ year: '2026', text: 'Today: 4 attorneys, 1,200+ clients, a 98% success rate — and the same promise as day one.' }
+		{ year: '2011', text: 'Mohan S. Yadav founds MSY Law in New Delhi with one advocate, one desk, and a promise: honest tax help.' },
+		{ year: '2014', text: 'The Mumbai office opens — the firm’s first office outside Delhi.' },
+		{ year: '2017', text: 'GST practice opens as GST launches in India on 1 July 2017.' },
+		{ year: '2020', text: 'Faceless assessment arrives — and the firm settles its first cases under Vivad se Vishwas.' },
+		{ year: '2023', text: 'Bengaluru and Hyderabad offices open, taking the firm to six cities.' },
+		{ year: '2026', text: 'Today: 4 advocates, 1,200+ clients, ₹120 Cr+ tax saved — and a practice built around the new Income-tax Act, 2025.' }
 	];
 </script>
 
 <svelte:head>
-	<title>About Us — MSY Law | Tax Attorney &amp; Tax Lawyer</title>
-	<meta name="description" content="Meet MSY Law: a tax attorney firm founded in 2011. Our story, our values, and the team behind 1,200+ resolved tax cases." />
+	<title>About Us — MSY Law | Tax Lawyers in India</title>
+	<meta name="description" content="Meet MSY Law: a tax law firm founded in New Delhi in 2011. Our story, our values, and the team behind 1,200+ resolved tax cases." />
 </svelte:head>
 
 <PageHero
@@ -40,7 +41,7 @@
 			<div class="absolute -inset-5 rounded-full border border-navy/10"></div>
 			<div class="absolute -inset-3 rounded-full border border-dashed border-navy/20"></div>
 			<div class="relative aspect-square overflow-hidden rounded-full bg-sage ring-8 ring-white">
-				<Picture src="/lawyer-meeting.webp" alt="Tax attorney discussing documents with a client" class="h-full w-full object-cover" width={1920} height={1280} />
+				<Picture src="/lawyer-meeting.webp" alt="Tax lawyer discussing documents with a client" class="h-full w-full object-cover" width={1920} height={1280} />
 			</div>
 			<div class="absolute -bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-2xl bg-navy px-5 py-3 text-white shadow-xl sm:left-auto sm:translate-x-0">
 				<p class="font-serif text-2xl leading-none font-bold">15+</p>
@@ -51,20 +52,20 @@
 			<Reveal>
 				<h2 class="font-serif text-[32px] leading-[1.15] font-semibold text-ink sm:text-[40px]">Our story</h2>
 				<p class="mt-5 text-[15px] leading-relaxed text-muted">
-					In 2011, Michael Young was a tax attorney at a national firm. He kept seeing the same thing:
-					good people — business owners, freelancers, parents — terrified by a letter from the IRS, and
-					charged thousands before anyone explained what was actually wrong.
+					In 2011, Mohan S. Yadav was a tax lawyer at a national firm. He kept seeing the same thing:
+					good people — business owners, freelancers, parents — terrified by a notice from the
+					Income-tax Department, and charged thousands before anyone explained what was actually wrong.
 				</p>
 				<p class="mt-4 text-[15px] leading-relaxed text-muted">
-					So he left, rented a small office, and started MSY Law with a different model: a free first
-					consultation, a written plan and a fixed fee before any work begins, and an attorney who calls
-					you back the same day. Fifteen years later, that model has served more than 1,200 clients —
-					and it has not changed.
+					So he left, rented a small office in Connaught Place, and started MSY Law with a different
+					model: a free first consultation, a written plan and a fixed fee before any work begins, and
+					a lawyer who calls you back the same day. Fifteen years later, that model has served more
+					than 1,200 clients — and it has not changed.
 				</p>
 				<p class="mt-4 text-[15px] leading-relaxed text-muted">
-					Today the firm is four attorneys strong, covering audits, criminal tax, estate planning,
-					international tax and property tax. What has not changed is the promise: if we cannot help
-					you, we will tell you — for free.
+					Today the firm is four advocates strong, covering income-tax appeals, GST disputes, corporate
+					tax planning, international tax and search &amp; seizure matters. What has not changed is the
+					promise: if we cannot help you, we will tell you — for free.
 				</p>
 			</Reveal>
 		</div>

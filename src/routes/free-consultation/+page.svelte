@@ -6,27 +6,27 @@
 
 	const steps = [
 		{ n: '01', title: 'Tell us what happened', text: 'Fill the form in your own words — 2 minutes. No legal language needed.' },
-		{ n: '02', title: 'We call you back', text: 'An attorney calls within one business day to schedule your free 30-minute consultation.' },
+		{ n: '02', title: 'We call you back', text: 'A lawyer calls within one business day to schedule your free 30-minute consultation.' },
 		{ n: '03', title: 'Leave with a plan', text: 'You get an honest assessment, a written plan and a fixed-fee quote. Hire us or not — the plan is yours.' }
 	];
 
 	const promises = [
 		'Free — no charge, no obligation, no card required',
-		'Confidential — attorney–client privilege from the first call',
+		'Confidential — lawyer–client privilege from the first call',
 		'Honest — if we cannot help, we will tell you and point you to someone who can',
 		'Fast — replies within one business day, usually same day'
 	];
 </script>
 
 <svelte:head>
-	<title>Free Consultation — MSY Law | Tax Attorney</title>
-	<meta name="description" content="Book a free 30-minute consultation with an MSY Law tax attorney. Leave with a clear plan and a fixed-fee quote — no obligation." />
+	<title>Free Consultation — MSY Law | Tax Lawyer</title>
+	<meta name="description" content="Book a free 30-minute consultation with an MSY Law tax lawyer. Leave with a clear plan and a fixed-fee quote — no obligation." />
 </svelte:head>
 
 <PageHero
 	eyebrow="Free Consultation"
 	title="Book your free 30-minute consultation"
-	subtitle="The fastest way to stop worrying about a tax problem is to understand it. In 30 minutes, an attorney will tell you where you stand — and what to do next."
+	subtitle="The fastest way to stop worrying about a tax problem is to understand it. In 30 minutes, a lawyer will tell you where you stand — and what to do next."
 	crumb="Free Consultation"
 />
 
@@ -61,7 +61,7 @@
 							{/each}
 						</ul>
 						<p class="mt-5 border-t border-black/5 pt-4 text-[13.5px] text-muted">
-							Prefer to talk first? Call <a href="tel:+18005550199" class="font-bold text-navy">+1 (800) 555-0199</a>, Mon–Fri 9 AM – 6 PM.
+							Prefer to talk first? Call <a href="tel:+919811012345" class="font-bold text-navy">+91 98110 12345</a>, Mon–Sat 10 AM – 7 PM IST.
 						</p>
 					</div>
 				</Reveal>

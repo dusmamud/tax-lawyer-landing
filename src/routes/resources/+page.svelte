@@ -6,21 +6,30 @@
 	import { posts } from '../../lib/data/posts';
 
 	const deadlines = [
-		{ date: 'Jan 15, 2027', item: 'Q4 estimated tax payment due (individuals)' },
-		{ date: 'Mar 15, 2027', item: 'S-corp & partnership returns due (or extension)' },
-		{ date: 'Apr 15, 2027', item: 'Individual returns due · Q1 estimated tax · IRA contributions' },
-		{ date: 'Jun 15, 2027', item: 'Q2 estimated tax payment due · Expat returns due' },
-		{ date: 'Sep 15, 2027', item: 'Q3 estimated tax · Extended S-corp & partnership returns' },
-		{ date: 'Oct 15, 2027', item: 'Extended individual returns due — final deadline' }
+		{ date: '15 Jun 2026', item: 'Advance tax — 1st instalment (15% of total liability)' },
+		{ date: '31 Jul 2026', item: 'ITR due — individuals, HUF & salaried (AY 2026-27)' },
+		{ date: '31 Aug 2026', item: 'ITR due — non-audit business & professionals' },
+		{ date: '15 Sep 2026', item: 'Advance tax — 2nd instalment (45% cumulative)' },
+		{ date: '15 Dec 2026', item: 'Advance tax — 3rd instalment (75% cumulative)' },
+		{ date: '31 Dec 2026', item: 'Belated ITR (with late fee) · GSTR-9 annual return' },
+		{ date: '15 Mar 2027', item: 'Advance tax — final instalment (100% cumulative)' },
+		{ date: '31 Mar 2027', item: 'Revised return — last date to correct AY 2026-27' },
+		{ date: 'Every month', item: 'GSTR-1 by the 11th · GSTR-3B by the 20th' }
 	];
 
 	const glossary = [
-		{ term: 'Offer in Compromise (OIC)', def: 'A deal with the IRS to settle your tax debt for less than the full amount, when you genuinely cannot pay it all.' },
-		{ term: 'Penalty abatement', def: 'Getting IRS penalties removed — usually for reasonable cause, like illness, a natural disaster, or relying on bad professional advice.' },
-		{ term: 'Nexus', def: 'A strong enough connection to a state that the state can require you to collect and pay its taxes. Selling online can create nexus in many states at once.' },
-		{ term: 'FBAR', def: 'A report (FinCEN Form 114) you must file if you held foreign bank accounts totalling over $10,000 at any point in the year. The penalties for missing it are severe.' },
-		{ term: 'Trust fund recovery penalty', def: 'A penalty the IRS can impose personally on owners and officers when a business fails to pay over payroll taxes it withheld from employees.' },
-		{ term: 'Voluntary disclosure', def: 'Coming forward to the IRS about unreported income or unfiled returns before the IRS finds you — usually resulting in far lighter treatment.' }
+		{ term: 'ITR', def: 'Income Tax Return — the return every taxpayer files for a tax year. Due 31 July for most individuals; late filing attracts a fee under Section 234F of up to ₹5,000.' },
+		{ term: 'GSTIN', def: 'Your 15-digit GST identification number. Registration is required once turnover crosses ₹40 lakh (goods) or ₹20 lakh (services).' },
+		{ term: 'GSTR-1 & GSTR-3B', def: 'Your two monthly GST returns — GSTR-1 (outward supplies) by the 11th, GSTR-3B (summary + payment) by the 20th of the following month.' },
+		{ term: 'ITAT', def: 'Income Tax Appellate Tribunal — the second level of appeal after the CIT(A). Most tax disputes that reach a tribunal are decided here.' },
+		{ term: 'CIT(A)', def: 'Commissioner of Income Tax (Appeals) — the first appeal authority. You file Form 35 here within 30 days of an assessment order.' },
+		{ term: 'DTAA', def: 'Double Taxation Avoidance Agreement — a treaty between India and another country so the same income is not taxed twice. Key for NRIs and cross-border business.' },
+		{ term: 'TDS & TCS', def: 'Tax Deducted at Source and Tax Collected at Source — tax collected by the payer before you receive the money. If too much was deducted, claim it back in your ITR.' },
+		{ term: 'PAN & TAN', def: 'PAN is your permanent tax identity; TAN is the number a deductor needs to deduct TDS. Both are issued by the Income-tax Department.' },
+		{ term: 'Vivad se Vishwas', def: 'The government’s dispute settlement scheme — pay a portion of the disputed tax and close the case, with penalty and interest waived.' },
+		{ term: 'Faceless assessment', def: 'Assessment done entirely online, with no meeting and no named officer — your reply is judged on paper alone, so the drafting has to be right.' },
+		{ term: 'Section 270A', def: 'The penalty section for under-reporting (50% of the tax) and misreporting (200% of the tax) of income. Most penalty cases we win are fought here.' },
+		{ term: 'Advance tax', def: 'Tax paid in instalments through the year — 15% by 15 June, 45% by 15 September, 75% by 15 December, 100% by 15 March. Miss an instalment and interest of 1% per month applies.' }
 	];
 
 	let open = $state(0);
@@ -28,7 +37,7 @@
 
 <svelte:head>
 	<title>Free Resources — MSY Law | Tax Guides, Deadlines &amp; Glossary</title>
-	<meta name="description" content="Free tax resources from MSY Law: 2027 IRS deadline calendar, a plain-English tax glossary, and guides written by our attorneys." />
+	<meta name="description" content="Free tax resources from MSY Law: the 2026-27 ITR and GST deadline calendar, a plain-English Indian tax glossary, and guides written by our lawyers." />
 </svelte:head>
 
 <PageHero
@@ -43,7 +52,7 @@
 		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-14">
 			<div>
 				<Reveal>
-					<h2 class="font-serif text-[28px] font-semibold text-ink sm:text-[32px]">2027 tax deadline calendar</h2>
+					<h2 class="font-serif text-[28px] font-semibold text-ink sm:text-[32px]">2026-27 tax deadline calendar</h2>
 					<p class="mt-2 text-[14.5px] text-muted">The dates that matter most. Put them in your calendar now — late filings cost money.</p>
 					<div class="mt-6 overflow-hidden rounded-2xl border border-black/5">
 						{#each deadlines as d, i}
@@ -53,14 +62,14 @@
 							</div>
 						{/each}
 					</div>
-					<p class="mt-3 text-[12.5px] text-muted">Dates are for the 2026 tax year, filed in 2027. Always confirm with your attorney — deadlines move when they fall on weekends or holidays.</p>
+					<p class="mt-3 text-[12.5px] text-muted">Dates are for assessment year 2026-27. Always confirm with your lawyer — deadlines move when they fall on weekends or holidays, and the Income-tax Act, 2025 (in force 1 April 2026) may change them.</p>
 				</Reveal>
 			</div>
 
 			<div>
 				<Reveal>
 					<h2 class="font-serif text-[28px] font-semibold text-ink sm:text-[32px]">Tax glossary</h2>
-					<p class="mt-2 text-[14.5px] text-muted">The six terms our clients ask about most — explained without jargon.</p>
+					<p class="mt-2 text-[14.5px] text-muted">The twelve terms our clients ask about most — explained without jargon.</p>
 					<div class="mt-6 space-y-3">
 						{#each glossary as item, i}
 							<div class="overflow-hidden rounded-2xl border border-black/5 bg-cream/50 transition {open === i ? 'bg-white shadow-md' : ''}">
@@ -81,7 +90,7 @@
 		</div>
 
 		<Reveal class="mt-14">
-			<h2 class="font-serif text-[28px] font-semibold text-ink sm:text-[32px]">Guides from our attorneys</h2>
+			<h2 class="font-serif text-[28px] font-semibold text-ink sm:text-[32px]">Guides from our lawyers</h2>
 			<p class="mt-2 text-[14.5px] text-muted">Longer reads for when you want the full picture.</p>
 			<div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
 				{#each posts as post, i}

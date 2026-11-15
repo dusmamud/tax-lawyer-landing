@@ -11,9 +11,9 @@
 		<Reveal>
 			<span class="inline-block rounded-md bg-cream px-3 py-1 text-[12px] font-semibold tracking-wide text-navy">FAQ</span>
 			<h2 class="mt-4 font-serif text-[32px] leading-tight font-semibold text-ink sm:text-[40px]">Questions? We’ve got honest answers.</h2>
-			<p class="mt-3 max-w-md text-[15px] leading-relaxed text-muted">Can’t find your question? Call us — a real attorney answers, not a bot.</p>
-			<a href="tel:+18005550199" class="mt-6 inline-flex items-center gap-2 rounded-full border border-navy/15 px-5 py-3 text-[14px] font-semibold text-navy transition hover:bg-cream">
-				<Icon name="phone" class="h-4 w-4" /> +1 (800) 555-0199
+			<p class="mt-3 max-w-md text-[15px] leading-relaxed text-muted">Can’t find your question? Call us — a real lawyer answers, not a bot.</p>
+			<a href="tel:+919811012345" class="mt-6 inline-flex items-center gap-2 rounded-full border border-navy/15 px-5 py-3 text-[14px] font-semibold text-navy transition hover:bg-cream">
+				<Icon name="phone" class="h-4 w-4" /> +91 98110 12345
 			</a>
 		</Reveal>
 

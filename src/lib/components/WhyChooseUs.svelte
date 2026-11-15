@@ -4,8 +4,8 @@
 	const items = [
 		{
 			icon: 'shield',
-			title: 'IRS & Audit Defence',
-			text: 'We speak to the IRS for you, so you never face an audit alone — from first notice to final settlement.'
+			title: 'Income Tax & GST Defence',
+			text: 'We speak to the Assessing Officer for you, so you never face scrutiny alone — from first notice to final settlement.'
 		},
 		{
 			icon: 'clock',
@@ -20,7 +20,7 @@
 		{
 			icon: 'lock',
 			title: '100% Confidential',
-			text: 'Attorney–client privilege from day one. Your finances stay private, always.'
+			text: 'Lawyer–client privilege from day one. Your finances stay private, always.'
 		}
 	];
 </script>
