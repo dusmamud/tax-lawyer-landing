@@ -93,6 +93,10 @@
 <Header />
 {@render children()}
 <Footer />
+<!-- Spacer for the mobile sticky call bar (fixed, ~62px + safe area): without
+	it the bar covers the footer's legal links and disclaimer when scrolled
+	to the very bottom. Hidden on desktop, where the bar does not render. -->
+<div class="h-[4.5rem] lg:hidden" aria-hidden="true"></div>
 <BackToTop />
 <LiveChat />
 <CookieBanner />
