@@ -8,7 +8,8 @@
 		| 'arrow-right'
 		| 'arrow-left'
 		| 'arrow-up'
-		| 'diamond';
+		| 'diamond'
+		| 'pin';
 
 	let { name, class: cls = '' }: { name: IconName; class?: string } = $props();
 
@@ -47,5 +48,8 @@
 		<path d="M12 19V5M6 11l6-6 6 6" stroke-linejoin="round" />
 	{:else if name === 'diamond'}
 		<path d="M12 3l7 9-7 9-7-9z" />
+	{:else if name === 'pin'}
+		<path d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z" stroke-linejoin="round" />
+		<circle cx="12" cy="10" r="2.5" />
 	{/if}
 </svg>

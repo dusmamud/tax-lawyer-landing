@@ -46,7 +46,7 @@
 </script>
 
 {#if open}
-	<div class="animate-fade-up fixed right-4 bottom-[9.5rem] z-[65] flex h-[26rem] w-[calc(100vw-2rem)] max-w-sm flex-col overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-black/10 sm:right-6 sm:bottom-[6.5rem]">
+	<div class="animate-fade-up fixed right-4 bottom-[9.5rem] z-[65] flex h-[24rem] w-[calc(100vw-2rem)] max-w-sm flex-col overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-black/10 sm:right-6 sm:bottom-[6.5rem] sm:h-[26rem]">
 		<div class="flex items-center justify-between bg-navy px-5 py-4 text-white">
 			<div>
 				<p class="text-[15px] font-bold">MSY Law — Live Chat</p>

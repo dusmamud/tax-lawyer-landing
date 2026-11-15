@@ -49,7 +49,7 @@
 
 		<Reveal class="mt-12">
 			<h2 class="text-center font-serif text-[26px] font-semibold sm:text-[30px]">Find our Austin office</h2>
-			<p class="mx-auto mt-2 max-w-xl text-center text-[14.5px] text-muted">1200 Congress Ave, Suite 400, Austin, TX 78701 — free validated parking in the Congress garage. <a href="https://www.google.com/maps/search/MSY+Law+Austin+TX" target="_blank" rel="noopener" class="font-semibold text-navy underline underline-offset-2">Open in Google Maps</a></p>
+			<p class="mx-auto mt-2 max-w-xl text-center text-[14.5px] text-muted">1200 Congress Ave, Suite 400, Austin, TX 78701 — free validated parking in the Congress garage.</p>
 			<div class="mt-6">
 				<MapEmbed query="1200 Congress Ave, Austin, TX 78701" title="MSY Law office on Google Maps" class="h-[380px] w-full" />
 			</div>

@@ -40,6 +40,9 @@
 		setTimeout(() => {
 			loggedIn = true;
 			sending = false;
+			// The dashboard replaces the shorter login form — jump to the top
+			// so the user lands on the case status, not mid-page.
+			window.scrollTo(0, 0);
 		}, 700);
 	}
 </script>

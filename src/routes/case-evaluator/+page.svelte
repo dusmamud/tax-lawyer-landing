@@ -37,6 +37,11 @@
 	function finish() {
 		ref = `MSY-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
 		step = 5;
+		// The result card replaces the form — scroll it into view so the
+		// user sees their answer immediately, on any screen size.
+		requestAnimationFrame(() => {
+			document.getElementById('evaluator-result')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		});
 	}
 </script>
 
@@ -124,7 +129,7 @@
 			</Reveal>
 		{:else}
 			<Reveal>
-				<div class="animate-fade-up rounded-3xl border border-black/5 bg-cream/50 p-8 text-center sm:p-10">
+				<div id="evaluator-result" class="animate-fade-up scroll-mt-28 rounded-3xl border border-black/5 bg-cream/50 p-8 text-center sm:p-10">
 					<span class="inline-block rounded-full px-4 py-1.5 text-[12px] font-bold tracking-wide uppercase {result.color}">{result.level}</span>
 					<h2 class="mt-4 font-serif text-[26px] leading-snug font-semibold sm:text-[30px]">{result.title}</h2>
 					<p class="mx-auto mt-3 max-w-lg text-[15px] leading-relaxed text-muted">{result.body}</p>
