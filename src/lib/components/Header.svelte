@@ -15,6 +15,7 @@
 		{ label: 'Home', href: '/' },
 		{ label: 'About Us', href: '/about' },
 		{ label: 'Practice Areas', href: '/practice-areas' },
+		{ label: 'Fees', href: '/fees' },
 		{ label: 'Our Team', href: '/team' },
 		{ label: 'Testimonials', href: '/testimonials' },
 		{ label: 'Blog', href: '/blog' },
@@ -35,15 +36,7 @@
 			: 'py-4'}"
 	>
 		<a href="/" class="flex shrink-0 items-center gap-2.5" aria-label="MSY Law — home">
-			<span
-				class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-navy/80 bg-white text-navy sm:h-12 sm:w-12"
-			>
-				<svg viewBox="0 0 24 24" class="h-6 w-6 sm:h-7 sm:w-7" fill="none" stroke="currentColor" stroke-width="1.6">
-					<path d="M12 3v18M8 21h8M12 6h7M12 6H5" stroke-linecap="round" />
-					<path d="M5 6l-2.5 6a2.8 2.8 0 0 0 5 0L5 6zM19 6l-2.5 6a2.8 2.8 0 0 0 5 0L19 6z" />
-					<path d="M7 21h10" stroke-linecap="round" />
-				</svg>
-			</span>
+			<img src="/logo.svg" alt="MSY Law logo" class="h-11 w-11 sm:h-12 sm:w-12" width="48" height="48" />
 			<span class="leading-none">
 				<span class="block font-serif text-[20px] font-bold tracking-[0.16em] text-navy sm:text-[22px]">MSY LAW</span>
 				<span class="mt-1 block text-[9px] font-semibold tracking-[0.32em] text-muted uppercase">Tax Attorney</span>
@@ -59,6 +52,16 @@
 		</nav>
 
 		<div class="flex items-center gap-2 sm:gap-3">
+			<a
+				href="/search"
+				class="hidden h-11 w-11 items-center justify-center rounded-full text-navy transition hover:bg-white lg:flex"
+				aria-label="Search the site"
+			>
+				<svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+					<circle cx="11" cy="11" r="7" />
+					<path d="M20 20l-3.8-3.8" />
+				</svg>
+			</a>
 			<a
 				href="tel:+18005550199"
 				class="hidden h-11 w-11 items-center justify-center rounded-full text-navy transition hover:bg-white lg:flex"

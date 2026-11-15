@@ -7,6 +7,8 @@ export type PracticeArea = {
 	services: string[];
 	who: string;
 	result: string;
+	local: string;
+	faqs: { q: string; a: string }[];
 };
 
 export const practiceAreas: PracticeArea[] = [
@@ -28,7 +30,13 @@ export const practiceAreas: PracticeArea[] = [
 			'Grand jury and trial representation'
 		],
 		who: 'Business owners, executives and professionals under IRS investigation or facing criminal tax charges.',
-		result: '$2.4M in criminal tax exposure reduced to a civil settlement — no charges filed.'
+		result: '$2.4M in criminal tax exposure reduced to a civil settlement — no charges filed.',
+		local: 'Based in Austin, Texas, our criminal tax team defends clients across Texas — in Dallas, Houston, San Antonio, Fort Worth and El Paso — and in federal court nationwide. IRS Criminal Investigation cases are federal, so where you live rarely limits what we can do.',
+		faqs: [
+			{ q: 'Am I going to jail?', a: 'Most criminal tax investigations end without charges, especially when an attorney gets involved early. Call before you speak to any investigator — what you say in the first conversation matters enormously.' },
+			{ q: 'What is a voluntary disclosure?', a: 'It is a formal way to come forward about unreported income or accounts before the IRS finds them. Done correctly, it usually means civil penalties instead of criminal prosecution.' },
+			{ q: 'How much does a criminal tax defence cost?', a: 'Every case starts with a free consultation and a written fixed-fee quote. Complex investigations are quoted in stages, so you always know what the next step costs before we take it.' }
+		]
 	},
 	{
 		slug: 'estate-planning-taxation',
@@ -48,7 +56,13 @@ export const practiceAreas: PracticeArea[] = [
 			'Special-needs and guardianship planning'
 		],
 		who: 'Families, homeowners and business owners who want their wishes honoured and their tax kept low.',
-		result: '$1.2M in estate tax saved by restructuring a plan before a major asset sale.'
+		result: '$1.2M in estate tax saved by restructuring a plan before a major asset sale.',
+		local: 'We build estate plans for families across Austin and all of Texas — Dallas, Houston, San Antonio, Fort Worth and El Paso — including Texas-specific issues like homestead protection and community property.',
+		faqs: [
+			{ q: 'Do I need a trust, or is a will enough?', a: 'A will is enough for many families. A trust is worth it when you want to avoid probate, keep things private, or control how and when children receive assets. We will tell you honestly which one fits your situation.' },
+			{ q: 'How much does an estate plan cost?', a: 'A basic will package starts at $1,500 and a full trust plan at $3,500 — fixed fees, quoted in writing before we start. See our Fees page for the full list.' },
+			{ q: 'What is Texas community property?', a: 'In Texas, most property acquired during a marriage belongs to both spouses. That changes how wills and trusts must be written — a plan copied from another state often gets it wrong.' }
+		]
 	},
 	{
 		slug: 'state-local-taxation',
@@ -68,7 +82,13 @@ export const practiceAreas: PracticeArea[] = [
 			'State tax credits and incentives'
 		],
 		who: 'Businesses operating in more than one state, e-commerce sellers and companies facing a state audit.',
-		result: 'A 4-state sales tax assessment of $410k reduced to $38k on appeal.'
+		result: 'A 4-state sales tax assessment of $410k reduced to $38k on appeal.',
+		local: 'Our state tax team represents Texas businesses before the Texas Comptroller and in courts across the state — from Austin to Dallas, Houston, San Antonio, Fort Worth and El Paso — plus multi-state matters nationwide.',
+		faqs: [
+			{ q: 'What is nexus, and why does it matter?', a: 'Nexus is the connection that makes a state able to tax you. Selling into a state, having employees there, or even storing inventory there can create nexus — and a tax bill going back years.' },
+			{ q: 'The Comptroller says I owe $200,000. Is that final?', a: 'No. Most assessments are negotiable. We review the audit, challenge what is wrong, and settle for what is actually owed — often a fraction of the original number.' },
+			{ q: 'Can you set up sales tax compliance for my online store?', a: 'Yes. We register you where you have nexus, set up filing calendars, and build a system that scales as you grow into new states.' }
+		]
 	},
 	{
 		slug: 'tax-planning-compliance',
@@ -88,7 +108,13 @@ export const practiceAreas: PracticeArea[] = [
 			'IRS notices and penalty abatement'
 		],
 		who: 'Individuals and businesses who want to pay the legal minimum — and never pay a late penalty again.',
-		result: 'Average planning client saves $18,400 a year in tax, legally.'
+		result: 'Average planning client saves $18,400 a year in tax, legally.',
+		local: 'Our planning clients are individuals and businesses across Austin, Texas — Dallas, Houston, San Antonio, Fort Worth and El Paso — and remote clients in all 50 states. Planning works best when it starts before the year ends.',
+		faqs: [
+			{ q: 'How much can tax planning actually save me?', a: 'Our average planning client saves $18,400 a year, legally. The exact number depends on your income, entity and timing — we will show you the maths before you commit to anything.' },
+			{ q: 'When should I start planning for next year?', a: 'October and November. By April, the tax year is over and almost every saving opportunity is locked in.' },
+			{ q: 'Do you prepare the returns too?', a: 'Yes — federal, state and local returns, prepared by attorneys who know the law behind every line, not just the software.' }
+		]
 	},
 	{
 		slug: 'international-taxation',
@@ -108,7 +134,13 @@ export const practiceAreas: PracticeArea[] = [
 			'Non-resident and foreign investor taxation'
 		],
 		who: 'Expats, dual citizens, foreign investors and businesses with income or assets abroad.',
-		result: '$860k in foreign-account penalties removed through streamlined disclosure.'
+		result: '$860k in foreign-account penalties removed through streamlined disclosure.',
+		local: 'Our international tax practice serves expats, dual citizens and foreign investors in Austin, across Texas — Dallas, Houston, San Antonio and El Paso — and clients in 14 countries. Most of this work is handled entirely remotely.',
+		faqs: [
+			{ q: 'I missed FBAR filings for years. Am I in serious trouble?', a: 'Probably not as much as you fear. The IRS streamlined disclosure procedures exist exactly for this — we have removed $860k in penalties through them. The key is to come forward before the IRS contacts you.' },
+			{ q: 'Do I pay tax twice on foreign income?', a: 'Usually not. The foreign earned income exclusion and foreign tax credit exist so you are taxed once, fairly. The rules are complex, which is why the planning matters.' },
+			{ q: 'Can you help if I live abroad?', a: 'Yes — most of our international clients have never set foot in our office. Everything is handled by video, phone and secure document sharing.' }
+		]
 	},
 	{
 		slug: 'property-taxes',
@@ -128,7 +160,13 @@ export const practiceAreas: PracticeArea[] = [
 			'Annual assessment monitoring'
 		],
 		who: 'Homeowners and commercial property owners who believe their assessment is too high.',
-		result: 'Average successful appeal cuts the annual property tax bill by 22%.'
+		result: 'Average successful appeal cuts the annual property tax bill by 22%.',
+		local: 'We challenge property tax assessments across Texas — Austin (Travis County), Dallas, Houston (Harris County), San Antonio (Bexar County), Fort Worth (Tarrant County) and El Paso — for homeowners and commercial owners.',
+		faqs: [
+			{ q: 'How do I know if my property is over-assessed?', a: 'Compare your assessed value with recent sales of similar properties nearby. If yours is higher with no good reason, it is probably over-assessed. We will review it free and tell you honestly.' },
+			{ q: 'What does a property tax appeal cost?', a: 'Nothing upfront. If we cannot reduce your assessment, you pay us nothing for the appeal. If we succeed, our fee is a share of the first year’s savings.' },
+			{ q: 'When is the deadline to protest in Texas?', a: 'Usually May 15 — or 30 days after your appraisal notice arrives, whichever is later. Miss it and you wait a whole year, so start early.' }
+		]
 	}
 ];
 

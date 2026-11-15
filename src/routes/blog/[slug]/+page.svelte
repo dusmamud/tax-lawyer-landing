@@ -9,11 +9,23 @@
 	let { data }: { data: PageData } = $props();
 	const post = $derived(data.post);
 	const related = $derived(data.related);
+
+	const articleSchema = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'Article',
+		headline: post.title,
+		description: post.excerpt,
+		author: { '@type': 'Person', name: post.author, jobTitle: post.authorRole },
+		publisher: { '@type': 'Organization', name: 'MSY Law', url: 'https://tax-lawyer-landing.pages.dev/' },
+		datePublished: post.date,
+		mainEntityOfPage: `https://tax-lawyer-landing.pages.dev/blog/${post.slug}`
+	});
 </script>
 
 <svelte:head>
 	<title>{post.title} — MSY Law Blog</title>
 	<meta name="description" content={post.excerpt} />
+	{@html `<script type="application/ld+json">${JSON.stringify(articleSchema)}</script>`}
 </svelte:head>
 
 <PageHero

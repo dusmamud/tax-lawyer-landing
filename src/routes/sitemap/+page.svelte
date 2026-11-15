@@ -4,6 +4,7 @@
 	import { practiceAreas } from '../../lib/data/practice-areas';
 	import { team } from '../../lib/data/team';
 	import { posts } from '../../lib/data/posts';
+	import { cities } from '../../lib/data/locations';
 
 	const main = [
 		{ label: 'Home', href: '/' },
@@ -21,7 +22,12 @@
 		{ label: 'Testimonials', href: '/testimonials' },
 		{ label: 'Blog', href: '/blog' },
 		{ label: 'Resources', href: '/resources' },
-		{ label: 'FAQ', href: '/faq' }
+		{ label: 'FAQ', href: '/faq' },
+		{ label: 'Fees & Pricing', href: '/fees' },
+		{ label: 'Case Evaluator', href: '/case-evaluator' },
+		{ label: 'Client Portal', href: '/client-portal' },
+		{ label: 'Search', href: '/search' },
+		{ label: 'En español', href: '/es' }
 	];
 	const legal = [
 		{ label: 'Privacy Policy', href: '/privacy-policy' },
@@ -82,6 +88,16 @@
 					<ul class="mt-4 space-y-2.5">
 						{#each team as member}
 							<li><a href="/team/{member.slug}" class="text-[15px] font-medium text-navy underline-offset-4 hover:underline">{member.name} — {member.role}</a></li>
+						{/each}
+					</ul>
+				</div>
+			</Reveal>
+			<Reveal delay={120}>
+				<div>
+					<h2 class="font-serif text-[22px] font-semibold">Locations</h2>
+					<ul class="mt-4 space-y-2.5">
+						{#each cities as city}
+							<li><a href="/locations/{city.slug}" class="text-[15px] font-medium text-navy underline-offset-4 hover:underline">Tax Attorney in {city.name}, TX</a></li>
 						{/each}
 					</ul>
 				</div>

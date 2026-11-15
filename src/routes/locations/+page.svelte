@@ -5,12 +5,12 @@
 	import CtaBanner from '#lib/components/CtaBanner.svelte';
 
 	const cities = [
-		{ name: 'Austin', detail: 'Main office — 1200 Congress Ave, Suite 400', tag: 'Headquarters' },
-		{ name: 'Dallas', detail: 'Serving clients across the Dallas–Fort Worth metro', tag: 'By appointment' },
-		{ name: 'Houston', detail: 'Serving clients across Greater Houston', tag: 'By appointment' },
-		{ name: 'San Antonio', detail: 'Serving clients across Bexar County and South Texas', tag: 'By appointment' },
-		{ name: 'Fort Worth', detail: 'Serving clients across Tarrant County', tag: 'By appointment' },
-		{ name: 'El Paso', detail: 'Serving clients across West Texas', tag: 'By appointment' }
+		{ slug: 'austin', name: 'Austin', detail: 'Main office — 1200 Congress Ave, Suite 400', tag: 'Headquarters' },
+		{ slug: 'dallas', name: 'Dallas', detail: 'Serving clients across the Dallas–Fort Worth metro', tag: 'By appointment' },
+		{ slug: 'houston', name: 'Houston', detail: 'Serving clients across Greater Houston', tag: 'By appointment' },
+		{ slug: 'san-antonio', name: 'San Antonio', detail: 'Serving clients across Bexar County and South Texas', tag: 'By appointment' },
+		{ slug: 'fort-worth', name: 'Fort Worth', detail: 'Serving clients across Tarrant County', tag: 'By appointment' },
+		{ slug: 'el-paso', name: 'El Paso', detail: 'Serving clients across West Texas', tag: 'By appointment' }
 	];
 </script>
 
@@ -39,9 +39,8 @@
 							<p class="mt-4 border-t border-black/5 pt-4 text-[13.5px] leading-relaxed text-muted">
 								1200 Congress Ave, Suite 400, Austin, TX 78701<br />Mon–Fri · 9:00 AM – 6:00 PM<br />Free validated parking in the Congress garage.
 							</p>
-						{:else}
-							<a href="/free-consultation" class="mt-4 inline-flex items-center gap-1.5 text-[13px] font-bold text-navy">Book a video consultation <Icon name="arrow-right" class="h-3.5 w-3.5" /></a>
 						{/if}
+						<a href="/locations/{city.slug}" class="mt-4 inline-flex items-center gap-1.5 text-[13px] font-bold text-navy">See the {city.name} page <Icon name="arrow-right" class="h-3.5 w-3.5" /></a>
 					</article>
 				</Reveal>
 			{/each}

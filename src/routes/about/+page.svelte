@@ -3,6 +3,7 @@
 	import Picture from '#lib/components/Picture.svelte';
 	import Reveal from '#lib/components/Reveal.svelte';
 	import Stats from '#lib/components/Stats.svelte';
+	import AwardsStrip from '#lib/components/AwardsStrip.svelte';
 	import CtaBanner from '#lib/components/CtaBanner.svelte';
 
 	const values = [
@@ -71,6 +72,8 @@
 </section>
 
 <Stats />
+
+<AwardsStrip />
 
 <section class="bg-white py-16 lg:py-24">
 	<div class="mx-auto max-w-7xl px-4 sm:px-5 lg:px-8">

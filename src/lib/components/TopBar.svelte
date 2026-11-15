@@ -19,6 +19,8 @@
 		</div>
 		<div class="flex items-center gap-5">
 			<span class="text-white/70">Mon–Fri · 9:00 AM – 6:00 PM</span>
+			<a href="/es" class="text-white/85 transition hover:text-white">Se habla español</a>
+			<a href="/client-portal" class="text-white/85 transition hover:text-white">Client Portal</a>
 			<span class="flex items-center gap-1.5 rounded-full bg-leaf/20 px-3 py-1 font-semibold text-leaf-2">
 				<span class="h-2 w-2 rounded-full bg-leaf-2"></span> Free 30-min consultation
 			</span>

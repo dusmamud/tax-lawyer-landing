@@ -7,7 +7,9 @@
 	let service = $state('Tax Audit & IRS Defence');
 	let message = $state('');
 	let submitted = $state(false);
+	let sending = $state(false);
 	let error = $state('');
+	let ref = $state('');
 
 	function submit(e: SubmitEvent) {
 		e.preventDefault();
@@ -16,7 +18,14 @@
 			return;
 		}
 		error = '';
-		submitted = true;
+		sending = true;
+		// Demo submission: in production this POSTs to the firm's intake
+		// endpoint (email / CRM). Replace with a real fetch() call.
+		setTimeout(() => {
+			ref = `MSY-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
+			sending = false;
+			submitted = true;
+		}, 800);
 	}
 </script>
 
@@ -27,6 +36,7 @@
 		<p class="mt-3 max-w-sm text-[15px] leading-relaxed text-muted">
 			Your request is in. An attorney will reply to <strong class="text-ink">{email}</strong> within one business day — usually much faster.
 		</p>
+		<p class="mt-3 text-[13px] text-muted">Your reference: <strong class="text-ink">{ref}</strong> — quote it when you call.</p>
 		<button
 			onclick={() => {
 				submitted = false;
@@ -75,8 +85,8 @@
 		{#if error}
 			<p class="mt-3 rounded-xl bg-red-50 px-4 py-3 text-[13.5px] font-medium text-red-700" role="alert">{error}</p>
 		{/if}
-		<button type="submit" class="mt-5 w-full rounded-full bg-navy py-3.5 text-[15px] font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-navy-3">
-			Get My Free Consultation <Icon name="arrow-right" class="ml-1 inline h-4 w-4 align-middle" />
+		<button type="submit" disabled={sending} class="mt-5 w-full rounded-full bg-navy py-3.5 text-[15px] font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-navy-3 disabled:opacity-60">
+			{sending ? 'Sending…' : 'Get My Free Consultation'} <Icon name="arrow-right" class="ml-1 inline h-4 w-4 align-middle" />
 		</button>
 		<p class="mt-3 text-center text-[12px] text-muted">No spam, no obligation. Your details stay confidential.</p>
 	</form>

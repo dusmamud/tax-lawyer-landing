@@ -9,11 +9,24 @@
 	let { data }: { data: PageData } = $props();
 	const member = $derived(data.member);
 	const others = $derived(data.others);
+
+	const personSchema = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'Person',
+		name: member.name,
+		jobTitle: member.role,
+		worksFor: { '@type': 'LegalService', name: 'MSY Law', url: 'https://tax-lawyer-landing.pages.dev/' },
+		alumniOf: member.education,
+		knowsAbout: member.focus,
+		image: `https://tax-lawyer-landing.pages.dev${member.img.replace('.webp', '.jpg')}`,
+		url: `https://tax-lawyer-landing.pages.dev/team/${member.slug}`
+	});
 </script>
 
 <svelte:head>
 	<title>{member.name} — {member.role} | MSY Law</title>
 	<meta name="description" content="{member.name}, {member.role} at MSY Law. {member.exp} experience in {member.focus.join(', ')}." />
+	{@html `<script type="application/ld+json">${JSON.stringify(personSchema)}</script>`}
 </svelte:head>
 
 <PageHero
