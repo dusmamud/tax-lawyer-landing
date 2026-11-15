@@ -1,0 +1,47 @@
+# Deploy to Cloudflare Pages via Direct Upload (Wrangler)
+# Official guide: https://developers.cloudflare.com/pages/how-to/use-direct-upload-with-continuous-integration/
+#
+# Required GitHub repo secrets (Settings > Secrets and variables > Actions):
+#   CLOUDFLARE_API_TOKEN  — custom token, Account > Cloudflare Pages > Edit
+#   CLOUDFLARE_ACCOUNT_ID — from the Cloudflare dashboard Overview > API section
+#
+# The Cloudflare Pages project "tax-lawyer-landing" must exist first
+# (Dashboard > Workers & Pages > Create > Pages > Direct Upload).
+# Wrangler does not auto-create a Pages project in non-interactive CI.
+
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Deploy to Cloudflare Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy build --project-name=tax-lawyer-landing --branch=main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
