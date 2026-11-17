@@ -1,6 +1,12 @@
 <script lang="ts">
 	import Icon from '#lib/components/Icon.svelte';
 
+	// Optional booked slot (e.g. "Tue 18 Nov at 11:00 AM") passed by the
+	// free-consultation page's date/time picker; shown in the success
+	// screen when present. Other pages render the form without a slot.
+	// (Named bookingSlot — `slot` is a reserved attribute in Svelte.)
+	let { bookingSlot = '' }: { bookingSlot?: string } = $props();
+
 	let name = $state('');
 	let email = $state('');
 	let phone = $state('');
@@ -36,6 +42,11 @@
 		<p class="mt-3 max-w-sm text-[15px] leading-relaxed text-muted">
 			Your request is in. A lawyer will reply to <strong class="text-ink">{email}</strong> within one business day — usually much faster.
 		</p>
+		{#if bookingSlot}
+			<p class="mt-3 rounded-xl bg-white px-4 py-3 text-[14px] font-semibold text-navy ring-1 ring-leaf/40">
+				Your consultation: {bookingSlot}
+			</p>
+		{/if}
 		<p class="mt-3 text-[13px] text-muted">Your reference: <strong class="text-ink">{ref}</strong> — quote it when you call.</p>
 		<button
 			onclick={() => {

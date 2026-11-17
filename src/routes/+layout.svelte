@@ -8,6 +8,8 @@
 	import LiveChat from '#lib/components/LiveChat.svelte';
 	import CookieBanner from '#lib/components/CookieBanner.svelte';
 	import StickyCallBar from '#lib/components/StickyCallBar.svelte';
+	import ScrollProgress from '#lib/components/ScrollProgress.svelte';
+	import WhatsAppButton from '#lib/components/WhatsAppButton.svelte';
 
 	let { children }: LayoutProps = $props();
 
@@ -90,6 +92,7 @@
 	{@html `<script type="application/ld+json">${JSON.stringify(legalService)}</script>`}
 </svelte:head>
 
+<ScrollProgress />
 <Header />
 {@render children()}
 <Footer />
@@ -98,6 +101,7 @@
 	to the very bottom. Hidden on desktop, where the bar does not render. -->
 <div class="h-[4.5rem] lg:hidden" aria-hidden="true"></div>
 <BackToTop />
+<WhatsAppButton />
 <LiveChat />
 <CookieBanner />
 <StickyCallBar />

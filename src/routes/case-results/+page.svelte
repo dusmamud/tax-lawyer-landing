@@ -59,6 +59,10 @@
 			time: '5 months'
 		}
 	];
+
+	const kinds = ['All', ...Array.from(new Set(cases.map((c) => c.kind)))];
+	let activeKind = $state('All');
+	let filtered = $derived(activeKind === 'All' ? cases : cases.filter((c) => c.kind === activeKind));
 </script>
 
 <svelte:head>
@@ -75,8 +79,26 @@
 
 <section class="bg-white py-16 lg:py-20">
 	<div class="mx-auto max-w-7xl px-4 sm:px-5 lg:px-8">
-		<div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
-			{#each cases as item, i}
+		<Reveal>
+			<div class="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 pb-2 sm:mx-0 sm:flex-wrap sm:px-0" role="group" aria-label="Filter case results by practice area">
+				{#each kinds as kind}
+					<button
+						onclick={() => (activeKind = kind)}
+						aria-pressed={activeKind === kind}
+						class="min-h-11 shrink-0 rounded-full border px-4 py-2.5 text-[13.5px] font-semibold whitespace-nowrap transition {activeKind === kind
+							? 'border-navy bg-navy text-white shadow-md'
+							: 'border-navy/20 bg-white text-navy hover:bg-cream-2'}"
+					>
+						{kind}
+					</button>
+				{/each}
+			</div>
+			<p class="mt-3 text-[13.5px] text-muted">
+				Showing {filtered.length} of {cases.length} cases{activeKind !== 'All' ? ` in “${activeKind}”` : ''}.
+			</p>
+		</Reveal>
+		<div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
+			{#each filtered as item, i}
 				<Reveal delay={(i % 2) * 90}>
 					<article class="flex h-full flex-col rounded-3xl border border-black/5 bg-cream/50 p-7 transition hover:-translate-y-1 hover:shadow-xl sm:p-8">
 						<div class="flex flex-wrap items-center justify-between gap-3">
@@ -103,3 +125,12 @@
 </section>
 
 <CtaBanner />
+
+<style>
+	.no-scrollbar {
+		scrollbar-width: none;
+	}
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+</style>

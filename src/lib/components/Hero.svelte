@@ -18,7 +18,7 @@
 		<div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-[240px_1fr_240px] lg:gap-6">
 			<!-- Left portrait — visible on mobile too, smaller -->
 			<div class="relative mx-auto w-[168px] shrink-0 animate-float-slow sm:w-[200px] lg:mx-0 lg:w-[220px]">
-				<div class="absolute -inset-3 rounded-full border border-dashed border-navy/25 sm:-inset-4"></div>
+				<div class="absolute -inset-3 animate-spin-slow rounded-full border border-dashed border-navy/25 sm:-inset-4"></div>
 				<div class="absolute -inset-6 rounded-full border border-navy/10 sm:-inset-8"></div>
 				<div class="relative h-[168px] w-[168px] overflow-hidden rounded-full bg-sage ring-8 ring-white/70 sm:h-[200px] sm:w-[200px] lg:h-[220px] lg:w-[220px]">
 					<Picture src="/lawyer-man.webp" alt="Tax lawyer" class="h-full w-full object-cover object-top" width={1600} height={1600} loading="eager" fetchpriority="high" />
@@ -26,7 +26,7 @@
 				<span class="absolute -bottom-1 -left-4 -rotate-12 rounded-sm bg-leaf px-3 py-1.5 text-[12px] font-bold text-white shadow sm:-left-6 sm:text-[13px]">
 					Tax Lawyer
 				</span>
-				<div class="absolute -right-3 -bottom-4 hidden rounded-2xl bg-white px-3.5 py-2.5 shadow-lg ring-1 ring-black/5 sm:block">
+				<div class="absolute -right-3 -bottom-4 hidden animate-float rounded-2xl bg-white px-3.5 py-2.5 shadow-lg ring-1 ring-black/5 sm:block" style="animation-delay: 1.2s">
 					<p class="font-serif text-lg leading-none font-bold text-navy">98%</p>
 					<p class="mt-1 text-[11px] font-medium text-muted">Success rate</p>
 				</div>
@@ -45,11 +45,15 @@
 					<h1 class="mt-5 font-serif text-[38px] leading-[1.08] font-semibold text-ink sm:text-6xl lg:text-[64px]">
 						We Handle Every<br />
 						Case
-						<span class="mx-1 inline-block align-middle">
-							<svg viewBox="0 0 64 28" class="inline h-6 w-14 sm:h-9 sm:w-20" aria-hidden="true">
-								<rect x="2" y="8" width="34" height="12" rx="6" fill="#1e3d52" />
-								<rect x="36" y="12" width="26" height="4" rx="2" fill="#8a5a2b" />
-								<rect x="4" y="4" width="30" height="4" rx="2" fill="#2c536b" />
+						<span class="mx-1 inline-block align-middle" aria-hidden="true">
+							<svg viewBox="0 0 72 40" class="inline h-6 w-14 sm:h-8 sm:w-16">
+								<g transform="rotate(-18 36 20)">
+									<rect x="8" y="10" width="30" height="13" rx="6" fill="#1e3d52" />
+									<rect x="14" y="10" width="4" height="13" fill="#c9a227" />
+									<rect x="28" y="10" width="4" height="13" fill="#c9a227" />
+									<rect x="38" y="14" width="25" height="5" rx="2.5" fill="#8a5a2b" />
+									<circle cx="66" cy="16.5" r="3.2" fill="#8a5a2b" />
+								</g>
 							</svg>
 						</span>
 						Professionally
@@ -94,7 +98,7 @@
 
 			<!-- Right portrait -->
 			<div class="relative mx-auto w-[168px] shrink-0 animate-float sm:w-[200px] lg:mx-0 lg:w-[220px]">
-				<div class="absolute -inset-3 rounded-full border border-dashed border-navy/25 sm:-inset-4"></div>
+				<div class="absolute -inset-3 animate-spin-slow rounded-full border border-dashed border-navy/25 sm:-inset-4"></div>
 				<div class="absolute -inset-6 rounded-full border border-navy/10 sm:-inset-8"></div>
 				<div class="relative h-[168px] w-[168px] overflow-hidden rounded-full bg-sage ring-8 ring-white/70 sm:h-[200px] sm:w-[200px] lg:h-[220px] lg:w-[220px]">
 					<Picture src="/lawyer-woman.webp" alt="Tax lawyer" class="h-full w-full object-cover object-top" width={1600} height={1600} loading="eager" />
@@ -102,7 +106,7 @@
 				<span class="absolute -top-3 -right-1 flex h-11 w-11 items-center justify-center rounded-full border-2 border-leaf bg-white text-[17px] font-bold text-leaf-dark shadow sm:-top-6 sm:-right-2 sm:h-12 sm:w-12">
 					1
 				</span>
-				<div class="absolute -left-3 -bottom-4 hidden rounded-2xl bg-white px-3.5 py-2.5 shadow-lg ring-1 ring-black/5 sm:block">
+				<div class="absolute -left-3 -bottom-4 hidden animate-float rounded-2xl bg-white px-3.5 py-2.5 shadow-lg ring-1 ring-black/5 sm:block" style="animation-delay: 0.6s">
 					<p class="font-serif text-lg leading-none font-bold text-navy">₹120 Cr+</p>
 					<p class="mt-1 text-[11px] font-medium text-muted">Tax saved for clients</p>
 				</div>

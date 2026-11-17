@@ -3,7 +3,7 @@
 	import Picture from '#lib/components/Picture.svelte';
 
 	const points = [
-		'Licensed tax attorneys, not just accountants',
+		'Licensed tax lawyers, not just accountants',
 		'Clear, fixed-fee quotes — no surprise bills',
 		'Same-day response on every enquiry',
 		'Confidential, judgement-free advice'

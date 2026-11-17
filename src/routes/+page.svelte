@@ -5,6 +5,7 @@
 	import WhyChooseUs from '#lib/components/WhyChooseUs.svelte';
 	import Process from '#lib/components/Process.svelte';
 	import PracticeAreas from '#lib/components/PracticeAreas.svelte';
+import Tools from '#lib/components/Tools.svelte';
 	import AwardsStrip from '#lib/components/AwardsStrip.svelte';
 	import Team from '#lib/components/Team.svelte';
 	import Results from '#lib/components/Results.svelte';
@@ -30,6 +31,7 @@
 	<WhyChooseUs />
 	<Process />
 	<PracticeAreas />
+	<Tools />
 	<Team />
 	<Results />
 	<Testimonials />

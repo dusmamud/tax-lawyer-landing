@@ -5,6 +5,10 @@
 	import Icon from '#lib/components/Icon.svelte';
 	import CtaBanner from '#lib/components/CtaBanner.svelte';
 	import { posts } from '../../lib/data/posts';
+
+	const tags = ['All', ...Array.from(new Set(posts.map((p) => p.tag)))];
+	let activeTag = $state('All');
+	let filtered = $derived(activeTag === 'All' ? posts : posts.filter((p) => p.tag === activeTag));
 </script>
 
 <svelte:head>
@@ -21,9 +25,27 @@
 
 <section class="bg-cream py-16 lg:py-20">
 	<div class="mx-auto max-w-7xl px-4 sm:px-5 lg:px-8">
-		<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-			{#each posts as post, i}
-				<Reveal delay={i * 90}>
+		<Reveal>
+			<div class="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 pb-2 sm:mx-0 sm:flex-wrap sm:px-0" role="group" aria-label="Filter articles by topic">
+				{#each tags as tag}
+					<button
+						onclick={() => (activeTag = tag)}
+						aria-pressed={activeTag === tag}
+						class="min-h-11 shrink-0 rounded-full border px-4 py-2.5 text-[13.5px] font-semibold whitespace-nowrap transition {activeTag === tag
+							? 'border-navy bg-navy text-white shadow-md'
+							: 'border-navy/20 bg-white text-navy hover:bg-cream-2'}"
+					>
+						{tag}
+					</button>
+				{/each}
+			</div>
+			<p class="mt-3 text-[13.5px] text-muted">
+				Showing {filtered.length} of {posts.length} articles{activeTag !== 'All' ? ` in “${activeTag}”` : ''}.
+			</p>
+		</Reveal>
+		<div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+			{#each filtered as post, i}
+				<Reveal delay={(i % 3) * 90}>
 					<a href="/blog/{post.slug}" class="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl">
 						<div class="relative flex h-44 items-end bg-gradient-to-br {post.grad} p-5">
 							<span class="rounded-full bg-white/90 px-3 py-1 text-[11px] font-bold text-navy">{post.tag}</span>
@@ -57,3 +79,12 @@
 </section>
 
 <CtaBanner />
+
+<style>
+	.no-scrollbar {
+		scrollbar-width: none;
+	}
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+</style>

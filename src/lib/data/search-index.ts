@@ -23,6 +23,10 @@ export const searchIndex: SearchEntry[] = [
 	{ t: 'Fees & Pricing', u: '/fees', d: 'Clear fixed fees for income tax appeals, GST disputes, planning and search matters — in rupees.', k: 'fees pricing cost how much flat fee' },
 	{ t: 'Free Consultation', u: '/free-consultation', d: 'Book a free 30-minute consultation with a tax attorney. Mon–Sat, 10 AM – 7 PM IST.', k: 'free consultation book appointment call' },
 	{ t: 'Case Evaluator', u: '/case-evaluator', d: 'Answer 4 quick questions and find out what kind of help your tax problem needs.', k: 'evaluator quiz check my case do i need lawyer' },
+	{ t: 'Tax Tools — Free Calculators', u: '/tools', d: 'Free Indian tax calculators: income tax (old vs new regime), advance tax instalments and GST.', k: 'tools calculators tax calculator free' },
+	{ t: 'Income Tax Calculator FY 2026-27', u: '/tools/income-tax-calculator', d: 'Compare income tax under the old and new regimes, slab by slab, with rebate, cess and surcharge.', k: 'income tax calculator old new regime 87a rebate salary' },
+	{ t: 'Advance Tax Calculator', u: '/tools/advance-tax-calculator', d: 'Work out advance tax instalments for FY 2026-27: 15 June, 15 September, 15 December and 15 March.', k: 'advance tax calculator instalments due dates 234b 234c' },
+	{ t: 'GST Calculator', u: '/tools/gst-calculator', d: 'Add or remove GST at 5%, 12%, 18%, 28% or 40% — with the CGST + SGST or IGST split.', k: 'gst calculator cgst sgst igst rate inclusive exclusive' },
 	{ t: 'Client Portal', u: '/client-portal', d: 'Existing clients: check your case status, documents, messages and balance.', k: 'client portal login my case documents pay' },
 	{ t: 'Contact Us', u: '/contact', d: 'Call +91 98110 12345, email hello@msylaw.in, or visit our Connaught Place office in New Delhi.', k: 'contact phone email address office map' },
 	{ t: 'Locations', u: '/locations', d: 'Based in New Delhi. Serving Mumbai, Bengaluru, Hyderabad, Chennai and Kolkata — and across India.', k: 'locations offices cities mumbai bengaluru' },
@@ -51,5 +55,6 @@ export const searchIndex: SearchEntry[] = [
 	{ t: 'Disclaimer', u: '/disclaimer', d: 'Attorney advertising notice and legal disclaimers.', k: 'disclaimer advertising' },
 	{ t: 'Cookie Policy', u: '/cookie-policy', d: 'What cookies this site uses and how to control them.', k: 'cookies policy' },
 	{ t: 'Accessibility', u: '/accessibility', d: 'Our commitment to an accessible website (WCAG 2.1 AA).', k: 'accessibility wcag' },
-	{ t: 'Sitemap', u: '/sitemap', d: 'Every page on this website, in one list.', k: 'sitemap all pages' }
+	{ t: 'Sitemap', u: '/sitemap', d: 'Every page on this website, in one list.', k: 'sitemap all pages' },
+	{ t: 'Free Guides & Checklists', u: '/downloads', d: 'Free PDF checklists for income-tax and GST notices — download, no email needed.', k: 'guides checklist download pdf notice' },
 ];

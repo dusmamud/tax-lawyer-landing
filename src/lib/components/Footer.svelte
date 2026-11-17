@@ -33,6 +33,8 @@
 
 	const tools = [
 		{ label: 'Fees & Pricing', href: '/fees' },
+		{ label: 'Tax Calculators', href: '/tools' },
+		{ label: 'Free Guides', href: '/downloads' },
 		{ label: 'Case Evaluator', href: '/case-evaluator' },
 		{ label: 'Client Portal', href: '/client-portal' },
 		{ label: 'Resources', href: '/resources' },
