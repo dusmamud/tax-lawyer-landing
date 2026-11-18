@@ -153,7 +153,9 @@
 		url: 'https://tax-lawyer-landing.pages.dev/tools/income-tax-calculator',
 		description:
 			'Compare income tax under the old and new regimes for FY 2026-27 (Income-tax Act, 2025): slabs, Section 87A rebate and marginal relief, cess and surcharge.',
-		offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }
+		offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
+		// Same firm-wide rating as the LegalService block (mock demo data, user-approved for the client preview).
+		aggregateRating: { '@type': 'AggregateRating', ratingValue: 4.9, reviewCount: 312 }
 	};
 </script>
 
