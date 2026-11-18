@@ -43,10 +43,6 @@
 	}
 </script>
 
-<svelte:head>
-	<title>Case Evaluator — MSY Law | Find Out What Your Tax Problem Needs</title>
-	<meta name="description" content="Answer 4 quick questions and find out what kind of help your tax problem needs — instantly, free, and confidential. No data leaves your browser." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Case Evaluator"

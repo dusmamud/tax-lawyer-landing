@@ -11,10 +11,6 @@
 	let filtered = $derived(activeTag === 'All' ? posts : posts.filter((p) => p.tag === activeTag));
 </script>
 
-<svelte:head>
-	<title>Blog — MSY Law | Tax Insights in Plain English</title>
-	<meta name="description" content="Tax insights in plain English: income tax notices, ITR deadlines, GST, advance tax, NRI taxation and more — written by MSY Law attorneys." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Our Blog"
@@ -56,7 +52,7 @@
 							<h2 class="mt-2 font-serif text-[21px] leading-snug font-semibold transition group-hover:text-navy">{post.title}</h2>
 							<p class="mt-2 flex-1 text-[14px] leading-relaxed text-muted">{post.excerpt}</p>
 							<span class="mt-4 flex items-center gap-3">
-								<Picture src={post.authorImg} alt={post.author} class="h-9 w-9 rounded-full object-cover object-top" />
+								<Picture src={post.authorImg} alt={post.author} class="h-9 w-9 rounded-full object-cover object-top" sizes="36px" />
 								<span class="text-[13px] font-semibold">{post.author}</span>
 							</span>
 							<span class="mt-4 text-[13px] font-bold text-navy">Read article <Icon name="arrow-right" class="inline h-3.5 w-3.5 transition-transform group-hover:translate-x-1" /></span>

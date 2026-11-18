@@ -6,10 +6,6 @@
 	import { practiceAreas } from '../../lib/data/practice-areas';
 </script>
 
-<svelte:head>
-	<title>Practice Areas — MSY Law | Tax Attorney &amp; Tax Lawyer</title>
-	<meta name="description" content="Six tax practice areas: criminal tax law, estate planning, state & local tax, tax planning & compliance, international tax and property taxes." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Practice Areas"

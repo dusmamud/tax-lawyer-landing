@@ -11,30 +11,49 @@
 
 	let openFaq = $state(0);
 
-	const stateBySlug: Record<string, string> = {
-		'new-delhi': 'Delhi',
-		mumbai: 'Maharashtra',
-		bengaluru: 'Karnataka',
-		hyderabad: 'Telangana',
-		chennai: 'Tamil Nadu',
-		kolkata: 'West Bengal'
-	};
-
+	// The ONE LegalService block for this city page. The layout deliberately
+	// does not emit its Delhi-HQ block here (see +layout.svelte), so the two
+	// can never contradict each other. Structured address with postalCode as
+	// its own field, geo from the office address, opening hours, rating and
+	// social profiles — the same completeness as the layout block.
 	const schema = $derived({
 		'@context': 'https://schema.org',
 		'@type': 'LegalService',
+		'@id': `https://tax-lawyer-landing.pages.dev/locations/${city.slug}#legal-service`,
 		name: `MSY Law — Tax Attorney in ${city.name}, India`,
-		telephone: '+91 98110 12345',
+		description: `Tax attorney in ${city.name}, India: income tax appeals, GST disputes, corporate tax and search & settlement. Free 30-minute consultation.`,
+		url: `https://tax-lawyer-landing.pages.dev/locations/${city.slug}`,
+		image: 'https://tax-lawyer-landing.pages.dev/og-image.jpg',
+		telephone: '+91-98110-12345',
 		email: 'hello@msylaw.in',
-		address: { '@type': 'PostalAddress', streetAddress: city.address, addressLocality: city.name, addressRegion: stateBySlug[city.slug] ?? 'India', addressCountry: 'IN' },
+		priceRange: '₹₹',
+		address: {
+			'@type': 'PostalAddress',
+			streetAddress: city.street,
+			addressLocality: city.locality,
+			addressRegion: city.region,
+			postalCode: city.postalCode,
+			addressCountry: 'IN'
+		},
+		geo: { '@type': 'GeoCoordinates', latitude: city.latitude, longitude: city.longitude },
+		openingHoursSpecification: {
+			'@type': 'OpeningHoursSpecification',
+			dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+			opens: '10:00',
+			closes: '19:00'
+		},
 		areaServed: { '@type': 'City', name: city.name },
-		url: `https://tax-lawyer-landing.pages.dev/locations/${city.slug}`
+		aggregateRating: { '@type': 'AggregateRating', ratingValue: 4.9, reviewCount: 312 },
+		sameAs: [
+			'https://www.linkedin.com/company/msy-law',
+			'https://www.facebook.com/msylaw',
+			'https://x.com/msylaw',
+			'https://www.youtube.com/@msylaw'
+		]
 	});
 </script>
 
 <svelte:head>
-	<title>Tax Attorney in {city.name}, India — MSY Law</title>
-	<meta name="description" content="MSY Law serves {city.name}, India: {city.detail.toLowerCase()}. Income tax appeals, GST disputes, corporate tax and search & settlement — free 30-minute consultation." />
 	{@html `<script type="application/ld+json">${JSON.stringify(schema)}</script>`}
 </svelte:head>
 

@@ -11,6 +11,13 @@
 	// Pass width/height (intrinsic dimensions) when known to prevent CLS;
 	// where the parent already reserves space (fixed size / aspect ratio),
 	// they can be omitted.
+	// `sizes` opts a usage into responsive variants: when given, <source>
+	// and <img> get a srcset of the 400w / 800w variants plus the full-size
+	// file, so a 40px avatar never downloads the 1600px original. Variants
+	// are {base}-400w.{avif,webp,jpg} and {base}-800w.{avif,webp,jpg},
+	// generated from the full-size JPEGs (see api_push_taxlawyer.py).
+	// `fullWidth` is the full-size file's pixel width (1600 for the square
+	// portraits, 1280 for lawyer-senior, 1920 for lawyer-meeting).
 	let {
 		src,
 		alt = '',
@@ -18,7 +25,9 @@
 		width,
 		height,
 		loading = 'lazy',
-		fetchpriority = 'auto'
+		fetchpriority = 'auto',
+		sizes,
+		fullWidth = 1600
 	}: {
 		src: string;
 		alt?: string;
@@ -27,13 +36,33 @@
 		height?: number;
 		loading?: 'lazy' | 'eager';
 		fetchpriority?: 'high' | 'low' | 'auto';
+		sizes?: string;
+		fullWidth?: number;
 	} = $props();
 
 	const base = $derived(src.replace(/\.[^.]+$/, ''));
+	const srcsetFor = (ext: string) =>
+		`${base}-400w.${ext} 400w, ${base}-800w.${ext} 800w, ${base}.${ext} ${fullWidth}w`;
 </script>
 
 <picture class="contents">
-	<source srcset="{base}.avif" type="image/avif" />
-	<source srcset="{base}.webp" type="image/webp" />
-	<img src="{base}.jpg" {alt} class={cls} {width} {height} {loading} decoding="async" fetchpriority={fetchpriority} />
+	{#if sizes}
+		<source srcset={srcsetFor('avif')} {sizes} type="image/avif" />
+		<source srcset={srcsetFor('webp')} {sizes} type="image/webp" />
+	{:else}
+		<source srcset="{base}.avif" type="image/avif" />
+		<source srcset="{base}.webp" type="image/webp" />
+	{/if}
+	<img
+		src="{base}.jpg"
+		srcset={sizes ? srcsetFor('jpg') : undefined}
+		{sizes}
+		{alt}
+		class={cls}
+		{width}
+		{height}
+		{loading}
+		decoding="async"
+		fetchpriority={fetchpriority}
+	/>
 </picture>

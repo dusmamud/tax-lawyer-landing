@@ -65,10 +65,6 @@
 	let filtered = $derived(activeKind === 'All' ? cases : cases.filter((c) => c.kind === activeKind));
 </script>
 
-<svelte:head>
-	<title>Case Results — MSY Law | Real Tax Case Outcomes</title>
-	<meta name="description" content="Real MSY Law case results: ₹4.2 Cr penalty deleted at ITAT, ₹86 lakh GST refund recovered, ₹1.8 Cr demand settled for ₹12 lakh, search case closed with no prosecution." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Case Results"

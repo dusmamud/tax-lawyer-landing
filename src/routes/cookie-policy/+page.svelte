@@ -11,10 +11,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Cookie Policy — MSY Law</title>
-	<meta name="description" content="MSY Law cookie policy: this site uses only strictly necessary cookies. No advertising trackers, no data selling." />
-</svelte:head>
 
 <PageHero eyebrow="Legal" title="Cookie Policy" subtitle="Last updated: November 15, 2026. Short version: this site uses only the cookies it needs to work — nothing else." crumb="Cookie Policy" />
 

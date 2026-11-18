@@ -14,10 +14,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Locations &amp; Service Areas — MSY Law | Tax Attorney in India</title>
-	<meta name="description" content="MSY Law is based in New Delhi and serves clients in Mumbai, Bengaluru, Hyderabad, Chennai and Kolkata — and across India for income tax and GST matters." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Locations"

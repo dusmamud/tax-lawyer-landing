@@ -4,6 +4,7 @@ export type Post = {
 	slug: string;
 	tag: string;
 	date: string;
+	published: string;
 	read: string;
 	title: string;
 	excerpt: string;
@@ -19,6 +20,7 @@ export const posts: Post[] = [
 		slug: 'income-tax-notice-what-to-do-first',
 		tag: 'Income Tax',
 		date: 'Nov 14, 2026',
+		published: '2026-11-14T10:00:00+05:30',
 		read: '6 min read',
 		title: 'Income tax notice? 5 things to do first',
 		excerpt: 'The first 48 hours decide how your notice goes. Here is the exact checklist our lawyers use.',
@@ -73,6 +75,7 @@ export const posts: Post[] = [
 		slug: 'itr-filing-deadline-guide',
 		tag: 'ITR Filing',
 		date: 'Nov 12, 2026',
+		published: '2026-11-12T10:00:00+05:30',
 		read: '8 min read',
 		title: 'ITR filing: deadlines, the new Act, and what changed',
 		excerpt: 'The 2026-27 deadlines, the Income-tax Act, 2025, and what a late return really costs you.',
@@ -121,6 +124,7 @@ export const posts: Post[] = [
 		slug: 'gst-notice-reply-guide',
 		tag: 'GST',
 		date: 'Nov 10, 2026',
+		published: '2026-11-10T10:00:00+05:30',
 		read: '6 min read',
 		title: 'GST notice? How to reply and what not to say',
 		excerpt: 'A show-cause notice is not a demand yet. Here is how to reply well — and the mistakes that turn it into one.',
@@ -168,6 +172,7 @@ export const posts: Post[] = [
 		slug: 'advance-tax-due-dates-guide',
 		tag: 'Tax Planning',
 		date: 'Nov 8, 2026',
+		published: '2026-11-08T10:00:00+05:30',
 		read: '7 min read',
 		title: 'Advance tax: the four dates every business must know',
 		excerpt: '15 June, 15 September, 15 December, 15 March — miss one and interest starts running at 1% a month.',
@@ -215,6 +220,7 @@ export const posts: Post[] = [
 		slug: 'section-270a-penalty-waiver',
 		tag: 'Penalties',
 		date: 'Nov 6, 2026',
+		published: '2026-11-06T10:00:00+05:30',
 		read: '6 min read',
 		title: 'Section 270A penalty: how to get it reduced or waived',
 		excerpt: '50% for under-reporting, 200% for misreporting — and the routes that can reduce it to nothing.',
@@ -262,6 +268,7 @@ export const posts: Post[] = [
 		slug: 'vivad-se-vishwas-settle-tax-dispute',
 		tag: 'Settlement',
 		date: 'Nov 4, 2026',
+		published: '2026-11-04T10:00:00+05:30',
 		read: '7 min read',
 		title: 'Vivad se Vishwas: settle your tax dispute for less',
 		excerpt: 'Pay the disputed tax, close the case, and stop the interest clock — when settlement beats an appeal.',
@@ -303,6 +310,7 @@ export const posts: Post[] = [
 		slug: 'nri-taxation-india-guide',
 		tag: 'NRI Tax',
 		date: 'Nov 2, 2026',
+		published: '2026-11-02T10:00:00+05:30',
 		read: '8 min read',
 		title: 'NRI taxation: the complete guide for Indians abroad',
 		excerpt: 'Residential status, DTAA relief, TDS on property sales, and the mistakes that cost NRIs the most.',
@@ -350,6 +358,7 @@ export const posts: Post[] = [
 		slug: 'gst-registration-threshold-guide',
 		tag: 'GST',
 		date: 'Oct 30, 2026',
+		published: '2026-10-30T10:00:00+05:30',
 		read: '7 min read',
 		title: 'GST registration: who must register and when',
 		excerpt: '₹40 lakh for goods, ₹20 lakh for services — and the cases where the threshold does not apply at all.',

@@ -60,7 +60,7 @@
 		<!-- Top row: brand + newsletter -->
 		<div class="grid grid-cols-1 gap-10 border-b border-white/10 py-12 lg:grid-cols-2 lg:gap-16">
 			<div>
-				<a href="/" class="flex items-center gap-2.5" aria-label="MSY Law — home">
+				<a href="/" class="flex items-center gap-2.5" aria-label="MSY Law">
 					<img src="/logo.svg" alt="MSY Law logo" class="h-11 w-11" width="44" height="44" />
 					<span>
 						<span class="block font-serif text-[22px] leading-none font-bold tracking-[0.18em]">MSY LAW</span>
@@ -109,14 +109,14 @@
 							type="email"
 							required
 							placeholder="Your email address"
-							class="min-w-0 flex-1 rounded-full border border-white/20 bg-white/10 px-5 py-3 text-[14.5px] text-white placeholder:text-white/45 outline-none transition focus:border-leaf focus:bg-white/15 focus:ring-2 focus:ring-leaf/40"
+							class="min-w-0 flex-1 rounded-full border border-white/20 bg-white/10 px-5 py-3 text-[14.5px] text-white placeholder:text-white/60 outline-none transition focus:border-leaf focus:bg-white/15 focus:ring-2 focus:ring-leaf/40"
 						/>
 						<button type="submit" class="shrink-0 rounded-full bg-leaf px-6 py-3 text-[14px] font-bold text-navy-3 shadow-md transition hover:-translate-y-0.5 hover:bg-leaf-2">Subscribe</button>
 					</form>
 					{#if newsError}
 						<p class="mt-2 text-[13px] font-medium text-red-300">{newsError}</p>
 					{:else}
-						<p class="mt-2 text-[12.5px] text-white/45">We never share your email. Unsubscribe anytime.</p>
+						<p class="mt-2 text-[12.5px] text-white/60">We never share your email. Unsubscribe anytime.</p>
 					{/if}
 				{/if}
 			</div>
@@ -193,7 +193,7 @@
 				{/each}
 			</nav>
 		</div>
-		<p class="pb-8 text-center text-[12px] leading-relaxed text-white/40 lg:text-left">
+		<p class="pb-8 text-center text-[12px] leading-relaxed text-white/60 lg:text-left">
 			Lawyer advertising. Past results do not guarantee similar outcomes. Nothing on this site is legal advice — every case is different, and a consultation is the only way to know how the law applies to you.
 		</p>
 	</div>

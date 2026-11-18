@@ -21,10 +21,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Free Guides &amp; Checklists — MSY Law | Downloads</title>
-	<meta name="description" content="Free tax guides from MSY Law: an income tax notice checklist for the first 48 hours, and a GST notice reply checklist. No email needed — just download." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Free Downloads"

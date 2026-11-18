@@ -9,6 +9,11 @@
 		<meta name="text-scale" content="scale" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="apple-touch-icon" href="/logo.svg" />
+		<!-- Self-hosted fonts (see src/app.css @font-face): preload the two
+			above-the-fold faces — Playfair Display 600 for the hero H1, Inter
+			400 for body text — so the first paint never waits on a font. -->
+		<link rel="preload" href="/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
 		<!-- Google Analytics 4 — replace G-XXXXXXXXXX with your real Measurement ID (Google Analytics > Admin > Data Streams). Until then no data is collected. -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 		<script>

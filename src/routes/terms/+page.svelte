@@ -13,10 +13,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Terms of Service — MSY Law</title>
-	<meta name="description" content="MSY Law terms of service: our services, fees, no guarantee of results, your responsibilities and governing law." />
-</svelte:head>
 
 <PageHero eyebrow="Legal" title="Terms of Service" subtitle="Last updated: November 15, 2026. The plain-English terms under which we work together." crumb="Terms of Service" />
 

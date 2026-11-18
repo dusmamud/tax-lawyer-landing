@@ -26,7 +26,7 @@
 				<Reveal delay={i * 90}>
 					<a href="/team/{slugOf(member.name)}" class="group block overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl">
 						<div class="relative aspect-[4/4.4] overflow-hidden bg-sage">
-							<Picture src={member.img} alt={member.name} class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />
+							<Picture src={member.img} alt={member.name} class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 300px, (min-width: 640px) 50vw, 90vw" />
 							<span class="absolute top-3 left-3 rounded-full bg-white/90 px-3 py-1 text-[11px] font-bold text-navy">{member.tag}</span>
 						</div>
 						<div class="p-5">

@@ -148,7 +148,7 @@
 				</div>
 			{/each}
 			{#if typing}
-				<div class="flex items-center gap-1.5 rounded-2xl rounded-bl-md bg-white px-4 py-3 shadow-sm ring-1 ring-black/5 w-fit" aria-label="MSY Law is typing">
+				<div class="flex items-center gap-1.5 rounded-2xl rounded-bl-md bg-white px-4 py-3 shadow-sm ring-1 ring-black/5 w-fit" role="status" aria-label="MSY Law is typing">
 					<span class="typing-dot"></span>
 					<span class="typing-dot"></span>
 					<span class="typing-dot"></span>

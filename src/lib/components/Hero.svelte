@@ -21,9 +21,9 @@
 				<div class="absolute -inset-3 animate-spin-slow rounded-full border border-dashed border-navy/25 sm:-inset-4"></div>
 				<div class="absolute -inset-6 rounded-full border border-navy/10 sm:-inset-8"></div>
 				<div class="relative h-[168px] w-[168px] overflow-hidden rounded-full bg-sage ring-8 ring-white/70 sm:h-[200px] sm:w-[200px] lg:h-[220px] lg:w-[220px]">
-					<Picture src="/lawyer-man.webp" alt="Tax lawyer" class="h-full w-full object-cover object-top" width={1600} height={1600} loading="eager" fetchpriority="high" />
+					<Picture src="/lawyer-man.webp" alt="Tax lawyer" class="h-full w-full object-cover object-top" width={1600} height={1600} loading="eager" fetchpriority="high" sizes="(min-width: 1024px) 220px, (min-width: 640px) 200px, 168px" />
 				</div>
-				<span class="absolute -bottom-1 -left-4 -rotate-12 rounded-sm bg-leaf px-3 py-1.5 text-[12px] font-bold text-white shadow sm:-left-6 sm:text-[13px]">
+				<span class="absolute -bottom-1 -left-4 -rotate-12 rounded-sm bg-leaf px-3 py-1.5 text-[12px] font-bold text-navy-3 shadow sm:-left-6 sm:text-[13px]">
 					Tax Lawyer
 				</span>
 				<div class="absolute -right-3 -bottom-4 hidden animate-float rounded-2xl bg-white px-3.5 py-2.5 shadow-lg ring-1 ring-black/5 sm:block" style="animation-delay: 1.2s">
@@ -73,7 +73,7 @@
 							Discover Tax Services
 						</a>
 						<a href="/about" class="w-full rounded-full border border-navy/20 bg-white/80 px-7 py-3.5 text-[15px] font-semibold text-navy transition hover:-translate-y-0.5 hover:bg-white sm:w-auto">
-							Learn More
+							Learn More <span class="sr-only">about MSY Law</span>
 						</a>
 					</div>
 				</Reveal>
@@ -81,9 +81,9 @@
 				<Reveal delay={280}>
 					<div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
 						<div class="flex -space-x-3">
-							<Picture src="/lawyer-man.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" />
-							<Picture src="/lawyer-woman.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" />
-							<Picture src="/lawyer-senior.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" />
+							<Picture src="/lawyer-man.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" width={1600} height={1600} sizes="40px" />
+							<Picture src="/lawyer-woman.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" width={1600} height={1600} sizes="40px" />
+							<Picture src="/lawyer-senior.webp" alt="" class="h-10 w-10 rounded-full object-cover object-top ring-2 ring-white" width={1280} height={1920} sizes="40px" />
 							<span class="flex h-10 w-10 items-center justify-center rounded-full bg-navy text-[11px] font-bold text-white ring-2 ring-white">1.2k+</span>
 						</div>
 						<div class="text-center sm:text-left">
@@ -101,7 +101,7 @@
 				<div class="absolute -inset-3 animate-spin-slow rounded-full border border-dashed border-navy/25 sm:-inset-4"></div>
 				<div class="absolute -inset-6 rounded-full border border-navy/10 sm:-inset-8"></div>
 				<div class="relative h-[168px] w-[168px] overflow-hidden rounded-full bg-sage ring-8 ring-white/70 sm:h-[200px] sm:w-[200px] lg:h-[220px] lg:w-[220px]">
-					<Picture src="/lawyer-woman.webp" alt="Tax lawyer" class="h-full w-full object-cover object-top" width={1600} height={1600} loading="eager" />
+					<Picture src="/lawyer-woman.webp" alt="Tax lawyer" class="h-full w-full object-cover object-top" width={1600} height={1600} loading="eager" sizes="(min-width: 1024px) 220px, (min-width: 640px) 200px, 168px" />
 				</div>
 				<span class="absolute -top-3 -right-1 flex h-11 w-11 items-center justify-center rounded-full border-2 border-leaf bg-white text-[17px] font-bold text-leaf-dark shadow sm:-top-6 sm:-right-2 sm:h-12 sm:w-12">
 					1
@@ -125,7 +125,7 @@
 	<!-- Trust marquee -->
 	<div class="relative border-y border-navy/10 bg-white/70 py-3.5">
 		<div class="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
-			<div class="marquee-track items-center gap-10 text-[13px] font-bold tracking-[0.18em] text-navy/60 uppercase">
+			<div class="marquee-track items-center gap-10 text-[13px] font-bold tracking-[0.18em] text-navy/80 uppercase">
 				{#each [0, 1] as dup}
 					<div class="flex items-center gap-10 pr-10" aria-hidden={dup === 1}>
 						<span>Income Tax Appeals</span><Icon name="diamond" class="h-2.5 w-2.5 text-leaf" />

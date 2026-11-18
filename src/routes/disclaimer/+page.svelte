@@ -12,10 +12,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Disclaimer — MSY Law</title>
-	<meta name="description" content="MSY Law disclaimer: lawyer advertising, not legal advice, no lawyer–client relationship from browsing, and past results." />
-</svelte:head>
 
 <PageHero eyebrow="Legal" title="Disclaimer" subtitle="Last updated: November 15, 2026. Please read this before relying on anything on this site." crumb="Disclaimer" />
 

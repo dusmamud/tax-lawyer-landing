@@ -46,10 +46,6 @@
 	};
 </script>
 
-<svelte:head>
-	<title>Advance Tax Calculator FY 2026-27 — Instalment Dates &amp; Amounts | MSY Law</title>
-	<meta name="description" content="Work out your advance tax for FY 2026-27: how much is due on 15 June, 15 September, 15 December and 15 March, and whether the ₹10,000 threshold applies. Free, private, instant." />
-</svelte:head>
 
 {@html `<script type="application/ld+json">${JSON.stringify(schema)}</script>`}
 

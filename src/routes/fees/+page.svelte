@@ -22,10 +22,6 @@
 	let openFaq = $state(0);
 </script>
 
-<svelte:head>
-	<title>Fees &amp; Pricing — MSY Law | Tax Lawyer Fees in India</title>
-	<meta name="description" content="Clear fixed fees: income-tax notice & scrutiny from ₹9,999, tax demand & settlement from ₹14,999, ITR filing from ₹2,499, GST disputes with no win, no fee. Free 30-minute consultation." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Fees & Pricing"

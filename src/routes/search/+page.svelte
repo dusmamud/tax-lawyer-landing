@@ -22,10 +22,6 @@
 	});
 </script>
 
-<svelte:head>
-	<title>Search — MSY Law</title>
-	<meta name="description" content="Search every page of the MSY Law website: practice areas, lawyers, fees, locations, blog articles and more." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Search"

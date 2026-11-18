@@ -13,10 +13,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Privacy Policy — MSY Law</title>
-	<meta name="description" content="MSY Law privacy policy: what information we collect, how we use it, confidentiality, security and your rights." />
-</svelte:head>
 
 <PageHero eyebrow="Legal" title="Privacy Policy" subtitle="Last updated: November 15, 2026. Your information is yours — here is exactly what we do with it." crumb="Privacy Policy" />
 

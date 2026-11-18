@@ -35,10 +35,6 @@
 	let open = $state(0);
 </script>
 
-<svelte:head>
-	<title>Free Resources — MSY Law | Tax Guides, Deadlines &amp; Glossary</title>
-	<meta name="description" content="Free tax resources from MSY Law: the 2026-27 ITR and GST deadline calendar, a plain-English Indian tax glossary, and guides written by our lawyers." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Resources"

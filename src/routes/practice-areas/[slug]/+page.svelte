@@ -32,8 +32,6 @@
 </script>
 
 <svelte:head>
-	<title>{area.title} Lawyer in New Delhi, India — MSY Law | Tax Attorney</title>
-	<meta name="description" content="{area.short} MSY Law serves New Delhi, Mumbai, Bengaluru, Hyderabad, Chennai and Kolkata — and clients across India." />
 	{@html `<script type="application/ld+json">${JSON.stringify(faqSchema)}</script>`}
 	{@html `<script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>`}
 </svelte:head>

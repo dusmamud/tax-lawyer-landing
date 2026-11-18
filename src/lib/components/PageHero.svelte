@@ -17,7 +17,7 @@
 	<div class="relative mx-auto max-w-7xl px-4 sm:px-5 lg:px-8">
 		<Reveal>
 			<nav aria-label="Breadcrumb" class="text-[13px] font-medium text-muted">
-				<a href="/" class="transition hover:text-navy">Home</a>
+				<a href="/" class="text-navy underline underline-offset-4 transition hover:text-navy-3">Home</a>
 				{#if crumb}
 					<span class="mx-2" aria-hidden="true">/</span><span class="text-navy">{crumb}</span>
 				{/if}

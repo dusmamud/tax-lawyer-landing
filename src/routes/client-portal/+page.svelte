@@ -47,10 +47,6 @@
 	}
 </script>
 
-<svelte:head>
-	<title>Client Portal — MSY Law | Case Status, Documents & Payments</title>
-	<meta name="description" content="Existing MSY Law clients: check your case status, download documents, message your lawyer, and pay your balance online." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Client Portal"

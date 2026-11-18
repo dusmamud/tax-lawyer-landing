@@ -14,6 +14,7 @@
 		'@context': 'https://schema.org',
 		'@type': 'Person',
 		name: member.name,
+		description: member.bio[0],
 		jobTitle: member.role,
 		worksFor: { '@type': 'LegalService', name: 'MSY Law', url: 'https://tax-lawyer-landing.pages.dev/' },
 		alumniOf: member.education,
@@ -24,8 +25,6 @@
 </script>
 
 <svelte:head>
-	<title>{member.name} — {member.role} | MSY Law</title>
-	<meta name="description" content="{member.name}, {member.role} at MSY Law. {member.exp} experience in {member.focus.join(', ')}." />
 	{@html `<script type="application/ld+json">${JSON.stringify(personSchema)}</script>`}
 </svelte:head>
 
@@ -41,7 +40,7 @@
 		<div>
 			<Reveal>
 				<div class="overflow-hidden rounded-3xl bg-sage shadow-lg">
-					<Picture src={member.img} alt={member.name} class="aspect-[4/4.4] w-full object-cover object-top" />
+					<Picture src={member.img} alt={member.name} class="aspect-[4/4.4] w-full object-cover object-top" sizes="(min-width: 1024px) 380px, 90vw" />
 				</div>
 				<div class="mt-6 rounded-3xl border border-black/5 bg-cream/50 p-6">
 					<p class="text-[13px] font-bold tracking-[0.16em] text-muted uppercase">Focus areas</p>
@@ -98,7 +97,7 @@
 					<div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
 						{#each others as other}
 							<a href="/team/{other.slug}" class="flex items-center gap-3 rounded-2xl border border-black/5 p-3 transition hover:-translate-y-0.5 hover:shadow-md">
-								<Picture src={other.img} alt={other.name} class="h-14 w-14 rounded-full object-cover object-top" />
+								<Picture src={other.img} alt={other.name} class="h-14 w-14 rounded-full object-cover object-top" sizes="56px" />
 								<span>
 									<span class="block text-[14px] font-bold">{other.name}</span>
 									<span class="block text-[12px] text-muted">{other.role}</span>

@@ -10,21 +10,49 @@
 	const post = $derived(data.post);
 	const related = $derived(data.related);
 
+	// Author name -> team profile slug (for the Article author url).
+	const authorSlug: Record<string, string> = {
+		'Ananya Rao': 'ananya-rao',
+		'Mohan S. Yadav': 'mohan-s-yadav',
+		'Sara Iyer': 'sara-iyer',
+		'Arvind Kapoor': 'arvind-kapoor'
+	};
+
 	const articleSchema = $derived({
 		'@context': 'https://schema.org',
 		'@type': 'Article',
 		headline: post.title,
 		description: post.excerpt,
-		author: { '@type': 'Person', name: post.author, jobTitle: post.authorRole },
-		publisher: { '@type': 'Organization', name: 'MSY Law', url: 'https://tax-lawyer-landing.pages.dev/' },
-		datePublished: post.date,
+		// The author's photo (1600x1600 JPEG) is the article's image — the
+		// page has no hero image. 1600px wide, 1:1 (an accepted ratio).
+		image: `https://tax-lawyer-landing.pages.dev${post.authorImg.replace('.webp', '.jpg')}`,
+		author: {
+			'@type': 'Person',
+			name: post.author,
+			jobTitle: post.authorRole,
+			url: `https://tax-lawyer-landing.pages.dev/team/${authorSlug[post.author] ?? 'mohan-s-yadav'}`
+		},
+		publisher: {
+			'@type': 'Organization',
+			name: 'MSY Law',
+			url: 'https://tax-lawyer-landing.pages.dev/',
+			logo: {
+				'@type': 'ImageObject',
+				url: 'https://tax-lawyer-landing.pages.dev/og-image.jpg',
+				width: 1200,
+				height: 630
+			}
+		},
+		// Full ISO 8601 with timezone (was the display string "Nov 14, 2026",
+		// which the validator flagged as an invalid datetime).
+		datePublished: post.published,
+		// Posts are never edited after publication, so modified = published.
+		dateModified: post.published,
 		mainEntityOfPage: `https://tax-lawyer-landing.pages.dev/blog/${post.slug}`
 	});
 </script>
 
 <svelte:head>
-	<title>{post.title} — MSY Law Blog</title>
-	<meta name="description" content={post.excerpt} />
 	{@html `<script type="application/ld+json">${JSON.stringify(articleSchema)}</script>`}
 </svelte:head>
 
@@ -39,7 +67,7 @@
 	<div class="mx-auto max-w-3xl px-4 sm:px-5">
 		<Reveal>
 			<div class="flex flex-wrap items-center gap-4 border-b border-black/5 pb-6">
-				<Picture src={post.authorImg} alt={post.author} class="h-13 w-13 rounded-full object-cover object-top ring-2 ring-cream" />
+				<Picture src={post.authorImg} alt={post.author} class="h-13 w-13 rounded-full object-cover object-top ring-2 ring-cream" sizes="52px" />
 				<div>
 					<p class="text-[15px] font-bold">{post.author}</p>
 					<p class="text-[13px] text-muted">{post.authorRole}</p>

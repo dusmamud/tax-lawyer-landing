@@ -39,10 +39,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Sitemap — MSY Law</title>
-	<meta name="description" content="Full sitemap of the MSY Law website: every page, practice area, lawyer profile and article." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Sitemap"

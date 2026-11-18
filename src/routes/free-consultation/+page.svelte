@@ -94,10 +94,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Free Consultation — MSY Law | Tax Lawyer</title>
-	<meta name="description" content="Book a free 30-minute consultation with an MSY Law tax lawyer. Leave with a clear plan and a fixed-fee quote — no obligation." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Free Consultation"

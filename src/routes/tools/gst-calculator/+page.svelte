@@ -54,10 +54,6 @@
 	};
 </script>
 
-<svelte:head>
-	<title>GST Calculator — Add or Remove GST, CGST / SGST / IGST Split | MSY Law</title>
-	<meta name="description" content="Add or remove GST from any amount at 5%, 12%, 18%, 28% or 40% — with the CGST + SGST split for intra-state sales or IGST for inter-state sales. Free, private, instant." />
-</svelte:head>
 
 {@html `<script type="application/ld+json">${JSON.stringify(schema)}</script>`}
 

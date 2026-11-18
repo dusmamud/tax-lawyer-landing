@@ -3,10 +3,6 @@
 	import Icon from '#lib/components/Icon.svelte';
 </script>
 
-<svelte:head>
-	<title>Page Not Found — MSY Law</title>
-	<meta name="description" content="The page you are looking for does not exist. Return home or contact MSY Law for help." />
-</svelte:head>
 
 <section class="bg-cream py-20 lg:py-28">
 	<div class="mx-auto max-w-2xl px-4 text-center sm:px-5">

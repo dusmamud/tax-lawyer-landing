@@ -19,7 +19,7 @@
 			<span class="absolute top-1/2 -left-5 h-2 w-2 rounded-full bg-leaf"></span>
 			<span class="absolute right-2 bottom-16 h-2.5 w-2.5 rounded-full bg-leaf"></span>
 			<div class="relative aspect-square overflow-hidden rounded-full bg-sage ring-8 ring-white">
-				<Picture src="/lawyer-meeting.webp" alt="Tax attorney discussing documents with a client" class="h-full w-full object-cover" width={1920} height={1280} />
+				<Picture src="/lawyer-meeting.webp" alt="Tax attorney discussing documents with a client" class="h-full w-full object-cover" width={1920} height={1280} sizes="(min-width: 1024px) 600px, (min-width: 640px) 560px, 90vw" fullWidth={1920} />
 			</div>
 			<div class="absolute -bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-2xl bg-navy px-5 py-3 text-white shadow-xl sm:left-auto sm:translate-x-0">
 				<p class="font-serif text-2xl leading-none font-bold">15+</p>
@@ -58,7 +58,7 @@
 						Begin Your Tax Journey
 					</a>
 					<div class="flex items-center gap-3">
-						<Picture src="/lawyer-senior.webp" alt="Michael S. Young, founding partner" class="h-12 w-12 rounded-full object-cover object-top ring-2 ring-cream" width={1280} height={1920} />
+						<Picture src="/lawyer-senior.webp" alt="Michael S. Young, founding partner" class="h-12 w-12 rounded-full object-cover object-top ring-2 ring-cream" width={1280} height={1920} sizes="48px" fullWidth={1280} />
 						<div>
 							<p class="font-serif text-[17px] font-semibold italic">Michael S. Young</p>
 							<p class="text-[12px] text-muted">Founding Partner · 15+ yrs</p>

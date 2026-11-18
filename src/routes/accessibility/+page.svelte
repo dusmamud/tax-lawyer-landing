@@ -11,10 +11,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Accessibility — MSY Law</title>
-	<meta name="description" content="MSY Law accessibility statement: our commitment to WCAG 2.1 AA, what we do, known limitations and how to reach us another way." />
-</svelte:head>
 
 <PageHero eyebrow="Legal" title="Accessibility statement" subtitle="Everyone should be able to use this website — including you. Here is what we do about it, and how to tell us when we fall short." crumb="Accessibility" />
 

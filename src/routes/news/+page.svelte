@@ -37,10 +37,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>News — MSY Law | Firm News &amp; Updates</title>
-	<meta name="description" content="MSY Law news: awards, case wins, community tax clinics and new team members." />
-</svelte:head>
 
 <PageHero
 	eyebrow="News"

@@ -4,6 +4,12 @@ export type City = {
 	tag: string;
 	detail: string;
 	address: string;
+	street: string;
+	locality: string;
+	region: string;
+	postalCode: string;
+	latitude: number;
+	longitude: number;
 	parking: string;
 	about: string[];
 	areas: string[];
@@ -19,6 +25,12 @@ export const cities: City[] = [
 		tag: 'Headquarters',
 		detail: 'Main office — Statesman House, Barakhamba Road, Connaught Place',
 		address: 'Statesman House, Barakhamba Road, Connaught Place, New Delhi 110001',
+		street: 'Statesman House, Barakhamba Road, Connaught Place',
+		locality: 'New Delhi',
+		region: 'Delhi',
+		postalCode: '110001',
+		latitude: 28.6315,
+		longitude: 77.2167,
 		parking: 'Paid parking at Statesman House; Barakhamba Road Metro (Blue Line) is a 2-minute walk.',
 		about: [
 			'Our main office is in Connaught Place, a short walk from the Barakhamba Road Metro station and minutes from the Income Tax Appellate Tribunal and the Delhi High Court. This is where the firm started in 2011, and where most of our attorneys work every day. Walk-ins are welcome during office hours, but a booked consultation means an attorney is waiting for you — not a receptionist.',
@@ -38,6 +50,12 @@ export const cities: City[] = [
 		tag: 'By appointment',
 		detail: 'Serving clients across Mumbai and Maharashtra',
 		address: 'One World Centre, Senapati Bapat Marg, Lower Parel, Mumbai 400013',
+		street: 'One World Centre, Senapati Bapat Marg, Lower Parel',
+		locality: 'Mumbai',
+		region: 'Maharashtra',
+		postalCode: '400013',
+		latitude: 19.00266,
+		longitude: 72.827,
 		parking: 'Valet and visitor parking at One World Centre.',
 		about: [
 			'Mumbai is India’s financial capital — and home to some of the most complex corporate tax, transfer pricing and GST disputes in the country. Our Mumbai clients are usually companies and promoters dealing with a scrutiny assessment, a transfer pricing adjustment, or a GST demand that started with a single notice.',
@@ -57,6 +75,12 @@ export const cities: City[] = [
 		tag: 'By appointment',
 		detail: 'Serving clients across Bengaluru and Karnataka',
 		address: 'UB City, Vittal Mallya Road, Bengaluru 560001',
+		street: 'UB City, Vittal Mallya Road',
+		locality: 'Bengaluru',
+		region: 'Karnataka',
+		postalCode: '560001',
+		latitude: 12.97154,
+		longitude: 77.59585,
 		parking: 'Visitor parking at UB City; Vidhana Soudha Metro is nearby.',
 		about: [
 			'Bengaluru’s startups and global capability centres create tax problems most firms never see: ESOP taxation, transfer pricing for captives, GST on software exports, and founders with income in two countries. Our Bengaluru clients range from first-time founders to listed companies.',
@@ -76,6 +100,12 @@ export const cities: City[] = [
 		tag: 'By appointment',
 		detail: 'Serving clients across Hyderabad and Telangana',
 		address: 'Financial District, Nanakramguda, Hyderabad 500032',
+		street: 'Financial District, Nanakramguda',
+		locality: 'Hyderabad',
+		region: 'Telangana',
+		postalCode: '500032',
+		latitude: 17.42639,
+		longitude: 78.33647,
 		parking: 'Visitor parking in the Financial District towers.',
 		about: [
 			'Hyderabad’s pharma, IT and life-sciences industries bring a distinctive mix of tax work — R&D deductions, GST on clinical trials and contract manufacturing, and transfer pricing for global captives. Our Hyderabad clients are usually CFOs and founders who need a straight answer fast, not a 40-page memo.',
@@ -95,6 +125,12 @@ export const cities: City[] = [
 		tag: 'By appointment',
 		detail: 'Serving clients across Chennai and Tamil Nadu',
 		address: 'Express Avenue, Whites Road, Royapettah, Chennai 600014',
+		street: 'Express Avenue, Whites Road, Royapettah',
+		locality: 'Chennai',
+		region: 'Tamil Nadu',
+		postalCode: '600014',
+		latitude: 13.05799,
+		longitude: 80.26349,
 		parking: 'Mall parking at Express Avenue; Royapettah is well connected by bus and Metro.',
 		about: [
 			'Chennai’s manufacturing base, auto ancillaries and a large NRI community create a distinctive set of tax issues — from GST on job work and exports to NRI residential status and foreign asset disclosures for families with members abroad.',
@@ -114,6 +150,12 @@ export const cities: City[] = [
 		tag: 'By appointment',
 		detail: 'Serving clients across Kolkata and West Bengal',
 		address: 'Camac Street, Park Street Area, Kolkata 700017',
+		street: 'Camac Street, Park Street Area',
+		locality: 'Kolkata',
+		region: 'West Bengal',
+		postalCode: '700017',
+		latitude: 22.55141,
+		longitude: 88.35238,
 		parking: 'Street and mall parking on Camac Street; Park Street Metro is nearby.',
 		about: [
 			'Kolkata’s family businesses — some in their third generation — face a particular problem: succession. A business built over decades can be broken by a single tax demand if nobody plans the handover. Our Kolkata practice is built around that: succession planning, settlement of old disputes, and restructuring so the next generation keeps the business.',

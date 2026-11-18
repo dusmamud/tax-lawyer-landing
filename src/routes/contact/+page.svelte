@@ -13,10 +13,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Contact Us — MSY Law | Tax Lawyers in New Delhi, India</title>
-	<meta name="description" content="Contact MSY Law: call +91 98110 12345, email hello@msylaw.in, or book a free 30-minute consultation. A lawyer replies within one business day." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Contact Us"

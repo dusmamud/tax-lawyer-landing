@@ -17,10 +17,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Testimonials &amp; Case Results — MSY Law</title>
-	<meta name="description" content="What MSY Law clients say: 4.9/5 from 1,200+ clients, with real case results — ₹4.2 Cr penalty deleted, ₹86 lakh GST refund recovered, ₹1.8 Cr demand settled." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Testimonials"
@@ -84,7 +80,7 @@
 						<Stars />
 						<blockquote class="mt-4 flex-1 text-[15px] leading-relaxed text-ink/85">“{item.quote}”</blockquote>
 						<figcaption class="mt-5 flex items-center gap-3 border-t border-black/5 pt-4">
-							<Picture src={item.img} alt={item.name} class="h-11 w-11 rounded-full object-cover object-top" />
+							<Picture src={item.img} alt={item.name} class="h-11 w-11 rounded-full object-cover object-top" sizes="44px" />
 							<span>
 								<span class="block text-[14px] font-bold">{item.name}</span>
 								<span class="block text-[12.5px] text-muted">{item.role}</span>

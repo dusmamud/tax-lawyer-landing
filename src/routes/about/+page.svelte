@@ -23,10 +23,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>About Us — MSY Law | Tax Lawyers in India</title>
-	<meta name="description" content="Meet MSY Law: a tax law firm founded in New Delhi in 2011. Our story, our values, and the team behind 1,200+ resolved tax cases." />
-</svelte:head>
 
 <PageHero
 	eyebrow="About Us"

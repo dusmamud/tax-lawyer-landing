@@ -157,10 +157,6 @@
 	};
 </script>
 
-<svelte:head>
-	<title>Income Tax Calculator FY 2026-27 — Old vs New Regime | MSY Law</title>
-	<meta name="description" content="Compare income tax under the old and new regimes for FY 2026-27: slab-by-slab breakdown, Section 87A rebate and marginal relief, cess and surcharge. Free, private, instant." />
-</svelte:head>
 
 {@html `<script type="application/ld+json">${JSON.stringify(schema)}</script>`}
 

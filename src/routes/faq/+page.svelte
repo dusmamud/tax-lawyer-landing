@@ -16,8 +16,6 @@
 </script>
 
 <svelte:head>
-	<title>FAQ — MSY Law | Frequently Asked Questions</title>
-	<meta name="description" content="Frequently asked questions about MSY Law: fees, income-tax notices, confidentiality, timelines and how a tax lawyer can help you." />
 	{@html `<script type="application/ld+json">${JSON.stringify(faqSchema)}</script>`}
 </svelte:head>
 

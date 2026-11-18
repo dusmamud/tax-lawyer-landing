@@ -51,10 +51,6 @@
 	};
 </script>
 
-<svelte:head>
-	<title>Free Tax Tools — Income Tax, Advance Tax &amp; GST Calculators | MSY Law</title>
-	<meta name="description" content="Free Indian tax calculators: compare old vs new income tax regimes, work out advance tax instalments, and add or remove GST. FY 2026-27 rules, Income-tax Act, 2025. No sign-up, nothing uploaded." />
-</svelte:head>
 
 {@html `<script type="application/ld+json">${JSON.stringify(schema)}</script>`}
 

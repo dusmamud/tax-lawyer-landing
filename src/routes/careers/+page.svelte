@@ -52,10 +52,6 @@
 	}
 </script>
 
-<svelte:head>
-	<title>Careers — MSY Law | Join Our Tax Team in India</title>
-	<meta name="description" content="Careers at MSY Law: tax advocate, paralegal and client intake roles in New Delhi and Mumbai. Competitive pay, no billable-hour targets, hybrid working." />
-</svelte:head>
 
 <PageHero
 	eyebrow="Careers"
