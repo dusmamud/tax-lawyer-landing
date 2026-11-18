@@ -35,7 +35,7 @@
 			? 'py-2.5'
 			: 'py-4'}"
 	>
-		<a href="/" class="flex shrink-0 items-center gap-2.5" aria-label="MSY Law">
+		<a href="/" class="flex shrink-0 items-center gap-2.5" aria-label="MSY Law — Tax Lawyer">
 			<img src="/logo.svg" alt="MSY Law logo" class="h-11 w-11 sm:h-12 sm:w-12" width="48" height="48" />
 			<span class="leading-none">
 				<span class="block font-serif text-[20px] font-bold tracking-[0.16em] text-navy sm:text-[22px]">MSY LAW</span>

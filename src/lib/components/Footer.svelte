@@ -60,7 +60,7 @@
 		<!-- Top row: brand + newsletter -->
 		<div class="grid grid-cols-1 gap-10 border-b border-white/10 py-12 lg:grid-cols-2 lg:gap-16">
 			<div>
-				<a href="/" class="flex items-center gap-2.5" aria-label="MSY Law">
+				<a href="/" class="flex items-center gap-2.5" aria-label="MSY Law — Tax Lawyer">
 					<img src="/logo.svg" alt="MSY Law logo" class="h-11 w-11" width="44" height="44" />
 					<span>
 						<span class="block font-serif text-[22px] leading-none font-bold tracking-[0.18em]">MSY LAW</span>
